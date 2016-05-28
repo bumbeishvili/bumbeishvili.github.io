@@ -1,4 +1,4 @@
-﻿
+
 
 <!DOCTYPE html>
 <html >
@@ -14,9 +14,20 @@
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css'>
 <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Crete+Round'>
 
         <style>
-      .container {
+      .crete{
+  font-family:'Crete Round'
+}
+.bold{
+  font-weight:bold
+}
+.font-medium{
+  font-size:18px;
+}
+
+.container {
   padding: 0;
   margin: 0;
 }
@@ -54,7 +65,7 @@
 }
 
 #section2 {
-  background-color: #00cc99;
+  background-color: #99b3ff;
 }
 
 #section3 {
@@ -81,13 +92,13 @@
 }
 
 .no-hpadder {
-  padding-left: 0;
+  padding-left: 0 ;
   padding-right: 0;
 }
 
 .no-vpadder {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .hmargin-md {
@@ -136,6 +147,36 @@ i{
 }
 
 
+
+
+.customTooltip {
+  background: #eee;
+  /* NEW */
+  box-shadow: 0 0 5px #999999;
+  /* NEW */
+  color: #333;
+  /* NEW */
+  opacity: 0;
+  /* NEW */
+  display: none;
+  /* NEW */
+  font-size: 12px;
+  /* NEW */
+  left: 130px;
+  /* NEW */
+  padding: 10px;
+  /* NEW */
+  position: absolute;
+  /* NEW */
+  text-align: center;
+  /* NEW */
+  top: 95px;
+  /* NEW */
+  width: 200px;
+  /* NEW */
+  z-index: 10;
+}
+
     </style>
 
     
@@ -157,14 +198,14 @@ i{
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#AboutMe">Portfolio</a>
+          <a class="navbar-brand crete bold " href="#AboutMe">Portfolio</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse collapsible-area">
 
-          <ul id="menu" class="nav navbar-nav">
-            <li data-menuanchor="AboutMe"><a href="#AboutMe">About me</a></li>
+          <ul id="menu" class="nav navbar-nav crete font-medium">
+            <li  data-menuanchor="AboutMe "><a href="#AboutMe">About me</a></li>
             <li data-menuanchor="Skills"><a href="#Skills">Skills</a></li>
             <li data-menuanchor="Projects"><a href="#Projects">Projects</a></li>
             <li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
@@ -185,200 +226,21 @@ i{
         <div class="container-fluid  text-center">
           <h3 class="vpadder-md"></h3>
           <img src="https://avatars1.githubusercontent.com/u/6873202?v=3&s=460" class="img-responsive img-rounded margin" style="display:inline" alt="Dato" width="350" height="350">
-          <h3 class="vpadder-md"> Dato Bumbeishvili, junior  developer from Tbilisi / Georgia</h3>
+          <h3 class="vpadder-md ">Hi, I am Dato,  <br> Junior  developer </h3>
         </div>
       </div>
     </div>
     <div class="section" id="section2">
       <div class="col-md-12 no-hpadder">
-        <div class=" jumbotron hmargin-md ">
-          <h2>Skills</h2>
-          <p>List of my static and currently improving skills</p>
-        </div>
-        <div class="col-md-3 ">
-          <div class="panel panel-primary">
-            <div class="panel panel-heading vpadder-sm">Front end</div>
-            <div class=" panel-body vpadder-sm">
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-
-                <label>Html</label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-success" style="width: 80%;">
-                    80%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Javascript(native) </label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-primary" style="width: 70%;">
-                    70%
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>JQuery</label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-primary" style="width: 60%;">
-                    60%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Bootstrap</label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-primary" style="width: 60%;">
-                    60%
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Angular.js (1.x)</label>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-info" style="width: 50%;">
-                    50%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Css</label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-info" style="width: 50%;">
-                    50%
-                  </div>
-                </div>
-              </div>
-
-               <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>semantic Ui </label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-warning" style="width: 20%;">
-                    20%
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 ">
-          <div class="panel panel-primary">
-            <div class="panel panel-heading vpadder-sm">Back end</div>
-            <div class=" panel-body vpadder-sm">
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Asp.Net (MVC, entity framework)</label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-info" style="width: 55%;">
-                    55%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Java(Hibernate)</label>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-warning" style="width: 30%;">
-                    30%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Php</label>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-warning" style="width: 20%;">
-                    20%
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 ">
-          <div class="panel panel-primary">
-            <div class="panel panel-heading vpadder-sm">Databases</div>
-            <div class=" panel-body vpadder-sm">
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Oracle (pl & sql)</label>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-primary" style="width: 60%;">
-                    60%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Ms Sql</label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-info" style="width: 45%;">
-                    45%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>MySql</label>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-warning" style="width: 35%;">
-                    35%
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 ">
-          <div class="panel panel-primary">
-            <div class="panel panel-heading vpadder-sm">Other stuff</div>
-            <div class=" panel-body vpadder-sm">
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>Android (java) </label>
-                <div class="progress progress-striped active">
-                  <div class="progress-bar progress-bar-warning" style="width: 25%;">
-                    25%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>IOS (Appcelerator)</label>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-warning" style="width: 20%;">
-                    20%
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hpadder-sm no-vpadder">
-                <label>IOS (Swift & Objective c)</label>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-danger" style="width: 15%;">
-                    15%
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
+        <div class="force-skills"></div>
 
       </div>
     </div>
 
     <div class="section" id="section3">
-      <div class=" jumbotron hmargin-md ">
+      <div class=" jumbotron ">
         <h2>Projects</h2>
-        <p></p>
+        <p>&nbsp;</p>
       </div>
       
       <div class="slide">
@@ -549,6 +411,7 @@ i{
     
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
 
         <script>
       $(document).ready(function() {
@@ -569,6 +432,286 @@ i{
   $("#collapsible-button").click(function() {
     $(".collapsible-area").toggleClass("in");
   });
+
+});
+function drawSkillsForce(data) {
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  var isMobile = width < 400;
+  var rectWidth = 100;
+  var rectHeight = 40;
+  var maxRadius = 30;
+  var catFontSize = 15;
+  var linkDistance = 100
+  var charge = -100
+  var gravity = 0.1
+
+  if (!isMobile) {
+    rectWidth = 200;
+    rectHeight = 80;
+    maxRadius = 80;
+    catFontSize = 30;
+    linkDistance = 200
+    charge = -500
+    gravity = 0.1
+  }
+
+  var svg = d3.select('.force-skills')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+  var force = d3.layout.force();
+
+  force.size([width, height])
+  force.charge(charge);
+  force.linkDistance(linkDistance);
+  force.links(data.links);
+  force.nodes(data.nodes);
+  force.gravity(gravity);
+
+  var radiusScale = d3.scale.linear().domain([0, 100]).range([0, maxRadius]);
+  var distanceScale = d3.scale.linear().domain([0, 100]).range([linkDistance, 80]);
+
+  var categoryNodesData = data.nodes.filter(function(v) {
+    return v.type == 'Category';
+  })
+
+  var technologyNodesData = data.nodes.filter(function(v) {
+    return v.type == 'Technology';
+  })
+
+  var links = svg.selectAll('.link')
+    .data(data.links)
+    .enter()
+    .append('line')
+    .attr('class', 'link ')
+    .attr('stroke', 'gray')
+
+  var grad = svg.selectAll('.grads')
+    .data(technologyNodesData)
+    .enter()
+    .append("defs")
+    .append("linearGradient")
+    .attr("id", function(d, i) {
+      return "grad" + i;
+    })
+    .attr("x1", "0%")
+    .attr("x2", "0%")
+    .attr("y1", function(d) {
+      return (100 - d.progressPercent) + '%';
+    })
+    .attr("y2", "0%");
+  grad.append("stop")
+    .attr("offset", "3%")
+    .attr("stop-color", function(d) {
+      return d.currentlyImproving ? '#4da6ff' : '#ff6666';
+    })
+
+  grad.append("stop")
+    .attr("offset", "0%")
+    .style("stop-color", "white");
+
+  var technologyNodes = svg.selectAll('.techNode')
+    .data(technologyNodesData)
+    .enter()
+    .append('circle')
+    .attr('class', 'techNode Node')
+    .attr('r', function(d) {
+      return radiusScale(d.progressPercent);
+    })
+    .style('cursor', 'pointer')
+    .attr('stroke', '#ccd9ff')
+    .attr('stroke-width', '5px')
+
+  .attr("fill", function(d, i) {
+      return "url(#grad" + i + ")";
+    })
+    .call(force.drag)
+
+  var categoryNodeGroups = svg.
+  selectAll('.catNode')
+    .data(categoryNodesData)
+    .enter()
+    .append('g')
+    .attr('class', 'catNode');
+
+  var categoryNodes = categoryNodeGroups.append('rect')
+    .style('cursor', 'pointer')
+    .attr('stroke', '#1a90ff')
+    .attr('stroke-width', '5px')
+    .attr('fill', '#cce6ff')
+    .attr('width', rectWidth + 'px')
+    .attr('height', rectHeight + 'px')
+    .call(force.drag);
+
+  var categoryTexts = categoryNodeGroups
+    .append("text")
+    .attr('class', 'catText ')
+    .style('font-size', catFontSize)
+    .style('font-family', 'Crete Round')
+    .attr("dy", ".35em")
+    .style('cursor', 'pointer')
+    .style('font-weight', 'bold')
+    .attr('fill', '#0069cc')
+    .call(force.drag)
+    .text(function(d) {
+      return d.name;
+    });
+
+  force.start();
+
+  //##################################  TOOLTIP  ##################################################
+  function progress(params) {
+    return '<div >' +
+      '<div class="progress">' +
+      '<div class="progress-bar '+ params.class +'" role="progressbar"  color="black"  aria-valuenow="' + params.relativeValue + '" aria-valuemin="0" aria-valuemax="100" style="width:' + params.relativeValue + '%">' +
+      (params.absoluteValue > 0 ? params.absoluteValue : 'N/A') + '%' +
+      '</div>' +
+      '</div>' +
+      '</div>';
+  }
+
+  var tooltip = d3.select('body')
+    .append('div')
+    .attr('class', 'customTooltip');
+
+  tooltip.append('div')
+    .attr('class', 'skills-label');
+  tooltip.append('div')
+    .attr('class', 'skills-progress');
+
+  function tooltipHoverHandler(d) {
+    var title = d.name;
+    tooltip.select('.skills-label').html("<b>" + title + "</b>");
+
+    tooltip.select('.skills-progress').html(progress({
+      progressLabel: d.name,
+      relativeValue: d.progressPercent,
+      absoluteValue: d.progressPercent,
+       class:d.currentlyImproving?'progress-bar-info':'progress-bar-danger'
+    }));
+
+    tooltip.selectAll('.progress')
+      .style('margin-bottom', '5px');
+
+    tooltip.selectAll('h6')
+      .style('margin-bottom', '5px').style('text-align', 'left');
+
+    tooltip.transition()
+      .duration(200).style("opacity", "1").style('display', 'block');
+    d3.select(this)
+      .attr('stroke-width', 10)
+      .attr("stroke", "#ccd9ff");
+  }
+
+  function tooltipOutHandler() {
+    tooltip.transition()
+      .duration(200)
+      .style('opacity', '0').style('display', 'none');
+    d3.select(this).attr('stroke-width', 5);
+  }
+
+  technologyNodes.on('mouseover', tooltipHoverHandler);
+
+  technologyNodes.on('mouseout', tooltipOutHandler);
+
+  technologyNodes.on("mousemove", function(d) {
+    tooltip.style('top', (d3.event.pageY - 100) + 'px')
+      .style('left', (d3.event.pageX + 0) + 'px');
+  });
+
+  //############################## LEGEND  ########################################
+  svg.append('text')
+    .text('This is My Skills Visualisation using d3.js')
+    .style('font-size', catFontSize)
+    .attr('y', 20)
+    .attr('x', 15)
+    .attr("dy", ".35em")
+    .style('cursor', 'pointer')
+    .style('font-family', 'Crete Round')
+    .attr('fill', '#0066cc')
+    .attr('height', '100px')
+
+  svg.append('rect')
+    .attr('y', 40)
+    .attr('x', 15)
+    .attr('width', 30)
+    .attr('height', 30)
+    .attr('stroke', '#ccd9ff')
+    .attr('stroke-width', '5px')
+    .attr('fill', '#4da6ff')
+
+  svg.append('text')
+    .text(' Improving')
+    .style('font-size', catFontSize)
+    .attr('y', 54)
+    .attr('x', 55)
+    .attr("dy", ".35em")
+    .style('cursor', 'pointer')
+    .style('font-family', 'Crete Round')
+    .attr('fill', '#0066cc')
+    .attr('height', '100px')
+
+  svg.append('rect')
+    .attr('y', 80)
+    .attr('x', 15)
+    .attr('width', 30)
+    .attr('height', 30)
+    .attr('stroke', '#ccd9ff')
+    .attr('stroke-width', '5px')
+    .attr('fill', '#ff6666')
+
+  svg.append('text')
+    .text(' Left for the God')
+    .style('font-size', catFontSize)
+    .attr('y', 94)
+    .attr('x', 55)
+    .attr("dy", ".35em")
+    .style('cursor', 'pointer')
+    .style('font-family', 'Crete Round')
+    .attr('fill', '#0066cc')
+    .attr('height', '100px')
+
+  force.on('tick', function() {
+
+    technologyNodes
+      .attr('cx', function(d) {
+        return d.x = Math.max(radiusScale(d.progressPercent), Math.min(width - radiusScale(d.progressPercent), d.x));
+      }).attr('cy', function(d) {
+        return d.y = Math.max(radiusScale(d.progressPercent), Math.min(height - radiusScale(d.progressPercent), d.y));
+      })
+
+    categoryNodes.attr('x', function(d) {
+      return d.x - rectWidth / 2;
+    }).attr('y', function(d) {
+      return d.y - rectHeight / 2;
+    })
+    categoryTexts.attr('x', function(d) {
+      return d.x - rectWidth / 2.4;
+    }).attr('y', function(d) {
+      return d.y;
+    })
+
+    links.attr('x1', function(d) {
+        return d.source.x;
+      })
+      .attr('y1', function(d) {
+        return d.source.y;
+      })
+      .attr('x2', function(d) {
+        return d.target.x;
+      })
+      .attr('y2', function(d) {
+        return d.target.y;
+      })
+  });
+
+}
+
+d3.json("https://raw.githubusercontent.com/bumbeishvili/bumbeishvili.github.io/master/assets/skills.json", function(data) {
+
+  drawSkillsForce(data);
 
 });
       //# sourceURL=pen.js
