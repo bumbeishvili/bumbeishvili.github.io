@@ -1,1 +1,1 @@
-Personal about me page  <a target="_blank" href="http://bumbeishvili.github.io/#AboutMe" >bumbeishvili.github.io<a/>
+##Personal  <a target="_blank" href="http://bumbeishvili.github.io/#AboutMe" > 'about me' <a/> page  
