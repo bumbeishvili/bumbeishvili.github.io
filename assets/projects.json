@@ -1,0 +1,32 @@
+[
+  {
+    "title": "About Me",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/AboutMe.png",
+    "description": "This responsive single page application highlights some info about me.  It's built with react.js, materialize css a nd I have also used d3.js for skills visualization",
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "#"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/2d6bfb98707c46fe4b2c6b9a93fe9590"
+      }
+    ]
+  },
+  {
+    "title": "Recipes Box",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/recipes.png",
+    "description": "This is simple responsive crud web application, where you can add, delete, edit recipes, built with react.js and materialize.css",
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "http://s.codepen.io/bumbeishvili/debug/gMLwYE"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/907fe27d03faf900904c4947d2c4ff5c"
+      }
+    ]
+  }
+]
