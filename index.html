@@ -1,156 +1,175 @@
 
 
 <!DOCTYPE html>
-<html >
+<html class="About Me Page Using React And Materializecss">
   <head>
     <meta charset="UTF-8">
 
 
-    <title>CodePen - AboutMe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CodePen - About Me Page Using React.js and materialize.css</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css'>
-<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Crete+Round'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css'>
+<link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
         <style>
-      .crete{
-  font-family:'Crete Round'
+      .tab {
+  position: relative;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
-.bold{
-  font-weight:bold
+.tab .tabs {
+  position: fixed;
+  left: 0;
 }
-.font-medium{
-  font-size:18px;
+.tab .tabs a {
+  color: #42a5f5 !important;
+}
+.tab .tabs a:hover {
+  color: #bbdefb !important;
+}
+.tab .tabs .indicator {
+  background-color: #64b5f6 !important;
 }
 
-.container {
+.pages {
+  margin-top: 65px;
+}
+.pages .header-title {
+  color: #42a5f5;
+  text-align: center;
+  margin-top: 80px;
+}
+.pages .header-title hr {
+  max-width: 220px;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #42a5f5;
   padding: 0;
-  margin: 0;
 }
-
-.section {
-  padding-top: 50px;
+.pages .header-title:not(#header_Projects) h2 {
+  margin-bottom: 0px !important;
+}
+.pages .me hr {
+  max-width: 220px;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #42a5f5;
+  padding: 0;
+}
+.pages .me .title-container {
+  background-color: #90caf9;
+  color: white;
+  text-align: center;
+}
+.pages .me .title-container hr {
+  max-width: 220px;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid white;
+  padding: 0;
+}
+.pages .me .title-container h4 {
+  padding-top: 20px;
   padding-bottom: 20px;
 }
-
-
-/*screen resolutions smaller than 950px height*/
-
-@media (min-width:950px) {
-  .center {
-    margin-left: 16.6%;
-    margin-top: 3%;
-  }
+.pages .me .myPhoto {
+  display: block;
+  margin: 0 auto;
+  float: none;
 }
-
-@media (max-width: 950px) {
-  .section {
-    height: auto !important;
-    min-height: 100%;
-  }
-  .fp-controlArrow {
-    display: none !important;
-  }
+.pages .me .myPhoto img {
+  display: block;
+  margin: 0 auto;
 }
-
-#section1 {
-  background-color: #008080;
-  font: 20px Montserrat, sans-serif;
-  line-height: 1.8;
+.pages .projects #ProjectsList {
+  text-align: center;
+}
+.pages .projects #ProjectsList li {
+  display: inline;
+  text-align: start;
+  opacity: 0;
+}
+.pages .projects #ProjectsList li .card {
+  margin: 10px;
+}
+.pages .Contact {
+  margin: 40px;
+}
+.pages .Contact .icon-wrappers-container {
+  overflow: hidden;
+}
+.pages .Contact .icon-wrappers-container .social-icons-wrapper {
+  margin: 15px;
+}
+.pages .Contact .icon-wrappers-container:hover {
+  overflow: visible;
+}
+.pages .Contact a {
+  font-size: 25px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: block;
+  margin: 20px calc(50% - 21px);
+  white-space: nowrap;
+  padding: 10px;
+  padding-top: 9px;
+  padding-left: 14px;
+  box-sizing: border-box;
   color: white;
+  transition: all 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
-
-#section2 {
-  background-color: #99b3ff;
+.pages .Contact a i {
+  margin-right: 20px;
+  transition: margin-right 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
-
-#section3 {
-  background-color: #0073e6;
+.pages .Contact a:hover {
+  width: 160px;
+  z-index: 1000;
+  transform: translateX(-50px);
 }
-
-#section4 {
-  background-color: #52527a;
+.pages .Contact a:hover i {
+  margin-right: 10px;
 }
-
-.vpadder-sm {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.pages .Contact a.linkedin {
+  background: #4875B4;
 }
-
-.vpadder-md {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.pages .Contact a.twitter {
+  background: #03A9F4;
 }
-
-.hpadder-sm {
-  padding-left: 5px;
-  padding-right: 5px;
+.pages .Contact a.stack-overflow {
+  background: #fe7a15;
 }
-
-.no-hpadder {
-  padding-left: 0 ;
-  padding-right: 0;
+.pages .Contact a.stack-overflow:hover {
+  width: 220px;
 }
-
-.no-vpadder {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+.pages .Contact a.facebook {
+  background: #3B5998;
+  padding-left: 18px;
 }
-
-.hmargin-md {
-  margin-left: 15px;
-  margin-right: 15px;
+.pages .Contact a.github {
+  background: #333;
 }
-
-.jumbotron {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-  padding-left: 20px;
-  margin-top: 0;
+.pages .Contact a.codepen {
+  background: #000;
+  padding-left: 12px;
 }
-
-.progress {
-  margin-bottom: 8px;
+.pages .Contact a.google-plus {
+  background: #C63D2D;
 }
-
-th {
-  padding-right: 10px;
+.pages .Contact a.google-plus:hover {
+  width: 200px;
 }
-
-body[class^="fp-viewing-Projects"] #fp-nav {
-  display: none !important;
-}
-
-.fp-slidesNav > ul > li > a > span {
-  background-color: white;
-}
-
-samp  {
-  font-size: 15px;
-}
-
-.text-white{
-  color:white;
-}
-
-.cell-white tr th,.cell-white tr td{
-  color:white;
-}
-
-i{
-  font-size:50px!important;
-}
-
-
-
 
 .customTooltip {
-  background: #eee;
+  background: white;
   /* NEW */
   box-shadow: 0 0 5px #999999;
   /* NEW */
@@ -176,6 +195,12 @@ i{
   /* NEW */
   z-index: 10;
 }
+.customTooltip .blue {
+  color: blue !important;
+}
+.customTooltip .red {
+  color: red !important;
+}
 
     </style>
 
@@ -186,454 +211,444 @@ i{
 
   <body translate="no" >
 
-    <div class="wrapper">
-  <div style="z-index:99999;position:fixed;width:100%">
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" id="collapsible-button" data-toggle="collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand crete bold " href="#AboutMe">Portfolio</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse collapsible-area">
-
-          <ul id="menu" class="nav navbar-nav crete font-medium">
-            <li  data-menuanchor="AboutMe "><a href="#AboutMe">About me</a></li>
-            <li data-menuanchor="Skills"><a href="#Skills">Skills</a></li>
-            <li data-menuanchor="Projects"><a href="#Projects">Projects</a></li>
-            <li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
-
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
-  </div>
-
-  <div id="fullpage">
-
-
-    <div class="section" id="section1">
-      <div class="col-md-12 ">
-        <div class="container-fluid  text-center">
-          <h3 class="vpadder-md"></h3>
-          <img src="https://avatars1.githubusercontent.com/u/6873202?v=3&s=460" class="img-responsive img-rounded margin" style="display:inline" alt="Dato" width="350" height="350">
-          <h3 class="vpadder-md ">Hi, I am Dato,  <br> Junior  developer </h3>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="section2">
-      <div class="col-md-12 no-hpadder">
-        <div class="force-skills"></div>
-
-      </div>
-    </div>
-
-    <div class="section" id="section3">
-      <div class=" jumbotron ">
-        <h2>Projects</h2>
-        <p>&nbsp;</p>
-      </div>
-      
-      <div class="slide">
-        <div class="col-md-12 vpadder-md">
-          <div class="col-md-8 center  well">
-
-            <div class="col-md-4">
-              <a class="thumbnail" href="#">
-                <img class="img img-responsive" src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png">
-              </a>
-
-            </div>
-            <div class="col-md-8">
-              <table class="table">
-                <tr>
-                  <th>Name:</th>
-                  <td><samp>Free Code Camp Projects</samp></td>
-                </tr>
-                <tr>
-                  <th>Demos:</th>
-                  <td><samp><samp><a target="_blank" href="https://github.com/bumbeishvili/free-code-camp-projects">project lists</a></samp></samp>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Github:</th>
-                  <td> <samp><a target="_blank" href="https://github.com/bumbeishvili/free-code-camp-projects">Sources</a></samp></td>
-                </tr>
-                <tr>
-                  <th>Technologies:</th>
-                  <td> <samp>Js(angular, jquery), Html , Css(bootstrap), </samp></td>
-                </tr>
-              </table>
-              <br>
-              <samp>&nbsp; These Projects were created during the way of passing free code camp challenges </samp>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-      
-     
-
-      <div class="slide">
-        <div class="col-md-12 vpadder-md">
-          <div class="col-md-8 center  well">
-
-            <div class="col-md-4">
-              <a class="thumbnail" href="#">
-                <img class="img img-responsive" src="https://d33c26a6bf13061cf9896a9a4ff493d776c12473.googledrive.com/host/0B5Xx_P8ocy_bQlVnbjZyd1NsVWc">
-              </a>
-
-            </div>
-            <div class="col-md-8">
-              <table class="table">
-                <tr>
-                  <th>Name:</th>
-                  <td><samp>Georgian Words Query</samp></td>
-                </tr>
-                <tr>
-                  <th>Demo:</th>
-                  <td><samp><samp><a target="_blank" href="http://bumbeishvili.github.io/GeoWordsDatabase/">github.io</a></samp></samp>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Github:</th>
-                  <td> <samp><a target="_blank" href="https://github.com/bumbeishvili/GeoWordsDatabase">Source</a></samp></td>
-                </tr>
-                <tr>
-                  <th>Technologies:</th>
-                  <td> <samp>Angular.js, Php, MySql, C# </samp></td>
-                </tr>
-              </table>
-              <br>
-              <samp>&nbsp; Application gets georgian words from database by search pattern. wildcards and regular expressions are both supported.</samp>
-              <br>
-              <samp>&nbsp; Application also includes rhyme algorithm, user can get georgian words from database with same rhyme. </samp>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="col-md-12 vpadder-md">
-          <div class="col-md-8 center  well">
-
-            <div class="col-md-4">
-              <a class="thumbnail" href="#">
-                <img class="img img-responsive" src="https://4938b49ed9747ede1db718ab00de96d1689d269d.googledrive.com/host/0B5Xx_P8ocy_benVBZ2ZUalFNTFE">
-              </a>
-
-            </div>
-            <div class="col-md-8">
-              <table class="table">
-                <tr>
-                  <th>Name:</th>
-                  <td><samp>51 Point</samp></td>
-                </tr>
-                <tr>
-                  <th>WebStore:</th>
-                  <td><samp><samp><a target="_blank" href="https://chrome.google.com/webstore/detail/51-%E1%83%A5%E1%83%A3%E1%83%9A%E1%83%90/jjekhfcnahkgpnjkfofmleljdlgpaplc?authuser=1">get extension</a></samp></samp>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Github:</th>
-                  <td> <samp><a target="_blank" href="https://github.com/bumbeishvili/SmsTsuExtenderChrome">Source</a></samp></td>
-                </tr>
-                <tr>
-                  <th>Technologies:</th>
-                  <td> <samp>jQuery, chart.js, sweetAlert </samp></td>
-                </tr>
-              </table>
-              <br>
-              <samp>&nbsp; This extension adds some usefull and funny tools to electronic education process management system of "Tbilisi State University"</samp>
-              <br>
-              <samp>&nbsp; Tools include: GPA calculator, Total aggregated statistics, GPA diagram by subject, Average points by semester and etc.</samp>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-     
-    </div>
-
-    <div class="section" id="section4">
-      <div class="col-md-12">
-        <div class=col-md-4>
-          <h1 class="text-white">Contact</h1>
-          <table class="cell-white">
-            <tr>
-              <th>Email: </th>
-              <td>Davit.Bumbeishvili@gmail.com</td>
-            </tr>
-            <tr>
-              <th>Phone: </th>
-              <td>(+995) 598 61 52 61</td>
-            </tr>
-          </table>
-        </div>
-        <div class="col-md-4">
-          <h1 class="text-white">Network</h1>
-
-          <a target="_blank" href="https://www.facebook.com/Davit.Bumbeishvili">
-            <i class="fa fa-fw fa-facebook-square text-white"></i>
-          </a>
-
-          <a target="_blank" href="https://github.com/bumbeishvili">
-            <i class="fa fa-fw fa-github-square text-white"></i>
-          </a>
-         <a target="_blank" href="https://codepen.io/bumbeishvili/">
-            <i class="fa fa-fw fa-codepen text-white"></i>
-          </a>
-          
-          <a target="_blank" href="https://www.linkedin.com/in/%E1%83%93%E1%83%90%E1%83%97%E1%83%9D-%E1%83%91%E1%83%A3%E1%83%9B%E1%83%91%E1%83%94%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98-b0aa47b5?trk=nav_responsive_tab_profile_pic">
-            <i class="fa fa-fw fa-linkedin-square text-white"></i>
-          </a>
-
-          <a target="_blank" href="http://stackoverflow.com/users/5369006/dato">
-            <i class="fa fa-fw fa-stack-overflow text-white"></i>
-          </a>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <div id='content'></div>
     
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+<script src='https://fb.me/react-15.1.0.min.js'></script>
+<script src='https://fb.me/react-dom-15.1.0.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
 
         <script>
-      $(document).ready(function() {
-  $('#fullpage').fullpage({
-    anchors: ['AboutMe', 'Skills', 'Projects', 'Contact'],
-    menu: '#menu',
-    css3: true,
-    verticalCentered: false,
-    responsiveWidth: 1100,
-    navigation: true,
-    navigationPosition: 'right',
-    navigationTooltips: ['About me', 'Skills','Projects','Contact'],
-    showActiveTooltip: false,
-    slidesNavigation: true,
-    slidesNavPosition: 'bottom',
-  });
+      'use strict';
 
-  $("#collapsible-button").click(function() {
-    $(".collapsible-area").toggleClass("in");
-  });
+var projectsJsonLink = "https://raw.githubusercontent.com/bumbeishvili/bumbeishvili.github.io/master/assets/projects.json";
 
-});
-function drawSkillsForce(data) {
-  var width = window.innerWidth;
-  var height = window.innerHeight;
-  var isMobile = width < 400;
-  var rectWidth = 100;
-  var rectHeight = 40;
-  var maxRadius = 30;
-  var catFontSize = 15;
-  var linkDistance = 100
-  var charge = -100
-  var gravity = 0.1
+var Page = React.createClass({
+  displayName: 'Page',
 
-  if (!isMobile) {
-    rectWidth = 200;
-    rectHeight = 80;
-    maxRadius = 80;
-    catFontSize = 30;
-    linkDistance = 200
-    charge = -500
-    gravity = 0.1
+  getInitialState: function getInitialState() {
+    return {
+      tabs: ['Me', 'Skills', 'Projects', 'Contact'],
+      projects: [],
+      socialChannels: [{
+        name: 'github',
+        URL: "https://github.com/bumbeishvili"
+      }, {
+        name: 'codepen',
+        URL: "https://codepen.io/bumbeishvili/"
+      }, {
+        name: 'stack-overflow',
+        URL: "http://stackoverflow.com/users/5369006/bumbeishvili"
+      }, {
+        name: 'linkedin',
+        URL: "https://www.linkedin.com/in/bumbeishvili"
+      }, {
+        name: 'google-plus',
+        URL: "https://goo.gl/VEsrgM"
+      }, {
+        name: 'facebook',
+        URL: "https://www.facebook.com/Davit.Bumbeishvili"
+      }, {
+        name: 'twitter',
+        URL: "https://twitter.com/dbumbeishvili"
+      }]
+    };
+  },
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'page' },
+      React.createElement(Tabs, { tabs: this.state.tabs }),
+      React.createElement(
+        'div',
+        { className: 'pages' },
+        React.createElement(Me, { getHeader: this.gerHeader }),
+        React.createElement(Skills, { getHeader: this.gerHeader }),
+        React.createElement(Projects, { getHeader: this.gerHeader, projects: this.state.projects }),
+        React.createElement(Contact, { getHeader: this.gerHeader, socialChannels: this.state.socialChannels })
+      )
+    );
+  },
+  gerHeader: function gerHeader(tabName) {
+    return React.createElement(
+      'div',
+      { className: 'header-title', id: 'header_' + tabName },
+      React.createElement(
+        'h2',
+        null,
+        tabName
+      ),
+      React.createElement('hr', null)
+    );
+  },
+  componentDidMount: function componentDidMount() {
+    var _this = this;
+
+    $.get(projectsJsonLink, function (projects) {
+      _this.setState({
+        projects: JSON.parse(projects)
+      });
+    });
   }
 
-  var svg = d3.select('.force-skills')
-    .append('svg')
-    .attr('width', width)
-    .attr('height', height);
+});
+
+var Tabs = React.createClass({
+  displayName: 'Tabs',
+
+  render: function render() {
+    var _this2 = this;
+
+    var tabs = this.props.tabs;
+    return React.createElement(
+      'div',
+      { className: ' tab row' },
+      React.createElement(
+        'div',
+        { className: 'col s12' },
+        React.createElement(
+          'ul',
+          { className: 'tabs' },
+          tabs.map(function (t, i) {
+            return React.createElement(
+              'li',
+              { key: i, className: 'tab col s3' },
+              React.createElement(
+                'a',
+                { href: '#tab' + t, onClick: _this2.scrollTo.bind(_this2, t) },
+                t
+              )
+            );
+          })
+        )
+      )
+    );
+  },
+  scrollTo: function scrollTo(dest) {
+    $('html, body').animate({
+      scrollTop: $("#" + dest).offset().top - 65
+    }, 1000);
+  },
+  componentDidMount: function componentDidMount() {
+    function height(selector) {
+      return $(selector).offset().top - window.innerHeight / 2;
+    }
+
+    function moveToTab(tabName) {
+      $('ul.tabs').tabs('select_tab', 'tab' + tabName);
+    }
+
+    var previousTab;
+    var tabs = this.props.tabs;
+
+    $(window).scroll(function () {
+      var currentHeight = $('body').scrollTop();
+      var tabContentHeights = tabs.map(function (t) {
+        return height('#' + t);
+      });
+
+      for (var i = tabs.length - 1; i >= 0; i--) {
+        if (currentHeight > tabContentHeights[i]) {
+          if (previousTab != tabs[i]) {
+            moveToTab(tabs[i]);
+            previousTab = tabs[i];
+          }
+          break;
+        }
+      }
+    });
+  }
+});
+
+var Me = React.createClass({
+  displayName: 'Me',
+
+  render: function render() {
+    var arr = Array.apply(null, Array(15));
+    return React.createElement(
+      'div',
+      { className: 'me', id: 'Me' },
+      this.props.getHeader("Me"),
+      React.createElement(
+        'div',
+        { className: 'row' },
+        React.createElement(
+          'div',
+          { className: 'col m4 s11 myPhoto' },
+          React.createElement('img', { src: 'https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/p2.jpg', alt: '', className: 'circle responsive-img' })
+        )
+      ),
+      React.createElement(
+        'div',
+        { className: 'row title-container' },
+        React.createElement(
+          'div',
+          { className: 'title' },
+          React.createElement(
+            'h4',
+            null,
+            'Dato Bumbeishvili'
+          ),
+          React.createElement('hr', null),
+          React.createElement(
+            'h3',
+            null,
+            'Junior Developer'
+          )
+        )
+      )
+    );
+  }
+});
+
+var Skills = React.createClass({
+  displayName: 'Skills',
+
+  render: function render() {
+    var arr = Array.apply(null, Array(15));
+    return React.createElement(
+      'div',
+      { className: 'Skills force-skills', id: 'Skills' },
+      this.props.getHeader("Skills")
+    );
+  }
+});
+
+var Projects = React.createClass({
+  displayName: 'Projects',
+
+  render: function render() {
+
+    return React.createElement(
+      'div',
+      { className: 'row', id: 'Projects' },
+      this.props.getHeader("Projects"),
+      React.createElement(
+        'div',
+        { className: 'projects row' },
+        React.createElement(
+          'ul',
+          { id: 'ProjectsList' },
+          this.props.projects.map(function (x, i) {
+            var item;
+            if (i % 4 == 0) {
+              item = React.createElement(
+                'div',
+                null,
+                React.createElement('div', { className: 'row' }),
+                React.createElement(
+                  'li',
+                  null,
+                  React.createElement(Card, { project: x, index: i })
+                )
+              );
+            } else {
+              item = React.createElement(
+                'li',
+                null,
+                React.createElement(Card, { project: x, index: i })
+              );
+            }
+
+            return item;
+          })
+        )
+      )
+    );
+  },
+  componentDidMount: function componentDidMount() {
+    var options = [{
+      selector: '#ProjectsList',
+      offset: 100,
+      callback: function callback(el) {
+        Materialize.showStaggeredList($(el));
+      }
+    }];
+    Materialize.scrollFire(options);
+  }
+});
+
+var Card = React.createClass({
+  displayName: 'Card',
+
+  render: function render() {
+    var project = this.props.project;
+    return React.createElement(
+      'div',
+      { className: 'col s12 m3' },
+      React.createElement(
+        'div',
+        { className: 'card  ' },
+        React.createElement(
+          'div',
+          { className: 'card-image' },
+          React.createElement('img', { src: project.imageURL })
+        ),
+        React.createElement(
+          'div',
+          { className: 'card-content' },
+          React.createElement(
+            'span',
+            { className: 'card-title' },
+            this.props.index + 1 + '. ',
+            ' ',
+            project.title,
+            ' '
+          ),
+          React.createElement(
+            'p',
+            null,
+            project.description
+          )
+        ),
+        React.createElement(
+          'div',
+          { className: 'card-action' },
+          project.links.map(function (l) {
+            return React.createElement(
+              'a',
+              { href: l.HREF, target: '_blank' },
+              l.name
+            );
+          })
+        )
+      )
+    );
+  }
+});
+
+var Contact = React.createClass({
+  displayName: 'Contact',
+
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'Contact', id: 'Contact' },
+      this.props.getHeader("Contact"),
+      React.createElement(
+        'div',
+        { className: 'row icon-wrappers-container' },
+        this.props.socialChannels.map(function (ch) {
+          return React.createElement(
+            'div',
+            { className: 'col s2 m1 social-icons-wrapper' },
+            ' ',
+            React.createElement(
+              'a',
+              { className: ch.name,
+                href: ch.URL, target: '_blank' },
+              React.createElement('i', { className: 'fa fa-' + ch.name }),
+              ch.name,
+              ' '
+            )
+          );
+        })
+      )
+    );
+  },
+  componentDidMount: function componentDidMount() {
+    $('.parallax').parallax();
+  }
+});
+
+ReactDOM.render(React.createElement(Page, null), document.getElementById('content'));
+
+function drawSkillsForce(data) {
+  var container = '.force-skills';
+  var width = window.innerWidth - 20;
+  var height = window.innerHeight - 140;
+  var isMobile = width < 400;
+  var rectWidth = 50;
+  var rectHeight = 20;
+  var maxRadius = 30;
+  var catFontSize = 10;
+  var linkDistance = 40;
+  var charge = -150;
+  var gravity = 0.1;
+
+  if (!isMobile) {
+    rectWidth = 100;
+    rectHeight = 40;
+    maxRadius = 60;
+    catFontSize = 20;
+    linkDistance = 80;
+    charge = -300;
+    gravity = 0.1;
+  }
+
+  var svg = d3.select(container).append('svg').attr('width', width).attr('height', height);
 
   var force = d3.layout.force();
 
-  force.size([width, height])
+  force.size([width, height]);
   force.charge(charge);
   force.linkDistance(linkDistance);
   force.links(data.links);
   force.nodes(data.nodes);
   force.gravity(gravity);
 
-  var radiusScale = d3.scale.linear().domain([0, 100]).range([0, maxRadius]);
+  var radiusScale = d3.scale.linear().domain([0, 100]).range([10, maxRadius]);
   var distanceScale = d3.scale.linear().domain([0, 100]).range([linkDistance, 80]);
 
-  var categoryNodesData = data.nodes.filter(function(v) {
+  var categoryNodesData = data.nodes.filter(function (v) {
     return v.type == 'Category';
-  })
+  });
 
-  var technologyNodesData = data.nodes.filter(function(v) {
+  var technologyNodesData = data.nodes.filter(function (v) {
     return v.type == 'Technology';
-  })
-  
-    //############################## LEGEND  ########################################
-  svg.append('text')
-    .text('This is My Skills Visualization using d3.js')
-    .style('font-size', catFontSize)
-    .attr('y', 20)
-    .attr('x', 15)
-    .attr("dy", ".35em")
-    .style('cursor', 'pointer')
-    .style('font-family', 'Crete Round')
-    .attr('fill', '#0066cc')
-    .attr('height', '100px')
+  });
 
-  svg.append('rect')
-    .attr('y', 40)
-    .attr('x', 15)
-    .attr('width', 30)
-    .attr('height', 30)
-    .attr('stroke', '#ccd9ff')
-    .attr('stroke-width', '5px')
-    .attr('fill', '#4da6ff')
+  //############################## LEGEND  ########################################
 
-  svg.append('text')
-    .text(' Improving')
-    .style('font-size', catFontSize)
-    .attr('y', 54)
-    .attr('x', 55)
-    .attr("dy", ".35em")
-    .style('cursor', 'pointer')
-    .style('font-family', 'Crete Round')
-    .attr('fill', '#0066cc')
-    .attr('height', '100px')
+  svg.append('rect').attr('y', 10).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', '#4da6ff');
 
-  svg.append('rect')
-    .attr('y', 80)
-    .attr('x', 15)
-    .attr('width', 30)
-    .attr('height', 30)
-    .attr('stroke', '#ccd9ff')
-    .attr('stroke-width', '5px')
-    .attr('fill', '#ff6666')
+  svg.append('text').text(' Improving').style('font-size', catFontSize).attr('y', 24).attr('x', 55).attr("dy", ".35em").style('cursor', 'pointer').style('font-family', 'Crete Round').attr('fill', '#0066cc').attr('height', '100px');
 
-  svg.append('text')
-    .text('Abandoned')
-    .style('font-size', catFontSize)
-    .attr('y', 94)
-    .attr('x', 55)
-    .attr("dy", ".35em")
-    .style('cursor', 'pointer')
-    .style('font-family', 'Crete Round')
-    .attr('fill', '#0066cc')
-    .attr('height', '100px')
+  svg.append('rect').attr('y', 50).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', '#ff6666');
+
+  svg.append('text').text('Abandoned').style('font-size', catFontSize).attr('y', 64).attr('x', 55).attr("dy", ".35em").style('cursor', 'pointer').style('font-family', 'Crete Round').attr('fill', '#0066cc').attr('height', '100px');
 
   //########################### drawing
 
-  var links = svg.selectAll('.link')
-    .data(data.links)
-    .enter()
-    .append('line')
-    .attr('class', 'link ')
-    .attr('stroke', 'gray')
+  var links = svg.selectAll('.link').data(data.links).enter().append('line').attr('class', 'link ').attr('stroke', 'gray');
 
-  var grad = svg.selectAll('.grads')
-    .data(technologyNodesData)
-    .enter()
-    .append("defs")
-    .append("linearGradient")
-    .attr("id", function(d, i) {
-      return "grad" + i;
-    })
-    .attr("x1", "0%")
-    .attr("x2", "0%")
-    .attr("y1", function(d) {
-      return (100 - d.progressPercent) + '%';
-    })
-    .attr("y2", "0%");
-  grad.append("stop")
-    .attr("offset", "3%")
-    .attr("stop-color", function(d) {
-      return d.currentlyImproving ? '#4da6ff' : '#ff6666';
-    })
+  var grad = svg.selectAll('.grads').data(technologyNodesData).enter().append("defs").append("linearGradient").attr("id", function (d, i) {
+    return "grad" + i;
+  }).attr("x1", "0%").attr("x2", "0%").attr("y1", function (d) {
+    return 100 - d.progressPercent + '%';
+  }).attr("y2", "0%");
+  grad.append("stop").attr("offset", "3%").attr("stop-color", function (d) {
+    return d.currentlyImproving ? '#4da6ff' : '#ff6666';
+  });
 
-  grad.append("stop")
-    .attr("offset", "0%")
-    .style("stop-color", "white");
+  grad.append("stop").attr("offset", "0%").style("stop-color", "white");
 
-  var technologyNodes = svg.selectAll('.techNode')
-    .data(technologyNodesData)
-    .enter()
-    .append('circle')
-    .attr('class', 'techNode Node')
-    .attr('r', function(d) {
-      return radiusScale(d.progressPercent);
-    })
-    .style('cursor', 'pointer')
-    .attr('stroke', '#ccd9ff')
-    .attr('stroke-width', '5px')
+  var technologyNodes = svg.selectAll('.techNode').data(technologyNodesData).enter().append('circle').attr('class', 'techNode Node').attr('r', function (d) {
+    return radiusScale(d.progressPercent);
+  }).style('cursor', 'pointer').attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr("fill", function (d, i) {
+    return "url(#grad" + i + ")";
+  }).call(force.drag);
 
-  .attr("fill", function(d, i) {
-      return "url(#grad" + i + ")";
-    })
-    .call(force.drag)
+  var categoryNodeGroups = svg.selectAll('.catNode').data(categoryNodesData).enter().append('g').attr('class', 'catNode');
 
-  var categoryNodeGroups = svg.
-  selectAll('.catNode')
-    .data(categoryNodesData)
-    .enter()
-    .append('g')
-    .attr('class', 'catNode');
+  var categoryNodes = categoryNodeGroups.append('rect').style('cursor', 'pointer').attr('stroke', '#1a90ff').attr('stroke-width', '3px').attr('fill', 'white').attr('width', rectWidth + 'px').attr('height', rectHeight + 'px').call(force.drag);
 
-  var categoryNodes = categoryNodeGroups.append('rect')
-    .style('cursor', 'pointer')
-    .attr('stroke', '#1a90ff')
-    .attr('stroke-width', '5px')
-    .attr('fill', '#cce6ff')
-    .attr('width', rectWidth + 'px')
-    .attr('height', rectHeight + 'px')
-    .call(force.drag);
-
-  var categoryTexts = categoryNodeGroups
-    .append("text")
-    .attr('class', 'catText ')
-    .style('font-size', catFontSize)
-    .style('font-family', 'Crete Round')
-    .attr("dy", ".35em")
-    .style('cursor', 'pointer')
-    .style('font-weight', 'bold')
-    .attr('fill', '#0069cc')
-    .call(force.drag)
-    .text(function(d) {
-      return d.name;
-    });
+  var categoryTexts = categoryNodeGroups.append("text").attr('class', 'catText ').style('font-size', catFontSize).style('font-family', 'Crete Round').attr("dy", ".35em").style('cursor', 'pointer').style('font-weight', 'bold').attr('fill', '#0069cc').call(force.drag).text(function (d) {
+    return d.name;
+  });
 
   force.start();
 
   //##################################  TOOLTIP  ##################################################
   function progress(params) {
-    return '<div >' +
-      '<div class="progress">' +
-      '<div class="progress-bar '+ params.class +'" role="progressbar"  color="black"  aria-valuenow="' + params.relativeValue + '" aria-valuemin="0" aria-valuemax="100" style="width:' + params.relativeValue + '%">' +
-      (params.absoluteValue > 0 ? params.absoluteValue : 'N/A') + '%' +
-      '</div>' +
-      '</div>' +
-      '</div>';
+    return '<div >' + (params.absoluteValue > 0 ? params.absoluteValue : 'N/A') + '%' + '<div class="progress">' + '<div class="determinate ' + params.class + '"  style="width:' + params.relativeValue + '%">' + '</div>' + '</div>' + '</div>';
   }
 
-  var tooltip = d3.select('body')
-    .append('div')
-    .attr('class', 'customTooltip');
+  var tooltip = d3.select('body').append('div').attr('class', 'customTooltip');
 
-  tooltip.append('div')
-    .attr('class', 'skills-label');
-  tooltip.append('div')
-    .attr('class', 'skills-progress');
+  tooltip.append('div').attr('class', 'skills-label');
+  tooltip.append('div').attr('class', 'skills-progress');
 
   function tooltipHoverHandler(d) {
     var title = d.name;
@@ -643,26 +658,19 @@ function drawSkillsForce(data) {
       progressLabel: d.name,
       relativeValue: d.progressPercent,
       absoluteValue: d.progressPercent,
-       class:d.currentlyImproving?'progress-bar-info':'progress-bar-danger'
+      class: d.currentlyImproving ? 'blue' : 'red'
     }));
 
-    tooltip.selectAll('.progress')
-      .style('margin-bottom', '5px');
+    tooltip.selectAll('.progress').style('margin-bottom', '5px');
 
-    tooltip.selectAll('h6')
-      .style('margin-bottom', '5px').style('text-align', 'left');
+    tooltip.selectAll('h6').style('margin-bottom', '5px').style('text-align', 'left');
 
-    tooltip.transition()
-      .duration(200).style("opacity", "1").style('display', 'block');
-    d3.select(this)
-      .attr('stroke-width', 10)
-      .attr("stroke", "#ccd9ff");
+    tooltip.transition().duration(200).style("opacity", "1").style('display', 'block');
+    d3.select(this).attr('stroke-width', 10).attr("stroke", "#ccd9ff");
   }
 
   function tooltipOutHandler() {
-    tooltip.transition()
-      .duration(200)
-      .style('opacity', '0').style('display', 'none');
+    tooltip.transition().duration(200).style('opacity', '0').style('display', 'none');
     d3.select(this).attr('stroke-width', 5);
   }
 
@@ -670,52 +678,56 @@ function drawSkillsForce(data) {
 
   technologyNodes.on('mouseout', tooltipOutHandler);
 
-  technologyNodes.on("mousemove", function(d) {
-    tooltip.style('top', (d3.event.pageY - 100) + 'px')
-      .style('left', (d3.event.pageX + 0) + 'px');
+  technologyNodes.on("mousemove", function (d) {
+    tooltip.style('top', d3.event.pageY - 100 + 'px').style('left', d3.event.pageX + 0 + 'px');
   });
 
+  force.on('tick', function () {
 
-  force.on('tick', function() {
+    technologyNodes.attr('cx', function (d) {
+      return d.x = Math.max(radiusScale(d.progressPercent), Math.min(width - radiusScale(d.progressPercent), d.x));
+    }).attr('cy', function (d) {
+      return d.y = Math.max(radiusScale(d.progressPercent), Math.min(height - radiusScale(d.progressPercent), d.y));
+    });
 
-    technologyNodes
-      .attr('cx', function(d) {
-        return d.x = Math.max(radiusScale(d.progressPercent), Math.min(width - radiusScale(d.progressPercent), d.x));
-      }).attr('cy', function(d) {
-        return d.y = Math.max(radiusScale(d.progressPercent), Math.min(height - radiusScale(d.progressPercent), d.y));
-      })
-
-    categoryNodes.attr('x', function(d) {
+    categoryNodes.attr('x', function (d) {
+      if (d.x - rectWidth / 2 < 0) return 0;
+      if (d.x + rectWidth / 2 > width) return width - rectWidth;
       return d.x - rectWidth / 2;
-    }).attr('y', function(d) {
+    }).attr('y', function (d) {
+      //return d.y - rectHeight / 2;
+
+      if (d.y - rectHeight / 2 < 0) return 0;
+      if (d.y + rectHeight / 2 > height) return height - rectHeight;
       return d.y - rectHeight / 2;
-    })
-    categoryTexts.attr('x', function(d) {
+    });
+
+    categoryTexts.attr('x', function (d) {
+      if (d.x - rectWidth / 2.4 < 0) return 0;
+      if (d.x + rectWidth / 2.6 > width) return width - rectWidth;
       return d.x - rectWidth / 2.4;
-    }).attr('y', function(d) {
+    }).attr('y', function (d) {
+      // return d.y;
+      if (d.y - rectHeight / 2 < 0) return rectHeight / 2;
+      if (d.y + rectHeight / 2 > height) return height - rectHeight / 2;
       return d.y;
-    })
+    });
 
-    links.attr('x1', function(d) {
-        return d.source.x;
-      })
-      .attr('y1', function(d) {
-        return d.source.y;
-      })
-      .attr('x2', function(d) {
-        return d.target.x;
-      })
-      .attr('y2', function(d) {
-        return d.target.y;
-      })
+    links.attr('x1', function (d) {
+      return d.source.x;
+    }).attr('y1', function (d) {
+      return d.source.y;
+    }).attr('x2', function (d) {
+      return d.target.x;
+    }).attr('y2', function (d) {
+      return d.target.y;
+    });
   });
-
 }
 
-d3.json("https://raw.githubusercontent.com/bumbeishvili/bumbeishvili.github.io/master/assets/skills.json", function(data) {
+d3.json("https://raw.githubusercontent.com/bumbeishvili/bumbeishvili.github.io/master/assets/skills.json", function (data) {
 
   drawSkillsForce(data);
-
 });
       //# sourceURL=pen.js
     </script>
