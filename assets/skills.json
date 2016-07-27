@@ -178,6 +178,13 @@
       "type": "Technology",
       "currentlyImproving": true,
       "progressPercent": 80
+    },
+    {
+      "index": 27,
+      "name": "Git",
+      "type": "Technology",
+      "currentlyImproving": true,
+      "progressPercent": 20
     }
   ],
   "links":[{
@@ -246,6 +253,9 @@
   },{
     "source":19,
     "target":26
+  },{
+    "source":19,
+    "target":27
   }
   ]
 }
