@@ -114,5 +114,24 @@
         "HREF": "https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/51Point"
       }
     ]
+  },
+  {
+    "title": "Enable Disabled Inputs",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/EnableButton.png",
+    "description": "This chrome extension adds cool features to electronic education system of tbilisi state university",
+    "links": [
+       {
+        "name": "Web store ",
+        "HREF": "https://goo.gl/BgGjNj"
+      },
+      {
+        "name": "try it ",
+        "HREF": "https://s.codepen.io/bumbeishvili/debug/BzzYom"
+      },
+      {
+        "name": "source",
+        "HREF": "https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/EnableDisabled"
+      }
+    ]
   }
 ]
