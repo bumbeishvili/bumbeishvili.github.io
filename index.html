@@ -624,7 +624,7 @@ function drawSkillsForce(data) {
   var width = window.innerWidth - 20;
   var height = window.innerHeight - 140;
   var isMobile = width < 400;
-  var rectWidth = 50;
+  var rectWidth = 55;
   var rectHeight = 20;
   var maxRadius = 30;
   var catFontSize = 10;
@@ -633,7 +633,7 @@ function drawSkillsForce(data) {
   var gravity = 0.1;
 
   if (!isMobile) {
-    rectWidth = 100;
+    rectWidth = 110;
     rectHeight = 40;
     maxRadius = 60;
     catFontSize = 20;
@@ -668,11 +668,11 @@ function drawSkillsForce(data) {
 
   svg.append('rect').attr('y', 10).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', '#4da6ff');
 
-  svg.append('text').text(' Improving').style('font-size', catFontSize).attr('y', 24).attr('x', 55).attr("dy", ".35em").style('cursor', 'pointer').style('font-family', 'Crete Round').attr('fill', '#0066cc').attr('height', '100px');
+  svg.append('text').text(' Improving').style('font-size', catFontSize).attr('y', 24).attr('x', 55).attr("dy", ".35em").style('cursor', 'pointer').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
 
   svg.append('rect').attr('y', 50).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', '#ff6666');
 
-  svg.append('text').text('Abandoned').style('font-size', catFontSize).attr('y', 64).attr('x', 55).attr("dy", ".35em").style('cursor', 'pointer').style('font-family', 'Crete Round').attr('fill', '#0066cc').attr('height', '100px');
+  svg.append('text').text('Abandoned').style('font-size', catFontSize).attr('y', 64).attr('x', 55).attr("dy", ".35em").style('cursor', 'pointer').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
 
   //########################### drawing
 
@@ -697,9 +697,9 @@ function drawSkillsForce(data) {
 
   var categoryNodeGroups = svg.selectAll('.catNode').data(categoryNodesData).enter().append('g').attr('class', 'catNode');
 
-  var categoryNodes = categoryNodeGroups.append('rect').style('cursor', 'pointer').attr('stroke', '#1a90ff').attr('stroke-width', '3px').attr('fill', 'white').attr('width', rectWidth + 'px').attr('height', rectHeight + 'px').call(force.drag);
+  var categoryNodes = categoryNodeGroups.append('rect').style('cursor', 'pointer').attr('stroke', '#42a5f5').attr('stroke-width', '3px').attr('fill', 'white').attr('width', rectWidth + 'px').attr('height', rectHeight + 'px').call(force.drag);
 
-  var categoryTexts = categoryNodeGroups.append("text").attr('class', 'catText ').style('font-size', catFontSize).style('font-family', 'Crete Round').attr("dy", ".35em").style('cursor', 'pointer').style('font-weight', 'bold').attr('fill', '#0069cc').call(force.drag).text(function (d) {
+  var categoryTexts = categoryNodeGroups.append("text").attr('class', 'catText ').style('font-size', catFontSize).style('font-family', 'Roboto').attr("dy", ".35em").style('cursor', 'pointer').style('font-weight', 'bold').attr('fill', '#42a5f5').call(force.drag).text(function (d) {
     return d.name;
   });
 
