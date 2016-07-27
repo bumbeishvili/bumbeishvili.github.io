@@ -133,5 +133,20 @@
         "HREF": "https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/EnableDisabled"
       }
     ]
+  },
+  {
+    "title": "Same Rhyme",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/RhymeWords.png",
+    "description": "This app searches  database and finds georgian words with same rhyme",
+    "links": [
+       {
+        "name": "Database",
+        "HREF": "https://github.com/bumbeishvili/GeoWordsDatabase"
+      },
+      {
+        "name": "App Source",
+        "HREF": "https://github.com/bumbeishvili/geoWords"
+      }
+    ]
   }
 ]
