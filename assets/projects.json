@@ -43,5 +43,20 @@
         "HREF": "https://gist.github.com/bumbeishvili/19ca2162f27ad641993e8a414b0fa702"
       }
     ]
+  },
+  {
+    "title": "Tic Tac Toe",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/TicTacToe.png",
+    "description": "Game is played against computer,which has purposefully left some weaknesses. Try, if you can beat him (or her )",
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "http://s.codepen.io/bumbeishvili/debug/wGaENr"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/384c0021cf2b367f3f4bbfab392d0ecd"
+      }
+    ]
   }
 ]
