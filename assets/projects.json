@@ -92,7 +92,7 @@
   {
     "title": "Other FCC Projects",
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/camperImage.png",
-    "description": "These are projects which i have completed during freecodecamp's Data Visualization and Front End Development   certification ",
+    "description": "These are projects which I have completed during freecodecamp's Data Visualization and Front End Development   certification ",
     "links": [
       {
         "name": "List",
@@ -146,6 +146,36 @@
       {
         "name": "App Source",
         "HREF": "https://github.com/bumbeishvili/geoWords"
+      }
+    ]
+  },
+  {
+    "title": "Number to text",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/NumbersToGeo.png",
+    "description": "It converts numbers to georgian words from range 0 to 10^3000 ",
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "http://bumbeishvili.github.io/code-snippets/NumberToGeorgian/"
+      },
+      {
+        "name": "source",
+        "HREF": "https://github.com/bumbeishvili/code-snippets/blob/master/js/number_to_text.js"
+      }
+    ]
+  },
+  {
+    "title": "Name cases",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/bruneba.png",
+    "description": "Unlike english grammar, cases are big pain in georgian grammar. This app will transform names to all georgian cases. It's correctly works on top 1000 most common georgian names ",
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "http://bumbeishvili.github.io/code-snippets/GeoGrammar/"
+      },
+      {
+        "name": "source",
+        "HREF": "https://github.com/bumbeishvili/code-snippets/blob/master/js/GeoGrammar.js"
       }
     ]
   }
