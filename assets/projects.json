@@ -28,5 +28,20 @@
         "HREF": "https://gist.github.com/bumbeishvili/907fe27d03faf900904c4947d2c4ff5c"
       }
     ]
+  },
+  {
+    "title": "Heat Map",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/Heatmap.png",
+    "description": "The Map shows average monthly global temperature for past 250 years. It's build with d3.js",
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "http://s.codepen.io/bumbeishvili/debug/reqPav"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/19ca2162f27ad641993e8a414b0fa702"
+      }
+    ]
   }
 ]
