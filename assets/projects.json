@@ -116,9 +116,9 @@
     ]
   },
   {
-    "title": "Enable Disabled Inputs",
+    "title": "Enable  Inputs",
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/EnableButton.png",
-    "description": "This chrome extension adds cool features to electronic education system of tbilisi state university",
+    "description": "This chrome extension makes easy to enable all disabled input fields at once",
     "links": [
        {
         "name": "Web store ",
