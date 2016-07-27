@@ -99,5 +99,20 @@
         "HREF": "https://github.com/bumbeishvili/free-code-camp-projects"
       }
     ]
+  },
+  {
+    "title": "51 Point",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/51Point.png",
+    "description": "This chrome extension adds cool features to electronic education system of tbilisi state university",
+    "links": [
+      {
+        "name": "Web store ",
+        "HREF": "https://goo.gl/xsGPVS"
+      },
+      {
+        "name": "source",
+        "HREF": "https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/51Point"
+      }
+    ]
   }
 ]
