@@ -88,5 +88,16 @@
         "HREF": "https://gist.github.com/bumbeishvili/7850718a871d6bb281a20774bc67c2df"
       }
     ]
+  },
+  {
+    "title": "Other FCC Projects",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/camperImage.png",
+    "description": "These are projects which i have completed during freecodecamp's Data Visualization and Front End Development   certification ",
+    "links": [
+      {
+        "name": "List",
+        "HREF": "https://github.com/bumbeishvili/free-code-camp-projects"
+      }
+    ]
   }
 ]
