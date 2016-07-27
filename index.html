@@ -107,7 +107,7 @@
 .pages .Contact .icon-wrappers-container:hover {
   overflow: visible;
 }
-.pages .Contact a {
+.pages .Contact .icon-wrappers-container a {
   font-size: 25px;
   position: relative;
   width: 50px;
@@ -126,16 +126,16 @@
   text-decoration: none;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
-.pages .Contact a i {
+.pages .Contact .icon-wrappers-container a i {
   margin-right: 20px;
   transition: margin-right 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
-.pages .Contact a:hover {
+.pages .Contact .icon-wrappers-container a:hover {
   width: 160px;
   z-index: 1000;
   transform: translateX(-50px);
 }
-.pages .Contact a:hover i {
+.pages .Contact .icon-wrappers-container a:hover i {
   margin-right: 10px;
 }
 .pages .Contact a.linkedin {
@@ -166,6 +166,13 @@
 }
 .pages .Contact a.google-plus:hover {
   width: 200px;
+}
+
+.footer-container {
+  background-color: #90caf9;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
 }
 
 .customTooltip {
@@ -267,7 +274,8 @@ var Page = React.createClass({
         React.createElement(Skills, { getHeader: this.gerHeader }),
         React.createElement(Projects, { getHeader: this.gerHeader, projects: this.state.projects }),
         React.createElement(Contact, { getHeader: this.gerHeader, socialChannels: this.state.socialChannels })
-      )
+      ),
+      React.createElement(Footer, null)
     );
   },
   gerHeader: function gerHeader(tabName) {
@@ -544,12 +552,69 @@ var Contact = React.createClass({
             )
           );
         })
+      ),
+      'Einshtein once said:',
+      React.createElement(
+        'blockquote',
+        null,
+        'Personal website will get you from A to Y.   Good CV will get you from Y to Z .'
+      ),
+      'So, I decided to trust his words.  You can  ',
+      React.createElement(
+        'a',
+        { target: '_blank', href: 'https://goo.gl/HarFV2' },
+        ' download my resume '
+      ),
+      React.createElement('br', null),
+      React.createElement('br', null),
+      React.createElement('br', null),
+      'Write me about anything:  ',
+      React.createElement(
+        'b',
+        null,
+        'davit.bumbeishvili@gmail.com'
+      ),
+      React.createElement('br', null),
+      'Talk me  about anything:   ',
+      React.createElement(
+        'b',
+        null,
+        '(+995) 598 61 52 61 '
       )
     );
   },
+
   componentDidMount: function componentDidMount() {
     $('.parallax').parallax();
   }
+});
+
+var Footer = React.createClass({
+  displayName: 'Footer',
+
+  render: function render() {
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'div',
+        { className: 'row footer-container' },
+        React.createElement(
+          'div',
+          { className: 'title' },
+          'Created with ',
+          React.createElement(
+            'span',
+            { style: { color: 'red' } },
+            '♥ '
+          ),
+          React.createElement('br', null),
+          ' © dato bumbeishvili'
+        )
+      )
+    );
+  }
+
 });
 
 ReactDOM.render(React.createElement(Page, null), document.getElementById('content'));
