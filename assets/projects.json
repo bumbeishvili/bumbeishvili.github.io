@@ -73,5 +73,20 @@
         "HREF": "https://gist.github.com/bumbeishvili/dc8d690f00a3249c6ecc4c6a1b474b11"
       }
     ]
+  },
+  {
+    "title": "Local Weather",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/weather.png",
+    "description": "It shows the local weather based on your location, if this data cannot be retrieved, then app prompts for city name. One cool feature is that, it tells, if weather change is expected  in near future ",
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "http://s.codepen.io/bumbeishvili/debug/bEjwLb"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/7850718a871d6bb281a20774bc67c2df"
+      }
+    ]
   }
 ]
