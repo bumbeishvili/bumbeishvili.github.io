@@ -2,7 +2,7 @@
   {
     "title": "About Me",
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/AboutMe.png",
-    "description": "This responsive single page application highlights some info about me.  It's built with react.js, materialize css a nd I have also used d3.js for skills visualization",
+    "description": "This responsive single page application highlights some info about me.  It's built with react.js, materialize css and I have also used d3.js for skills visualization",
     "links": [
       {
         "name": "Try It",
@@ -56,6 +56,21 @@
       {
         "name": "source",
         "HREF": "https://gist.github.com/bumbeishvili/384c0021cf2b367f3f4bbfab392d0ecd"
+      }
+    ]
+  },
+  {
+    "title": "Simon game",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/SimonGame.png",
+    "description": "In the game, you examine your memory. if you reach at 21 step, you will win. game hast strict mode, where sequence will restart, if mistake is made",
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "https://s.codepen.io/bumbeishvili/debug/GZEwmY"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/dc8d690f00a3249c6ecc4c6a1b474b11"
       }
     ]
   }
