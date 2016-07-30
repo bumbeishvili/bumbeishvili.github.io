@@ -185,6 +185,14 @@
       "type": "Technology",
       "currentlyImproving": true,
       "progressPercent": 20
+    },
+    ,
+    {
+      "index": 28,
+      "name": "Ionic 2",
+      "type": "Technology",
+      "currentlyImproving": true,
+      "progressPercent": 20
     }
   ],
   "links":[{
@@ -256,6 +264,9 @@
   },{
     "source":19,
     "target":27
-  }
+  },{
+    "source":3,
+    "target":28
+  },
   ]
 }
