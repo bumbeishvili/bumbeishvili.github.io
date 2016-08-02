@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
 
 
-    <title>About Me Page Using React.js and materialize.css</title>
+    <title> About Me </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/meGusta.png">
     
     
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css'>
@@ -100,6 +101,7 @@
 }
 .pages .Contact .icon-wrappers-container {
   overflow: hidden;
+  margin-left: 10%;
 }
 .pages .Contact .icon-wrappers-container .social-icons-wrapper {
   margin: 15px;
@@ -121,14 +123,14 @@
   padding-left: 14px;
   box-sizing: border-box;
   color: white;
-  transition: all 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.1s cubic-bezier(0.64, 0.09, 0.08, 1);
   font-family: Roboto, sans-serif;
   text-decoration: none;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .pages .Contact .icon-wrappers-container a i {
   margin-right: 20px;
-  transition: margin-right 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: margin-right 0.1s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
 .pages .Contact .icon-wrappers-container a:hover {
   width: 160px;
@@ -137,6 +139,9 @@
 }
 .pages .Contact .icon-wrappers-container a:hover i {
   margin-right: 10px;
+}
+.pages .Contact .icon-wrappers-container a:hover:after {
+  content: attr(data-name);
 }
 .pages .Contact a.linkedin {
   background: #4875B4;
@@ -166,6 +171,12 @@
 }
 .pages .Contact a.google-plus:hover {
   width: 200px;
+}
+.pages .Contact a.fire {
+  background: green;
+}
+.pages .Contact a.fire:hover {
+  width: 250px;
 }
 
 .footer-container {
@@ -218,7 +229,16 @@
 
   <body translate="no" >
 
-    <div id='content'></div>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id='content'></div>
     
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
@@ -240,24 +260,35 @@ var Page = React.createClass({
       projects: [],
       socialChannels: [{
         name: 'github',
+        iconClass: 'github',
         URL: "https://github.com/bumbeishvili"
       }, {
+        name: 'free code camp',
+        iconClass: 'fire',
+        URL: "https://freecodecamp.com/bumbeishvili"
+      }, {
         name: 'codepen',
+        iconClass: 'codepen',
         URL: "https://codepen.io/bumbeishvili/"
       }, {
         name: 'stack-overflow',
+        iconClass: 'stack-overflow',
         URL: "http://stackoverflow.com/users/5369006/bumbeishvili"
       }, {
         name: 'linkedin',
+        iconClass: 'linkedin',
         URL: "https://www.linkedin.com/in/bumbeishvili"
       }, {
         name: 'google-plus',
+        iconClass: 'google-plus',
         URL: "https://goo.gl/VEsrgM"
       }, {
         name: 'facebook',
+        iconClass: 'facebook',
         URL: "https://www.facebook.com/Davit.Bumbeishvili"
       }, {
         name: 'twitter',
+        iconClass: 'twitter',
         URL: "https://twitter.com/dbumbeishvili"
       }]
     };
@@ -270,15 +301,15 @@ var Page = React.createClass({
       React.createElement(
         'div',
         { className: 'pages' },
-        React.createElement(Me, { getHeader: this.gerHeader }),
-        React.createElement(Skills, { getHeader: this.gerHeader }),
-        React.createElement(Projects, { getHeader: this.gerHeader, projects: this.state.projects }),
-        React.createElement(Contact, { getHeader: this.gerHeader, socialChannels: this.state.socialChannels })
+        React.createElement(Me, { getHeader: this.getHeader }),
+        React.createElement(Skills, { getHeader: this.getHeader }),
+        React.createElement(Projects, { getHeader: this.getHeader, projects: this.state.projects }),
+        React.createElement(Contact, { getHeader: this.getHeader, socialChannels: this.state.socialChannels })
       ),
       React.createElement(Footer, null)
     );
   },
-  gerHeader: function gerHeader(tabName) {
+  getHeader: function getHeader(tabName) {
     return React.createElement(
       'div',
       { className: 'header-title', id: 'header_' + tabName },
@@ -351,11 +382,12 @@ var Tabs = React.createClass({
     var tabs = this.props.tabs;
 
     $(window).scroll(function () {
-      var currentHeight = $('body').scrollTop();
+      var currentHeight = $(document).scrollTop();
       var tabContentHeights = tabs.map(function (t) {
         return height('#' + t);
       });
-
+      console.log("currentHeight = ", currentHeight);
+      console.log("tabContentHeights = ", tabContentHeights);
       for (var i = tabs.length - 1; i >= 0; i--) {
         if (currentHeight > tabContentHeights[i]) {
           if (previousTab != tabs[i]) {
@@ -537,21 +569,23 @@ var Contact = React.createClass({
       React.createElement(
         'div',
         { className: 'row icon-wrappers-container' },
-        this.props.socialChannels.map(function (ch) {
-          return React.createElement(
-            'div',
-            { className: 'col s2 m1 social-icons-wrapper' },
-            ' ',
-            React.createElement(
-              'a',
-              { className: ch.name,
-                href: ch.URL, target: '_blank' },
-              React.createElement('i', { className: 'fa fa-' + ch.name }),
-              ch.name,
-              ' '
-            )
-          );
-        })
+        React.createElement(
+          'div',
+          { className: 'centered-icons' },
+          this.props.socialChannels.map(function (ch) {
+            return React.createElement(
+              'div',
+              { className: 'col s2 m1 social-icons-wrapper' },
+              ' ',
+              React.createElement(
+                'a',
+                { className: ch.iconClass, 'data-name': ch.name,
+                  href: ch.URL, target: '_blank' },
+                React.createElement('i', { className: 'fa fa-' + ch.iconClass })
+              )
+            );
+          })
+        )
       ),
       'Einshtein once said:',
       React.createElement(
@@ -580,6 +614,18 @@ var Contact = React.createClass({
         'b',
         null,
         '(+995) 598 61 52 61 '
+      ),
+      React.createElement('br', null),
+      'I also have skype :             ',
+      React.createElement(
+        'span',
+        { style: { display: "inline-block" } },
+        React.createElement('i', { className: 'fa fa-skype' }),
+        React.createElement(
+          'b',
+          null,
+          ' davit.bumbeishvili'
+        )
       )
     );
   },
@@ -601,7 +647,7 @@ var Footer = React.createClass({
         { className: 'row footer-container' },
         React.createElement(
           'div',
-          { className: 'title' },
+          { className: 'col  m9' },
           'Created with ',
           React.createElement(
             'span',
@@ -610,6 +656,12 @@ var Footer = React.createClass({
           ),
           React.createElement('br', null),
           ' © dato bumbeishvili'
+        ),
+        React.createElement(
+          'div',
+          { className: 'col  m1' },
+          '    ',
+          React.createElement('div', { className: 'fb-like', 'data-href': 'https://www.facebook.com/dato.apps/', 'data-width': '20', 'data-layout': 'standard', 'data-action': 'like', 'data-show-faces': 'false', 'data-share': 'false' })
         )
       )
     );
@@ -668,11 +720,11 @@ function drawSkillsForce(data) {
 
   svg.append('rect').attr('y', 10).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', '#4da6ff');
 
-  svg.append('text').text(' Improving').style('font-size', catFontSize).attr('y', 24).attr('x', 55).attr("dy", ".35em").style('cursor', 'pointer').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
+  svg.append('text').text(' Improving').style('font-size', catFontSize).attr('y', 24).attr('x', 55).attr("dy", ".35em").style('cursor', 'context-menu').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
 
   svg.append('rect').attr('y', 50).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', '#ff6666');
 
-  svg.append('text').text('Abandoned').style('font-size', catFontSize).attr('y', 64).attr('x', 55).attr("dy", ".35em").style('cursor', 'pointer').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
+  svg.append('text').text('Abandoned').style('font-size', catFontSize).attr('y', 64).attr('x', 55).attr("dy", ".35em").style('cursor', 'context-menu').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
 
   //########################### drawing
 
@@ -779,12 +831,20 @@ function drawSkillsForce(data) {
     });
 
     links.attr('x1', function (d) {
+      if (d.source.x < 0) return 0;
+      if (d.source.x > width) return width;
       return d.source.x;
     }).attr('y1', function (d) {
+      if (d.source.y < 0) return 0;
+      if (d.source.y > height) return height;
       return d.source.y;
     }).attr('x2', function (d) {
+      if (d.target.x < 0) return 0;
+      if (d.target.x > width) return width;
       return d.target.x;
     }).attr('y2', function (d) {
+      if (d.target.y < 0) return 0;
+      if (d.target.y > height) return height;
       return d.target.y;
     });
   });
