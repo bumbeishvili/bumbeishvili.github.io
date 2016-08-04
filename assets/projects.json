@@ -12,13 +12,16 @@
 }, {
 	"title": "Employee Hierarchy",
 	"imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/OrganizationHierarchy.png",
-	"description": " This D3.js powered, modified version of <a target='_blank' href='https://jsfiddle.net/augburto/YMa2y/'> this tree chart </a> shows hierarchical structure of company employees.You can zoom in/out,drag, find currently logged user by clicking button",
+	"description": " This D3.js powered chart shows hierarchical structure of company employees.You can zoom in/out,drag, find currently logged user by clicking button",
 	"links": [{
 		"name": "Try It",
 		"HREF": "https://s.codepen.io/bumbeishvili/debug/PzdOJP"
 	}, {
 		"name": "source",
 		"HREF": "https://gist.github.com/bumbeishvili/4ac943bfc3a9c7637a65c05b8bc3fb90"
+	},{
+		"name": "original",
+		"HREF": "https://jsfiddle.net/augburto/YMa2y/"
 	}]
 }, {
 	"title": "Recipes Box",
