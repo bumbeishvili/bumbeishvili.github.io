@@ -12,13 +12,13 @@
 }, {
 	"title": "Employee Hierarchy",
 	"imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/OrganizationHierarchy.png",
-	"description": " This D3.js powered chart shows hierarchical structure of company employees.You can zoom in/out,drag, find currently logged user by clicking button",
+	"description": " This D3.js powered chart shows hierarchical structure of 1500  employees.You can zoom in/out, drag,  expand/collapse node, find currently logged user",
 	"links": [{
 		"name": "Try It",
-		"HREF": "https://s.codepen.io/bumbeishvili/debug/PzdOJP"
+		"HREF": "https://s.codepen.io/bumbeishvili/debug/qNLdbE"
 	}, {
 		"name": "source",
-		"HREF": "https://gist.github.com/bumbeishvili/4ac943bfc3a9c7637a65c05b8bc3fb90"
+		"HREF": "https://gist.github.com/bumbeishvili/92bb8565cdb110b39f5bd9009773b267"
 	},{
 		"name": "original",
 		"HREF": "https://jsfiddle.net/augburto/YMa2y/"
