@@ -5,7 +5,7 @@
     "description": "This responsive single page application highlights some info about me.  It's built with react.js, materialize css and I have also used d3.js for skills visualization",
     "tags": [
       "react.js",
-      "d3.js",
+      "D3.js",
       "Materializecss"
     ],
     "links": [
