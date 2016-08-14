@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
 
 
-    <title> About Dato</title>
+    <title>  About Dato</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> About Dato</title>
+
 <link rel="icon" href="https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/meGusta.png">
 
 
@@ -21,7 +23,21 @@
 <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
         <style>
-      .tab {
+      .chip {
+  display: inline-block;
+  height: auto;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 23px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background-color: #e4e4e4;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.tab {
   position: relative;
   right: 0;
   left: 0;
@@ -91,15 +107,18 @@
   display: block;
   margin: 0 auto;
 }
-.pages .projects #ProjectsList {
+.pages #Projects .projects-filter {
+  margin: 20px;
+}
+.pages #Projects .projects #ProjectsList {
   text-align: center;
 }
-.pages .projects #ProjectsList li {
+.pages #Projects .projects #ProjectsList li {
   display: inline;
   text-align: start;
   opacity: 0;
 }
-.pages .projects #ProjectsList li .card {
+.pages #Projects .projects #ProjectsList li .card {
   margin: 10px;
 }
 .pages .Contact {
@@ -267,7 +286,22 @@ var Page = React.createClass({
   getInitialState: function getInitialState() {
     return {
       tabs: ['Me', 'Skills', 'Projects', 'Contact'],
+      filters: [{
+        name: "all",
+        checked: true
+      }, {
+        name: "react.js",
+        checked: false
+      }, {
+        name: "D3.js",
+        checked: false
+      }, {
+        name: "vanilla-js",
+        checked: false
+      }],
+      setOpacity: false,
       projects: [],
+      filteredProjects: [],
       socialChannels: [{
         name: 'github',
         iconClass: 'github',
@@ -313,11 +347,66 @@ var Page = React.createClass({
         { className: 'pages' },
         React.createElement(Me, { getHeader: this.getHeader }),
         React.createElement(Skills, { getHeader: this.getHeader }),
-        React.createElement(Projects, { getHeader: this.getHeader, projects: this.state.projects }),
+        React.createElement(Projects, { getHeader: this.getHeader, projects: this.state.filteredProjects, filters: this.state.filters, handleFilterClick: this.handleFilterClick, setOpacity: this.state.setOpacity }),
         React.createElement(Contact, { getHeader: this.getHeader, socialChannels: this.state.socialChannels })
       ),
       React.createElement(Footer, null)
     );
+  },
+  handleFilterClick: function handleFilterClick(clickedIndex) {
+    debugger;
+    var filts = this.state.filters;
+    filts[clickedIndex].checked = !filts[clickedIndex].checked;
+
+    var optionNamedAll = filts.find(function (f) {
+      return f.name == 'all';
+    });
+
+    if (filts[clickedIndex].name != 'all') {
+      optionNamedAll.checked = false;
+    } else {
+      filts.forEach(function (f) {
+        if (f.name != 'all') {
+          f.checked = false;
+        }
+      });
+    }
+
+    var projects = this.state.projects;
+    var filtered = getFilteredProjects(projects, filts.filter(function (f) {
+      return f.checked;
+    }));
+
+    this.setState({
+      filters: filts,
+      filteredProjects: filtered,
+      setOpacity: true
+    });
+
+    function getFilteredProjects(projects, filters) {
+      projects.forEach(function (p) {
+        return p.setOpacity = true;
+      });
+      if (filters.length == 0) return [];
+
+      var filteredProjects = [];
+      var allOptionIsNotChecked = !filters.find(function (f) {
+        return f.name == 'all';
+      });
+      if (allOptionIsNotChecked) {
+        filters.forEach(function (f) {
+          projects.forEach(function (p) {
+            if (p.tags.indexOf(f.name) != -1 && !filteredProjects.find(function (fp) {
+              return fp.title == p.title;
+            })) {
+              filteredProjects.push(p);
+            }
+          });
+        });
+        return filteredProjects;
+      }
+      return projects;
+    }
   },
   getHeader: function getHeader(tabName) {
     return React.createElement(
@@ -335,8 +424,10 @@ var Page = React.createClass({
     var _this = this;
 
     $.get(projectsJsonLink, function (projects) {
+      var projects = JSON.parse(projects);
       _this.setState({
-        projects: JSON.parse(projects)
+        projects: projects,
+        filteredProjects: projects
       });
     });
   }
@@ -468,12 +559,34 @@ var Skills = React.createClass({
 var Projects = React.createClass({
   displayName: 'Projects',
 
+  handleFilterClick: function handleFilterClick(clickedIndex) {
+    debugger;
+    this.props.handleFilterClick(clickedIndex);
+  },
   render: function render() {
+    var _this3 = this;
 
+    var cardStyle = {};
+    if (this.props.setOpacity) {
+      cardStyle.opacity = 1;
+    }
     return React.createElement(
       'div',
       { className: 'row', id: 'Projects' },
       this.props.getHeader("Projects"),
+      React.createElement(
+        'div',
+        { className: 'projects-filter' },
+        this.props.filters.map(function (f, i) {
+          return React.createElement(
+            'button',
+            { onClick: _this3.handleFilterClick.bind(_this3, i), className: "btn waves-effect waves-light cyan" + (f.checked ? "" : " lighten-4") },
+            f.name,
+            '  ',
+            React.createElement('i', { className: "fa  fa-" + (f.checked ? "check-circle" : "circle") })
+          );
+        })
+      ),
       React.createElement(
         'div',
         { className: 'projects row' },
@@ -489,14 +602,14 @@ var Projects = React.createClass({
                 React.createElement('div', { className: 'row' }),
                 React.createElement(
                   'li',
-                  null,
+                  { style: cardStyle },
                   React.createElement(Card, { project: x, index: i })
                 )
               );
             } else {
               item = React.createElement(
                 'li',
-                null,
+                { style: cardStyle },
                 React.createElement(Card, { project: x, index: i })
               );
             }
@@ -507,23 +620,26 @@ var Projects = React.createClass({
       )
     );
   },
+
   componentDidMount: function componentDidMount() {
     var corrected = false;
 
     function correctCardDescHeights() {
-      var cardDescs = $('.card .card-content p');
+      var cardContents = $('.card .card-content ');
       var maxHeights = [];
       var gridColumnCount = 4;
-      cardDescs.each(function (index) {
+
+      cardContents.each(function (index) {
         var heightIndex = Math.floor(index / gridColumnCount);
+
         if (!($(this).height() < maxHeights[heightIndex])) {
           maxHeights[heightIndex] = $(this).height();
         }
       });
 
-      cardDescs.each(function (index) {
+      cardContents.each(function (index) {
         var heightIndex = Math.floor(index / gridColumnCount);
-        $(this).css('min-height', maxHeights[heightIndex]);
+        $(this).css('min-height', maxHeights[heightIndex] + 35); //padding
       });
 
       corrected = true;
@@ -545,6 +661,7 @@ var Card = React.createClass({
 
   render: function render() {
     var project = this.props.project;
+
     return React.createElement(
       'div',
       { className: 'col s12 m3' },
@@ -567,6 +684,14 @@ var Card = React.createClass({
             project.title,
             ' '
           ),
+          React.createElement('br', null),
+          project.tags.map(function (t) {
+            return React.createElement(
+              'div',
+              { className: 'chip' },
+              t
+            );
+          }),
           React.createElement(
             'p',
             null,
