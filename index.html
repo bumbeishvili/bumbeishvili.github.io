@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 
 
-    <title> About Me Page Using React.js and materialize.css</title>
+    <title> About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title> About Dato</title>
 
@@ -246,11 +246,17 @@
   /* NEW */
   z-index: 10;
 }
-.customTooltip .blue {
-  color: blue !important;
+.customTooltip .RapidlyImproving {
+  background-color: #00c853 !important;
 }
-.customTooltip .red {
-  color: red !important;
+.customTooltip .Improving {
+  background-color: #4da6ff !important;
+}
+.customTooltip .Planned {
+  background-color: #e040fb !important;
+}
+.customTooltip .Abandoned {
+  background-color: #ff6666 !important;
 }
 
     </style>
@@ -394,10 +400,10 @@ var Page = React.createClass({
       if (filters.length == 0) return [];
 
       var filteredProjects = [];
-      var allOptionIsNotChecked = !filters.find(function (f) {
+      var OptionNamedAllIsNotChecked = !filters.find(function (f) {
         return f.name == 'all';
       });
-      if (allOptionIsNotChecked) {
+      if (OptionNamedAllIsNotChecked) {
         filters.forEach(function (f) {
           projects.forEach(function (p) {
             if (p.tags.indexOf(f.name) != -1 && !filteredProjects.find(function (fp) {
@@ -427,8 +433,8 @@ var Page = React.createClass({
   componentDidMount: function componentDidMount() {
     var _this = this;
 
-    $.get(projectsJsonLink, function (projects) {
-      var projects = JSON.parse(projects);
+    $.get(projectsJsonLink, function (p) {
+      var projects = JSON.parse(p);
       _this.setState({
         projects: projects,
         filteredProjects: projects
@@ -491,8 +497,6 @@ var Tabs = React.createClass({
       var tabContentHeights = tabs.map(function (t) {
         return height('#' + t);
       });
-      console.log("currentHeight = ", currentHeight);
-      console.log("tabContentHeights = ", tabContentHeights);
       for (var i = tabs.length - 1; i >= 0; i--) {
         if (currentHeight > tabContentHeights[i]) {
           if (previousTab != tabs[i]) {
@@ -857,6 +861,32 @@ function drawSkillsForce(data) {
   var linkDistance = 40;
   var charge = -150;
   var gravity = 0.1;
+  var skillConditions = {
+    RapidlyImproving: {
+      key: "RapidlyImproving",
+      name: 'Improving Rapidly',
+      color: "#00c853  "
+    },
+    Improving: {
+      key: "Improving",
+      name: 'Improving ',
+      color: "#4da6ff"
+    },
+    Planned: {
+      key: "Planned",
+      name: 'Planned to learn ',
+      color: "#e040fb "
+    },
+    Abandoned: {
+      key: "Abandoned",
+      name: 'Abandoned',
+      color: "#ff6666"
+    },
+    init: function init() {
+      this.array = [this.RapidlyImproving, this.Improving, this.Planned, this.Abandoned];
+      return this;
+    }
+  }.init();
 
   if (!isMobile) {
     rectWidth = 110;
@@ -890,16 +920,37 @@ function drawSkillsForce(data) {
     return v.type == 'Technology';
   });
 
+  technologyNodesData.forEach(function (v) {
+    v.skillCondition = skillConditions[v.status];
+  });
   //############################## LEGEND  ########################################
 
-  svg.append('rect').attr('y', 10).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', '#4da6ff');
+  skillConditions.array.forEach(function (v, i) {
+    svg.append('rect').attr('y', 10 + i * 40).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', v.color);
 
-  svg.append('text').text(' Improving').style('font-size', catFontSize).attr('y', 24).attr('x', 55).attr("dy", ".35em").style('cursor', 'context-menu').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
+    svg.append('text').text(v.name).style('font-size', catFontSize).attr('y', 24 + i * 40).attr('x', 55).attr("dy", ".35em").style('cursor', 'context-menu').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
+  });
 
-  svg.append('rect').attr('y', 50).attr('x', 15).attr('width', 30).attr('height', 30).attr('stroke', '#ccd9ff').attr('stroke-width', '5px').attr('fill', '#ff6666');
-
-  svg.append('text').text('Abandoned').style('font-size', catFontSize).attr('y', 64).attr('x', 55).attr("dy", ".35em").style('cursor', 'context-menu').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
-
+  /*
+    svg.append('rect')
+      .attr('y', 50)
+      .attr('x', 15)
+      .attr('width', 30)
+      .attr('height', 30)
+      .attr('stroke', '#ccd9ff')
+      .attr('stroke-width', '5px')
+      .attr('fill', '#ff6666')
+     svg.append('text')
+      .text('Abandoned')
+      .style('font-size', catFontSize)
+      .attr('y', 64)
+      .attr('x', 55)
+      .attr("dy", ".35em")
+      .style('cursor', 'context-menu')
+      .style('font-family', 'Roboto')
+      .attr('fill', '#42a5f5')
+      .attr('height', '100px')
+  */
   //########################### drawing
 
   var links = svg.selectAll('.link').data(data.links).enter().append('line').attr('class', 'link ').attr('stroke', 'gray');
@@ -910,7 +961,7 @@ function drawSkillsForce(data) {
     return 100 - d.progressPercent + '%';
   }).attr("y2", "0%");
   grad.append("stop").attr("offset", "3%").attr("stop-color", function (d) {
-    return d.currentlyImproving ? '#4da6ff' : '#ff6666';
+    return d.skillCondition.color;
   });
 
   grad.append("stop").attr("offset", "0%").style("stop-color", "white");
@@ -937,7 +988,7 @@ function drawSkillsForce(data) {
   }
 
   var tooltip = d3.select('body').append('div').attr('class', 'customTooltip');
-
+  //dwada
   tooltip.append('div').attr('class', 'skills-label');
   tooltip.append('div').attr('class', 'skills-progress');
 
@@ -949,7 +1000,7 @@ function drawSkillsForce(data) {
       progressLabel: d.name,
       relativeValue: d.progressPercent,
       absoluteValue: d.progressPercent,
-      class: d.currentlyImproving ? 'blue' : 'red'
+      class: d.skillCondition.key
     }));
 
     tooltip.selectAll('.progress').style('margin-bottom', '5px');
