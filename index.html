@@ -259,7 +259,7 @@
   background-color: #ff6666 !important;
 }
 .customTooltip table {
-  width: 80% !important;
+  width: 100% !important;
 }
 .customTooltip table td, .customTooltip table th {
   padding: 0px 0px 0px 0px !important;
@@ -988,7 +988,7 @@ function drawSkillsForce(data) {
 
   //##################################  TOOLTIP  ##################################################
   function progress(params) {
-    return '<div >' + '<table>' + '<tr><td>Experience</td><th>' + params.experience + '</th></tr>' + '<tr><td>Knowledge</td><th>' + params.absoluteValue + ' %</th></tr>' + '</table>' + '<div class="progress">' + '<div class="determinate ' + params.class + '"  style="width:' + params.relativeValue + '%">' + '</div>' + '</div>' + '</div>';
+    return '<div >' + '<table>' + '<tr><td>Experience</td><th>' + params.experience + '</th></tr>' + '<tr><td>Status</td><th>' + params.skillStatus + ' </th></tr>' + '<tr><td>Knowledge</td><th>' + params.absoluteValue + ' %</th></tr>' + '</table>' + '<div class="progress">' + '<div class="determinate ' + params.class + '"  style="width:' + params.relativeValue + '%">' + '</div>' + '</div>' + '</div>';
   }
 
   var tooltip = d3.select('body').append('div').attr('class', 'customTooltip');
@@ -1005,7 +1005,8 @@ function drawSkillsForce(data) {
       relativeValue: d.progressPercent,
       absoluteValue: d.progressPercent,
       class: d.skillCondition.key,
-      experience: d.experienceText
+      experience: d.experienceText,
+      skillStatus: d.skillCondition.name
     }));
 
     tooltip.selectAll('.progress').style('margin-bottom', '5px');
@@ -1026,7 +1027,7 @@ function drawSkillsForce(data) {
   technologyNodes.on('mouseout', tooltipOutHandler);
 
   technologyNodes.on("mousemove", function (d) {
-    tooltip.style('top', d3.event.pageY - 100 + 'px').style('left', d3.event.pageX + 0 + 'px');
+    tooltip.style('top', d3.event.pageY - 130 + 'px').style('left', d3.event.pageX + 0 + 'px');
   });
 
   force.on('tick', function () {
