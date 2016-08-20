@@ -27,8 +27,8 @@
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
-        "start": "1471717727934",
-        "previous": "94608000000"
+        "start":1471717727934,
+        "previous":94608000000
       },
       "progressPercent": 80
     },
@@ -39,8 +39,8 @@
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
-        "start": "1471717727934",
-        "previous": "94608000000"
+        "start":1471717727934,
+        "previous":94608000000
       },
       "progressPercent": 50
     },
@@ -51,8 +51,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "31536000000"
+        "start":1471717727934,
+        "previous":31536000000
       },
       "progressPercent": 60
     },
@@ -62,9 +62,9 @@
       "type": "Technology",
       "status": "RapidlyImproving",
       "experience": {
-        "type": "ongoing",
-        "start": "1471717727934",
-        "previous": "31536000000"
+        "type": "dinamic",
+        "start":1471717727934,
+        "previous":31536000000
       },
       "progressPercent": 75
     },
@@ -75,8 +75,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "31536000000"
+        "start":1471717727934,
+        "previous":31536000000
       },
       "progressPercent": 60
     },
@@ -87,8 +87,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "18748800000"
+        "start":1471717727934,
+        "previous":18748800000
       },
       "progressPercent": 50
     },
@@ -98,9 +98,9 @@
       "type": "Technology",
       "status": "RapidlyImproving",
       "experience": {
-        "type": "ongoing",
-        "start": "1471717727934",
-        "previous": "8035200000"
+        "type": "dinamic",
+        "start":1471717727934,
+        "previous":8035200000
       },
       "progressPercent": 60
     },
@@ -111,8 +111,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "32140800000"
+        "start":1471717727934,
+        "previous":32140800000
       },
       "progressPercent": 60
     },
@@ -122,9 +122,9 @@
       "type": "Technology",
       "status": "Improving",
       "experience": {
-        "type": "ongoing",
-        "start": "1471717727934",
-        "previous": "32140800000"
+        "type": "dinamic",
+        "start":1471717727934,
+        "previous":32140800000
       },
       "progressPercent": 55
     },
@@ -135,8 +135,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "5356800000"
+        "start":1471717727934,
+        "previous":5356800000
       },
       "progressPercent": 35
     },
@@ -147,8 +147,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "2678400000"
+        "start":1471717727934,
+        "previous":2678400000
       },
       "progressPercent": 20
     },
@@ -158,9 +158,9 @@
       "type": "Technology",
       "status": "Improving",
       "experience": {
-        "type": "ongoing",
-        "start": "1471717727934",
-        "previous": "32140800000"
+        "type": "dinamic",
+        "start":1471717727934,
+        "previous":32140800000
       },
       "progressPercent": 60
     },
@@ -171,8 +171,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "2678400000"
+        "start":1471717727934,
+        "previous":2678400000
       },
       "progressPercent": 30
     },
@@ -183,8 +183,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "5356800000"
+        "start":1471717727934,
+        "previous":5356800000
       },
       "progressPercent": 20
     },
@@ -195,8 +195,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "2678400000"
+        "start":1471717727934,
+        "previous":2678400000
       },
       "progressPercent": 20
     },
@@ -212,8 +212,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "2678400000"
+        "start":1471717727934,
+        "previous":2678400000
       },
       "progressPercent": 60
     },
@@ -224,8 +224,8 @@
       "status": "Planned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "10713600000"
+        "start":1471717727934,
+        "previous":10713600000
       },
       "progressPercent": 25
     },
@@ -236,8 +236,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "10713600000"
+        "start":1471717727934,
+        "previous":10713600000
       },
       "progressPercent": 20
     },
@@ -248,8 +248,8 @@
       "status": "Planned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "2678400000"
+        "start":1471717727934,
+        "previous":2678400000
       },
       "progressPercent": 15
     },
@@ -260,8 +260,8 @@
       "status": "Planned",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "2678400000"
+        "start":1471717727934,
+        "previous":2678400000
       },
       "progressPercent": 20
     },
@@ -272,8 +272,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "8035200000"
+        "start":1471717727934,
+        "previous":8035200000
       },
       "progressPercent": 30
     },
@@ -284,8 +284,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start": "1471717727934",
-        "previous": "8035200000"
+        "start":1471717727934,
+        "previous":8035200000
       },
       "progressPercent": 80
     },
@@ -295,9 +295,9 @@
       "type": "Technology",
       "status": "Improving",
       "experience": {
-        "type": "ongoing",
-        "start": "1471717727934",
-        "previous": "16070400000"
+        "type": "dinamic",
+        "start":1471717727934,
+        "previous":16070400000
       },
       "progressPercent": 20
     },
@@ -307,9 +307,9 @@
       "type": "Technology",
       "status": "Improving",
       "experience": {
-        "type": "ongoing",
-        "start": "1471717727934",
-        "previous": "5356800000"
+        "type": "dinamic",
+        "start":1471717727934,
+        "previous":5356800000
       },
       "progressPercent": 25
     }
