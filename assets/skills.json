@@ -1,240 +1,415 @@
 {
-	"nodes": [{
-		"index": 0,
-		"name": "Front End ",
-		"type": "Category"
-	}, {
-		"index": 1,
-		"name": "Back End ",
-		"type": "Category"
-	}, {
-		"index": 2,
-		"name": "Databases",
-		"type": "Category"
-	}, {
-		"index": 3,
-		"name": "Mobile ",
-		"type": "Category"
-	}, {
-		"index": 4,
-		"name": "Html",
-		"type": "Technology",
-		"status":"RapidlyImproving",
-		"progressPercent": 80
-	}, {
-		"index": 5,
-		"name": "Css",
-		"type": "Technology",
-		"status":"RapidlyImproving",
-		"progressPercent": 50
-	}, {
-		"index": 6,
-		"name": "Bootstrap",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 60
-	}, {
-		"index": 7,
-		"name": "Javascript(Native)",
-		"type": "Technology",
-		"status":"RapidlyImproving",
-		"progressPercent": 75
-	}, {
-		"index": 8,
-		"name": "JQuery",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 60
-	}, {
-		"index": 9,
-		"name": "Angular.js (1.x)",
-		"type": "Technology",
-		"status":"Abandoned",
-		"progressPercent": 50
-	}, {
-		"index": 10,
-		"name": "D3.js",
-		"type": "Technology",
-		"status":"RapidlyImproving",
-		"progressPercent": 60
-	}, {
-		"index": 11,
-		"name": "Oracle (PL SQL)",
-		"type": "Technology",
-		"status":"Abandoned",
-		"progressPercent": 60
-	}, {
-		"index": 12,
-		"name": "MS SQL",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 50
-	}, {
-		"index": 13,
-		"name": "MY SQL",
-		"type": "Technology",
-		"status":"Abandoned",
-		"progressPercent": 35
-	}, {
-		"index": 14,
-		"name": "Mongo db",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 20
-	}, {
-		"index": 15,
-		"name": "Asp.Net MVC (Entity Framework)",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 60
-	}, {
-		"index": 16,
-		"name": "Java (Hibernate)",
-		"type": "Technology",
-		"status":"Abandoned",
-		"progressPercent": 30
-	}, {
-		"index": 17,
-		"name": "Php",
-		"type": "Technology",
-		"status":"Abandoned",
-		"progressPercent": 20
-	}, {
-		"index": 18,
-		"name": "Node.js",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 20
-	}, {
-		"index": 19,
-		"name": "Other",
-		"type": "Category"
-	}, {
-		"index": 20,
-		"name": "Regular Expressions",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 60
-	}, {
-		"index": 21,
-		"name": "Android (java)",
-		"type": "Technology",
-		"status":"Planned",
-		"progressPercent": 25
-	}, {
-		"index": 22,
-		"name": "Ios (Appcelerator)",
-		"type": "Technology",
-		"status":"Abandoned",
-		"progressPercent": 20
-	}, {
-		"index": 23,
-		"name": "Ios (swift, objective c)",
-		"type": "Technology",
-		"status":"Planned",
-		"progressPercent": 15
-	}, {
-		"index": 24,
-		"name": "Express.js",
-		"type": "Technology",
-		"status":"Planned",
-		"progressPercent": 20
-	}, {
-		"index": 25,
-		"name": "React.js",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 30
-	}, {
-		"index": 26,
-		"name": "Markdown",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 80
-	}, {
-		"index": 27,
-		"name": "Git",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 20
-	}, {
-		"index": 28,
-		"name": "Ionic 2",
-		"type": "Technology",
-		"status":"Improving",
-		"progressPercent": 25
-	}],
-	"links": [{
-		"source": 0,
-		"target": 4
-	}, {
-		"source": 0,
-		"target": 5
-	}, {
-		"source": 0,
-		"target": 6
-	}, {
-		"source": 0,
-		"target": 7
-	}, {
-		"source": 0,
-		"target": 8
-	}, {
-		"source": 0,
-		"target": 9
-	}, {
-		"source": 0,
-		"target": 10
-	}, {
-		"source": 2,
-		"target": 11
-	}, {
-		"source": 2,
-		"target": 12
-	}, {
-		"source": 2,
-		"target": 13
-	}, {
-		"source": 2,
-		"target": 14
-	}, {
-		"source": 1,
-		"target": 15
-	}, {
-		"source": 1,
-		"target": 16
-	}, {
-		"source": 1,
-		"target": 17
-	}, {
-		"source": 1,
-		"target": 18
-	}, {
-		"source": 3,
-		"target": 21
-	}, {
-		"source": 3,
-		"target": 22
-	}, {
-		"source": 3,
-		"target": 23
-	}, {
-		"source": 19,
-		"target": 20
-	}, {
-		"source": 1,
-		"target": 24
-	}, {
-		"source": 0,
-		"target": 25
-	}, {
-		"source": 19,
-		"target": 26
-	}, {
-		"source": 19,
-		"target": 27
-	}, {
-		"source": 3,
-		"target": 28
-	}]
+  "nodes": [
+    {
+      "index": 0,
+      "name": "Front End ",
+      "type": "Category"
+    },
+    {
+      "index": 1,
+      "name": "Back End ",
+      "type": "Category"
+    },
+    {
+      "index": 2,
+      "name": "Databases",
+      "type": "Category"
+    },
+    {
+      "index": 3,
+      "name": "Mobile ",
+      "type": "Category"
+    },
+    {
+      "index": 4,
+      "name": "Html",
+      "type": "Technology",
+      "status": "RapidlyImproving",
+      "experience": {
+        "type": "ongoing",
+        "start": "1471717727934",
+        "previous": "94608000000"
+      },
+      "progressPercent": 80
+    },
+    {
+      "index": 5,
+      "name": "Css",
+      "type": "Technology",
+      "status": "RapidlyImproving",
+      "experience": {
+        "type": "ongoing",
+        "start": "1471717727934",
+        "previous": "94608000000"
+      },
+      "progressPercent": 50
+    },
+    {
+      "index": 6,
+      "name": "Bootstrap",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "31536000000"
+      },
+      "progressPercent": 60
+    },
+    {
+      "index": 7,
+      "name": "Javascript(Native)",
+      "type": "Technology",
+      "status": "RapidlyImproving",
+      "experience": {
+        "type": "dinamic",
+        "start": "1471717727934",
+        "previous": "31536000000"
+      },
+      "progressPercent": 75
+    },
+    {
+      "index": 8,
+      "name": "JQuery",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "31536000000"
+      },
+      "progressPercent": 60
+    },
+    {
+      "index": 9,
+      "name": "Angular.js (1.x)",
+      "type": "Technology",
+      "status": "Abandoned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "18748800000"
+      },
+      "progressPercent": 50
+    },
+    {
+      "index": 10,
+      "name": "D3.js",
+      "type": "Technology",
+      "status": "RapidlyImproving",
+      "experience": {
+        "type": "dinamic",
+        "start": "1471717727934",
+        "previous": "8035200000"
+      },
+      "progressPercent": 60
+    },
+    {
+      "index": 11,
+      "name": "Oracle (PL SQL)",
+      "type": "Technology",
+      "status": "Abandoned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "32140800000"
+      },
+      "progressPercent": 60
+    },
+    {
+      "index": 12,
+      "name": "MS SQL",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "dinamic",
+        "start": "1471717727934",
+        "previous": "32140800000"
+      },
+      "progressPercent": 55
+    },
+    {
+      "index": 13,
+      "name": "MY SQL",
+      "type": "Technology",
+      "status": "Abandoned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "5356800000"
+      },
+      "progressPercent": 35
+    },
+    {
+      "index": 14,
+      "name": "Mongo db",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "2678400000"
+      },
+      "progressPercent": 20
+    },
+    {
+      "index": 15,
+      "name": "Asp.Net MVC (Entity Framework)",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "dinamic",
+        "start": "1471717727934",
+        "previous": "32140800000"
+      },
+      "progressPercent": 60
+    },
+    {
+      "index": 16,
+      "name": "Java (Hibernate)",
+      "type": "Technology",
+      "status": "Abandoned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "2678400000"
+      },
+      "progressPercent": 30
+    },
+    {
+      "index": 17,
+      "name": "Php",
+      "type": "Technology",
+      "status": "Abandoned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "5356800000"
+      },
+      "progressPercent": 20
+    },
+    {
+      "index": 18,
+      "name": "Node.js",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "2678400000"
+      },
+      "progressPercent": 20
+    },
+    {
+      "index": 19,
+      "name": "Other",
+      "type": "Category"
+    },
+    {
+      "index": 20,
+      "name": "Regular Expressions",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "2678400000"
+      },
+      "progressPercent": 60
+    },
+    {
+      "index": 21,
+      "name": "Android (java)",
+      "type": "Technology",
+      "status": "Planned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "10713600000"
+      },
+      "progressPercent": 25
+    },
+    {
+      "index": 22,
+      "name": "Ios (Appcelerator)",
+      "type": "Technology",
+      "status": "Abandoned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "10713600000"
+      },
+      "progressPercent": 20
+    },
+    {
+      "index": 23,
+      "name": "Ios (swift, objective c)",
+      "type": "Technology",
+      "status": "Planned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "2678400000"
+      },
+      "progressPercent": 15
+    },
+    {
+      "index": 24,
+      "name": "Express.js",
+      "type": "Technology",
+      "status": "Planned",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "2678400000"
+      },
+      "progressPercent": 20
+    },
+    {
+      "index": 25,
+      "name": "React.js",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "8035200000"
+      },
+      "progressPercent": 30
+    },
+    {
+      "index": 26,
+      "name": "Markdown",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "static",
+        "start": "1471717727934",
+        "previous": "8035200000"
+      },
+      "progressPercent": 80
+    },
+    {
+      "index": 27,
+      "name": "Git",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "dinamic",
+        "start": "1471717727934",
+        "previous": "16070400000"
+      },
+      "progressPercent": 20
+    },
+    {
+      "index": 28,
+      "name": "Ionic 2",
+      "type": "Technology",
+      "status": "Improving",
+      "experience": {
+        "type": "dinamic",
+        "start": "1471717727934",
+        "previous": "5356800000"
+      },
+      "progressPercent": 25
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 4
+    },
+    {
+      "source": 0,
+      "target": 5
+    },
+    {
+      "source": 0,
+      "target": 6
+    },
+    {
+      "source": 0,
+      "target": 7
+    },
+    {
+      "source": 0,
+      "target": 8
+    },
+    {
+      "source": 0,
+      "target": 9
+    },
+    {
+      "source": 0,
+      "target": 10
+    },
+    {
+      "source": 2,
+      "target": 11
+    },
+    {
+      "source": 2,
+      "target": 12
+    },
+    {
+      "source": 2,
+      "target": 13
+    },
+    {
+      "source": 2,
+      "target": 14
+    },
+    {
+      "source": 1,
+      "target": 15
+    },
+    {
+      "source": 1,
+      "target": 16
+    },
+    {
+      "source": 1,
+      "target": 17
+    },
+    {
+      "source": 1,
+      "target": 18
+    },
+    {
+      "source": 3,
+      "target": 21
+    },
+    {
+      "source": 3,
+      "target": 22
+    },
+    {
+      "source": 3,
+      "target": 23
+    },
+    {
+      "source": 19,
+      "target": 20
+    },
+    {
+      "source": 1,
+      "target": 24
+    },
+    {
+      "source": 0,
+      "target": 25
+    },
+    {
+      "source": 19,
+      "target": 26
+    },
+    {
+      "source": 19,
+      "target": 27
+    },
+    {
+      "source": 3,
+      "target": 28
+    }
+  ]
 }
