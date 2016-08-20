@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 
 
-    <title> About Me</title>
+    <title>CodePen - About Me Page Using React.js and materialize.css</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title> About Dato</title>
 
@@ -258,6 +258,12 @@
 .customTooltip .Abandoned {
   background-color: #ff6666 !important;
 }
+.customTooltip table {
+  width: 80% !important;
+}
+.customTooltip table td, .customTooltip table th {
+  padding: 0px 0px 0px 0px !important;
+}
 
     </style>
 
@@ -284,6 +290,7 @@
 <script src='https://fb.me/react-15.1.0.min.js'></script>
 <script src='https://fb.me/react-dom-15.1.0.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js'></script>
 
         <script>
       'use strict';
@@ -865,7 +872,7 @@ function drawSkillsForce(data) {
     RapidlyImproving: {
       key: "RapidlyImproving",
       name: 'Improving Rapidly',
-      color: "#00c853  "
+      color: "rgb(97, 201, 109)"
     },
     Improving: {
       key: "Improving",
@@ -922,7 +929,24 @@ function drawSkillsForce(data) {
 
   technologyNodesData.forEach(function (v) {
     v.skillCondition = skillConditions[v.status];
+    v.experienceText = getReadableExperience(v.experience);
   });
+
+  function getReadableExperience(e) {
+    switch (e.type) {
+      case "static":
+        return moment.duration(e.previous).humanize();
+      case "ongoing":
+        {
+          var currentDate = new Date();
+          var milliseconds = currentDate.getTime();
+          var result = moment.duration(milliseconds - e.start + e.previous).humanize();
+          return result;
+        }
+      default:
+        return 'something wrong in getReadableExperience';
+    }
+  }
   //############################## LEGEND  ########################################
 
   skillConditions.array.forEach(function (v, i) {
@@ -931,26 +955,6 @@ function drawSkillsForce(data) {
     svg.append('text').text(v.name).style('font-size', catFontSize).attr('y', 24 + i * 40).attr('x', 55).attr("dy", ".35em").style('cursor', 'context-menu').style('font-family', 'Roboto').attr('fill', '#42a5f5').attr('height', '100px');
   });
 
-  /*
-    svg.append('rect')
-      .attr('y', 50)
-      .attr('x', 15)
-      .attr('width', 30)
-      .attr('height', 30)
-      .attr('stroke', '#ccd9ff')
-      .attr('stroke-width', '5px')
-      .attr('fill', '#ff6666')
-     svg.append('text')
-      .text('Abandoned')
-      .style('font-size', catFontSize)
-      .attr('y', 64)
-      .attr('x', 55)
-      .attr("dy", ".35em")
-      .style('cursor', 'context-menu')
-      .style('font-family', 'Roboto')
-      .attr('fill', '#42a5f5')
-      .attr('height', '100px')
-  */
   //########################### drawing
 
   var links = svg.selectAll('.link').data(data.links).enter().append('line').attr('class', 'link ').attr('stroke', 'gray');
@@ -984,7 +988,7 @@ function drawSkillsForce(data) {
 
   //##################################  TOOLTIP  ##################################################
   function progress(params) {
-    return '<div >' + (params.absoluteValue > 0 ? params.absoluteValue : 'N/A') + '%' + '<div class="progress">' + '<div class="determinate ' + params.class + '"  style="width:' + params.relativeValue + '%">' + '</div>' + '</div>' + '</div>';
+    return '<div >' + '<table>' + '<tr><td>Experience</td><th>' + params.experience + '</th></tr>' + '<tr><td>Knowledge</td><th>' + params.absoluteValue + ' %</th></tr>' + '</table>' + '<div class="progress">' + '<div class="determinate ' + params.class + '"  style="width:' + params.relativeValue + '%">' + '</div>' + '</div>' + '</div>';
   }
 
   var tooltip = d3.select('body').append('div').attr('class', 'customTooltip');
@@ -1000,7 +1004,8 @@ function drawSkillsForce(data) {
       progressLabel: d.name,
       relativeValue: d.progressPercent,
       absoluteValue: d.progressPercent,
-      class: d.skillCondition.key
+      class: d.skillCondition.key,
+      experience: d.experienceText
     }));
 
     tooltip.selectAll('.progress').style('margin-bottom', '5px');
