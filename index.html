@@ -582,8 +582,13 @@ var Projects = React.createClass({
     var _this3 = this;
 
     var cardStyle = {};
+    var filtBtnStyle = {};
+
     if (this.props.setOpacity) {
       cardStyle.opacity = 1;
+    }
+    if (isMobileScreen()) {
+      filtBtnStyle.minWidth = "100%";
     }
     return React.createElement(
       'div',
@@ -595,7 +600,7 @@ var Projects = React.createClass({
         this.props.filters.map(function (f, i) {
           return React.createElement(
             'button',
-            { onClick: _this3.handleFilterClick.bind(_this3, i), className: "btn waves-effect waves-light cyan" + (f.checked ? "" : " lighten-4") },
+            { style: filtBtnStyle, onClick: _this3.handleFilterClick.bind(_this3, i), className: "btn waves-effect waves-light cyan" + (f.checked ? "" : " lighten-4") },
             f.name,
             '  ',
             React.createElement('i', { className: "fa  fa-" + (f.checked ? "check-circle" : "circle") })
@@ -860,7 +865,7 @@ function drawSkillsForce(data) {
   var container = '.force-skills';
   var width = window.innerWidth - 20;
   var height = window.innerHeight - 140;
-  var isMobile = width < 400;
+  var isMobile = isMobileScreen();
   var rectWidth = 55;
   var rectHeight = 20;
   var maxRadius = 30;
@@ -1085,6 +1090,10 @@ d3.json("https://raw.githubusercontent.com/bumbeishvili/bumbeishvili.github.io/m
 
   drawSkillsForce(data);
 });
+
+function isMobileScreen() {
+  return window.innerWidth < 420;
+}
       //# sourceURL=pen.js
     </script>
 
