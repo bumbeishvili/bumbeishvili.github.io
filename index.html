@@ -798,7 +798,11 @@ var Contact = React.createClass({
       React.createElement(
         'b',
         null,
-        '(+995) 598 61 52 61 '
+        React.createElement(
+          'span',
+          { className: 'contact-info' },
+          '(+995) 598 61 52 61 '
+        )
       ),
       React.createElement('br', null),
       React.createElement(
