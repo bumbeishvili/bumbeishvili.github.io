@@ -35,6 +35,12 @@
   background-color: #e4e4e4;
   margin-bottom: 5px;
   margin-right: 5px;
+  transition: all .15s ease-in-out;
+}
+
+.chip:hover {
+  background-color: #42a5f5;
+  color: white;
 }
 
 .tab {
@@ -707,8 +713,8 @@ var Card = React.createClass({
           React.createElement('br', null),
           project.tags.map(function (t) {
             return React.createElement(
-              'div',
-              { className: 'chip' },
+              'a',
+              { className: 'chip', target: '_blank', href: "https://www.google.ge/#q=" + t },
               t
             );
           }),
