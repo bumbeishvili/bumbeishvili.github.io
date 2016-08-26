@@ -6,4 +6,4 @@ See full detailed source
 
 Screenshot:  
 
-<a href="http://bumbeishvili.github.io" ><img src="https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/AboutMe.png" /></a>
+<a href="http://bumbeishvili.github.io" ><img src="https://raw.githubusercontent.com/bumbeishvili/Assets/master/Sharing/Projects/portfolio.png" /></a>
