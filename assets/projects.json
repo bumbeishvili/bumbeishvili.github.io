@@ -21,8 +21,8 @@
   },
   {
     "title": "Org. chart",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/OrganizationHierarchy.png",
-    "description": " This D3.js powered chart shows hierarchical structure of 1500  employees.You can zoom in/out, drag,  expand/collapse node, find currently logged user",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/empChart.png",
+    "description": " This D3.js powered chart shows hierarchical structure of 1500  employees.You can zoom in/out, drag,  expand/collapse node, find currently logged user, search any user, separate department users",
     "tags": [
       "D3.js"
     ],
