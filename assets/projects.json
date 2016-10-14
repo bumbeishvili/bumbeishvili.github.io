@@ -44,7 +44,7 @@
   {
     "title": "Elections 2016",
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/Elections.png",
-    "description": "This bubble chart clearly shows differences between pre election polls, exitpolls and real results ",
+    "description": "This bubble chart clearly shows differences between pre election polls, exitpolls and real results from Election Administration of Georgia(Cesko)",
     "tags": [
       "D3.js", "C3.js"
     ],
