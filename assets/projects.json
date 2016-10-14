@@ -58,6 +58,23 @@
         "HREF": "https://gist.github.com/bumbeishvili/0e1df129bd1082da8ceafaf93dbf0e57"
       }
     ]
+  },  {
+    "title": "Chart.js to D3.js",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/chartJsToD3js.png",
+    "description": "Chart.js basic examples converted to d3.js charts. I tried to match everything, data structure, startup animations, color , tooltip and e.t.c.",
+    "tags": [
+      "D3.js"
+    ],
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "https://s.codepen.io/bumbeishvili/debug/RGbvPg"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/c7f01d47413187752cde959032c5bbaa"
+      }
+    ]
   },
   {
     "title": "Recipes Box",
