@@ -42,6 +42,24 @@
     ]
   },
   {
+    "title": "Elections 2016",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/Elections.png",
+    "description": "This bubble chart clearly shows differences between pre election polls, exitpolls and real results ",
+    "tags": [
+      "D3.js", "C3.js"
+    ],
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "https://s.codepen.io/bumbeishvili/debug/LROkRo"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/0e1df129bd1082da8ceafaf93dbf0e57"
+      }
+    ]
+  },
+  {
     "title": "Recipes Box",
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/recipes.png",
     "description": "This is simple responsive crud web application, where you can add, delete, edit recipes, built with react.js and materialize.css",
