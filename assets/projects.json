@@ -96,42 +96,6 @@
     ]
   },
   {
-    "title": "Heat Map",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/Heatmap.png",
-    "description": "The Map shows average monthly global temperature for past 250 years. It's build with d3.js",
-    "tags": [
-      "D3.js"
-    ],
-    "links": [
-      {
-        "name": "Try It",
-        "HREF": "http://s.codepen.io/bumbeishvili/debug/reqPav"
-      },
-      {
-        "name": "source",
-        "HREF": "https://gist.github.com/bumbeishvili/19ca2162f27ad641993e8a414b0fa702"
-      }
-    ]
-  },
-  {
-    "title": "Tic Tac Toe",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/TicTacToe.png",
-    "description": "Game is played against computer,which has purposefully left some weaknesses. Try, if you can beat him (or her )",
-    "tags": [
-      "angular.js"
-    ],
-    "links": [
-      {
-        "name": "Try It",
-        "HREF": "http://s.codepen.io/bumbeishvili/debug/wGaENr"
-      },
-      {
-        "name": "source",
-        "HREF": "https://gist.github.com/bumbeishvili/384c0021cf2b367f3f4bbfab392d0ecd"
-      }
-    ]
-  },
-  {
     "title": "Simon game",
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/SimonGame.png",
     "description": "In the game, you examine your memory. if you reach at 21 step, you will win. game hast strict mode, where sequence will restart, if mistake is made",
@@ -146,25 +110,6 @@
       {
         "name": "source",
         "HREF": "https://gist.github.com/bumbeishvili/dc8d690f00a3249c6ecc4c6a1b474b11"
-      }
-    ]
-  },
-  {
-    "title": "Local Weather",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/weather.png",
-    "description": "It shows the local weather based on your location, if this data cannot be retrieved, then app prompts for city name. One cool feature is that, it tells, if weather change is expected  in near future ",
-    "tags": [
-      "jquery.js",
-      "is.js"
-    ],
-    "links": [
-      {
-        "name": "Try It",
-        "HREF": "http://s.codepen.io/bumbeishvili/debug/bEjwLb"
-      },
-      {
-        "name": "source",
-        "HREF": "https://gist.github.com/bumbeishvili/7850718a871d6bb281a20774bc67c2df"
       }
     ]
   },
@@ -202,86 +147,6 @@
       {
         "name": "source",
         "HREF": "https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/51Point"
-      }
-    ]
-  },
-  {
-    "title": "Enable  Inputs",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/EnableButton.png",
-    "description": "This chrome extension makes easy to enable all disabled input fields at once",
-    "tags": [
-      "vanilla-js"
-    ],
-    "links": [
-      {
-        "name": "Web store ",
-        "HREF": "https://goo.gl/BgGjNj"
-      },
-      {
-        "name": "try it ",
-        "HREF": "https://s.codepen.io/bumbeishvili/debug/BzzYom"
-      },
-      {
-        "name": "source",
-        "HREF": "https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/EnableDisabled"
-      }
-    ]
-  },
-  {
-    "title": "Same Rhyme",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/RhymeWords.png",
-    "description": "This app searches  database and finds georgian words with same rhyme",
-    "tags": [
-      "c sharp",
-      "mysql",
-      "php",
-      "angular.js",
-      "bootstrap"
-    ],
-    "links": [
-      {
-        "name": "Database",
-        "HREF": "https://github.com/bumbeishvili/GeoWordsDatabase"
-      },
-      {
-        "name": "App Source",
-        "HREF": "https://github.com/bumbeishvili/geoWords"
-      }
-    ]
-  },
-  {
-    "title": "Number to text",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/NumbersToGeo.png",
-    "description": "It converts numbers to georgian words from range 0 to 10^3000 ",
-    "tags": [
-      "vanilla-js"
-    ],
-    "links": [
-      {
-        "name": "Try It",
-        "HREF": "http://bumbeishvili.github.io/code-snippets/NumberToGeorgian/"
-      },
-      {
-        "name": "source",
-        "HREF": "https://github.com/bumbeishvili/code-snippets/blob/master/js/number_to_text.js"
-      }
-    ]
-  },
-  {
-    "title": "Name cases",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/bruneba.png",
-    "description": "Unlike english grammar, cases are big pain in georgian grammar. This app will transform names to all georgian cases. It correctly works on top 1000 most common georgian names ",
-    "tags": [
-      "vanilla-js"
-    ],
-    "links": [
-      {
-        "name": "Try It",
-        "HREF": "http://bumbeishvili.github.io/code-snippets/GeoGrammar/"
-      },
-      {
-        "name": "source",
-        "HREF": "https://github.com/bumbeishvili/code-snippets/blob/master/js/GeoGrammar.js"
       }
     ]
   }
