@@ -23,6 +23,7 @@
     {
       "index": 4,
       "name": "Html",
+      "shortName":"html",
       "type": "Technology",
       "status": "RapidlyImproving",
       "experience": {
@@ -36,6 +37,7 @@
     {
       "index": 5,
       "name": "Css",
+    "shortName":"css",
       "type": "Technology",
       "status": "RapidlyImproving",
       "experience": {
@@ -48,6 +50,7 @@
     {
       "index": 6,
       "name": "Bootstrap",
+      "shortName":"Bootstrap",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -61,6 +64,7 @@
       "index": 7,
       "name": "Javascript(Native)",
       "type": "Technology",
+           "shortName":"js",
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
@@ -72,6 +76,7 @@
     {
       "index": 8,
       "name": "JQuery",
+           "shortName":"jq",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -85,6 +90,7 @@
       "index": 9,
       "name": "Angular.js (1.x)",
       "type": "Technology",
+           "shortName":"ng1",
       "status": "Abandoned",
       "experience": {
         "type": "static",
@@ -96,6 +102,7 @@
     {
       "index": 10,
       "name": "D3.js",
+           "shortName":"D3",
       "type": "Technology",
       "status": "RapidlyImproving",
       "experience": {
@@ -109,6 +116,7 @@
     {
       "index": 11,
       "name": "Oracle (PL SQL)",
+           "shortName":"PL",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -122,6 +130,7 @@
     {
       "index": 12,
       "name": "MS SQL",
+           "shortName":"MS SQL",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -134,6 +143,7 @@
     {
       "index": 13,
       "name": "MY SQL",
+           "shortName":"MY SQL",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -146,6 +156,7 @@
     {
       "index": 14,
       "name": "Mongo db",
+           "shortName":"mongo",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -158,6 +169,7 @@
     {
       "index": 15,
       "name": "Asp.Net MVC (Entity Framework)",
+           "shortName":"asp",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -170,6 +182,7 @@
     {
       "index": 16,
       "name": "Java (Hibernate)",
+           "shortName":"java",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -182,6 +195,7 @@
     {
       "index": 17,
       "name": "Php",
+           "shortName":"php",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -194,6 +208,7 @@
     {
       "index": 18,
       "name": "Node.js",
+           "shortName":"node",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -211,6 +226,7 @@
     {
       "index": 20,
       "name": "Regular Expressions",
+           "shortName":"regex",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -223,6 +239,7 @@
     {
       "index": 21,
       "name": "Android (java)",
+           "shortName":"android",
       "type": "Technology",
       "status": "Planned",
       "experience": {
@@ -235,6 +252,7 @@
     {
       "index": 22,
       "name": "Ios (Appcelerator)",
+           "shortName":"appc",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -248,6 +266,7 @@
       "index": 23,
       "name": "Ios (swift, objective c)",
       "type": "Technology",
+           "shortName":"swift",
       "status": "Planned",
       "experience": {
         "type": "static",
@@ -257,20 +276,9 @@
       "progressPercent": 15
     },
     {
-      "index": 24,
-      "name": "Express.js",
-      "type": "Technology",
-      "status": "Planned",
-      "experience": {
-        "type": "static",
-        "start": 1471717727934,
-        "previous": 2678400000
-      },
-      "progressPercent": 20
-    },
-    {
       "index": 25,
       "name": "React.js",
+           "shortName":"react",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -283,6 +291,7 @@
     {
       "index": 26,
       "name": "Markdown",
+           "shortName":"md",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -295,6 +304,7 @@
     {
       "index": 27,
       "name": "Git",
+           "shortName":"git",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -307,6 +317,7 @@
     {
       "index": 28,
       "name": "Ionic 2",
+           "shortName":"ion",
       "type": "Technology",
       "status": "Improving",
       "experience": {
