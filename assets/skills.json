@@ -27,9 +27,9 @@
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
-        "start":1471717727934,
-        "previous":47304000000,
-        "story":"<p>I am mostly working for both, frond and back end sides. So, I  allways use it&nbsp;in&nbsp;projects</p>"
+        "start": 1471717727934,
+        "previous": 47304000000,
+        "story": "<p>I am mostly working for both, frond and back end sides. So, I  allways use it&nbsp;in&nbsp;projects</p>"
       },
       "progressPercent": 80
     },
@@ -40,8 +40,8 @@
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
-        "start":1471717727934,
-        "previous":47304000000 
+        "start": 1471717727934,
+        "previous": 47304000000
       },
       "progressPercent": 50
     },
@@ -52,8 +52,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":31536000000
+        "start": 1471717727934,
+        "previous": 31536000000
       },
       "progressPercent": 60
     },
@@ -64,8 +64,8 @@
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
-        "start":1471717727934,
-        "previous":31536000000
+        "start": 1471717727934,
+        "previous": 31536000000
       },
       "progressPercent": 75
     },
@@ -76,8 +76,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":31536000000
+        "start": 1471717727934,
+        "previous": 31536000000
       },
       "progressPercent": 60
     },
@@ -88,8 +88,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":18748800000
+        "start": 1471717727934,
+        "previous": 18748800000
       },
       "progressPercent": 50
     },
@@ -100,8 +100,9 @@
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
-        "start":1471717727934,
-        "previous":8035200000
+        "start": 1471717727934,
+        "previous": 8035200000,
+        "story": "<p>I am using d3.js mostly for freelance projects. I like it's flexibility, speed,power and e.t.c.</p><p>&nbsp;</p><p>I have created several custom designed charts . Some of them are listed in projects section.</p><p>&nbsp;</p><p>Overall, I enjoy working on it, and planning to advance my skills in that direction</p>"
       },
       "progressPercent": 60
     },
@@ -112,8 +113,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":32140800000
+        "start": 1471717727934,
+        "previous": 32140800000
       },
       "progressPercent": 60
     },
@@ -124,8 +125,8 @@
       "status": "Improving",
       "experience": {
         "type": "ongoing",
-        "start":1471717727934,
-        "previous":32140800000
+        "start": 1471717727934,
+        "previous": 32140800000
       },
       "progressPercent": 55
     },
@@ -136,8 +137,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":5356800000
+        "start": 1471717727934,
+        "previous": 5356800000
       },
       "progressPercent": 35
     },
@@ -148,8 +149,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":2678400000
+        "start": 1471717727934,
+        "previous": 2678400000
       },
       "progressPercent": 20
     },
@@ -160,8 +161,8 @@
       "status": "Improving",
       "experience": {
         "type": "ongoing",
-        "start":1471717727934,
-        "previous":32140800000
+        "start": 1471717727934,
+        "previous": 32140800000
       },
       "progressPercent": 60
     },
@@ -172,8 +173,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":2678400000
+        "start": 1471717727934,
+        "previous": 2678400000
       },
       "progressPercent": 30
     },
@@ -184,8 +185,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":5356800000
+        "start": 1471717727934,
+        "previous": 5356800000
       },
       "progressPercent": 20
     },
@@ -196,8 +197,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":2678400000
+        "start": 1471717727934,
+        "previous": 2678400000
       },
       "progressPercent": 20
     },
@@ -213,8 +214,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":2678400000
+        "start": 1471717727934,
+        "previous": 2678400000
       },
       "progressPercent": 60
     },
@@ -225,8 +226,8 @@
       "status": "Planned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":10713600000
+        "start": 1471717727934,
+        "previous": 10713600000
       },
       "progressPercent": 25
     },
@@ -237,8 +238,8 @@
       "status": "Abandoned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":10713600000
+        "start": 1471717727934,
+        "previous": 10713600000
       },
       "progressPercent": 20
     },
@@ -249,8 +250,8 @@
       "status": "Planned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":2678400000
+        "start": 1471717727934,
+        "previous": 2678400000
       },
       "progressPercent": 15
     },
@@ -261,8 +262,8 @@
       "status": "Planned",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":2678400000
+        "start": 1471717727934,
+        "previous": 2678400000
       },
       "progressPercent": 20
     },
@@ -273,8 +274,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":8035200000
+        "start": 1471717727934,
+        "previous": 8035200000
       },
       "progressPercent": 30
     },
@@ -285,8 +286,8 @@
       "status": "Improving",
       "experience": {
         "type": "static",
-        "start":1471717727934,
-        "previous":8035200000
+        "start": 1471717727934,
+        "previous": 8035200000
       },
       "progressPercent": 80
     },
@@ -297,8 +298,8 @@
       "status": "Improving",
       "experience": {
         "type": "ongoing",
-        "start":1471717727934,
-        "previous":16070400000
+        "start": 1471717727934,
+        "previous": 16070400000
       },
       "progressPercent": 20
     },
@@ -309,8 +310,8 @@
       "status": "Improving",
       "experience": {
         "type": "ongoing",
-        "start":1471717727934,
-        "previous":5356800000
+        "start": 1471717727934,
+        "previous": 5356800000
       },
       "progressPercent": 25
     }
