@@ -102,7 +102,7 @@
         "type": "ongoing",
         "start": 1471717727934,
         "previous": 8035200000,
-        "story": "<p>I am using d3.js mostly for freelance projects. I like it's flexibility, speed,power and e.t.c.</p><p>&nbsp;</p><p>I have created several custom designed charts . Some of them are listed in projects section.</p><p>&nbsp;</p><p>Overall, I enjoy working on it, and planning to advance my skills in that direction</p>"
+        "story": "<p>I am using d3.js mostly for freelance projects. I like it's flexibility, speed,power and e.t.c.</p><p>I have created several custom designed charts . Some of them are listed in projects section.</p><p>Overall, I enjoy working on it, and planning to advance my skills in that direction</p>"
       },
       "progressPercent": 60
     },
@@ -114,7 +114,8 @@
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 32140800000
+        "previous": 32140800000,
+        "story": "<p>During Internship, at bank of georgia, I had trainings in oracle &nbsp;and pl &amp; sql (11g) .I was using it for test projects. &nbsp;</p><p>After I was hired, had one web project, where we were using oracle in&nbsp;db side. I doubt, if we will meet again :D</p>"
       },
       "progressPercent": 60
     },
