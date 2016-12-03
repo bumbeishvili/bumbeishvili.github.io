@@ -5,9 +5,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
-  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
-  <title> About Me Page Using React.js and materialize.css</title>
+ <title>About Me Page Using React.js and materialize.css</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title> About Dato</title>
 
@@ -21,7 +19,7 @@
   
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css'>
-<link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
 
       <style>
       .chip {
@@ -254,16 +252,16 @@
   z-index: 10;
 }
 .customTooltip .RapidlyImproving {
-  background-color: #00c853 !important;
+  background-color: #FDD525 !important;
 }
 .customTooltip .Improving {
-  background-color: #4da6ff !important;
+  background-color: #0CC8F4 !important;
 }
 .customTooltip .Planned {
-  background-color: #e040fb !important;
+  background-color: #E1E2A9 !important;
 }
 .customTooltip .Abandoned {
-  background-color: #ff6666 !important;
+  background-color: #ed6fc3 !important;
 }
 .customTooltip table {
   width: 100% !important;
@@ -771,17 +769,11 @@ var Contact = React.createClass({
           })
         )
       ),
-      'Einshtein once said:',
-      React.createElement(
-        'blockquote',
-        null,
-        'Personal website will get you from A to Y.   Good CV will get you from Y to Z .'
-      ),
-      'So, I decided to trust his words.  You can  ',
+      'Companies tend to prefer cv\'s, over personal websites,so  ',
       React.createElement(
         'a',
         { target: '_blank', href: 'https://goo.gl/HarFV2' },
-        ' download my resume '
+        ' I am putting my resume here '
       ),
       React.createElement('br', null),
       React.createElement('br', null),
@@ -889,22 +881,22 @@ function drawSkillsForce(data) {
     RapidlyImproving: {
       key: "RapidlyImproving",
       name: 'Improving Rapidly',
-      color: "rgb(97, 201, 109)"
+      color: "#FDD525"
     },
     Improving: {
       key: "Improving",
       name: 'Improving ',
-      color: "#4da6ff"
+      color: "#0CC8F4"
     },
     Planned: {
       key: "Planned",
       name: 'Planned to learn ',
-      color: "#e040fb "
+      color: "#E1E2A9"
     },
     Abandoned: {
       key: "Abandoned",
       name: 'Abandoned',
-      color: "#ff6666"
+      color: "#ed6fc3"
     },
     init: function init() {
       this.array = [this.RapidlyImproving, this.Improving, this.Planned, this.Abandoned];
@@ -922,7 +914,7 @@ function drawSkillsForce(data) {
     gravity = 0.1;
   }
 
-  var svg = d3.select(container).append('svg').attr('width', width).attr('height', height);
+  var svg = d3.select(container).append('svg').attr("viewBox", "0 0 " + width + " " + height).attr("preserveAspectRatio", "xMidYMid meet");
 
   var force = d3.layout.force();
 
@@ -1012,10 +1004,13 @@ function drawSkillsForce(data) {
   //dwada
   tooltip.append('div').attr('class', 'skills-label');
   tooltip.append('div').attr('class', 'skills-progress');
+  tooltip.append('div').attr('class', 'skills-story').style('text-align', 'left').style('text-indent', "20px");
 
   function tooltipHoverHandler(d) {
+
     var title = d.name;
     tooltip.select('.skills-label').html("<b>" + title + "</b>");
+    tooltip.select('.skills-story').html(d.experience.story);
 
     tooltip.select('.skills-progress').html(progress({
       progressLabel: d.name,
@@ -1044,7 +1039,7 @@ function drawSkillsForce(data) {
   technologyNodes.on('mouseout', tooltipOutHandler);
 
   technologyNodes.on("mousemove", function (d) {
-    tooltip.style('top', d3.event.pageY - 130 + 'px').style('left', d3.event.pageX + 0 + 'px');
+    tooltip.style('top', d3.event.pageY - 130 + 'px').style('left', d3.event.pageX + 20 + 'px');
   });
 
   force.on('tick', function () {
