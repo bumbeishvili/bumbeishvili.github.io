@@ -275,6 +275,19 @@
       },
       "progressPercent": 15
     },
+     {
+       "index": 24,
+       "name": "Express.js",
+       "type": "Technology",
+       "status": "Planned",
+      "experience": {
+         "type": "static",
+         "start": 1471717727934,
+         "previous": 2678400000
+       },
+       "progressPercent": 20
+     },
+    
     {
       "index": 25,
       "name": "React.js",
