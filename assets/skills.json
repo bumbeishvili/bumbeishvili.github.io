@@ -23,7 +23,7 @@
     {
       "index": 4,
       "name": "Html",
-      "shortName":"html",
+      "shortName": "html",
       "type": "Technology",
       "status": "RapidlyImproving",
       "experience": {
@@ -37,26 +37,28 @@
     {
       "index": 5,
       "name": "Css",
-    "shortName":"css",
+      "shortName": "css",
       "type": "Technology",
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
         "start": 1471717727934,
-        "previous": 47304000000
+        "previous": 47304000000,
+        "story": "<p>Css is not my strongest side. Although I have used several basic and advanced techniques and got desired results .</p><p>I allways prefer for my projects to take some web themes and customize it, to fit my&nbsp;needs</p>"
       },
       "progressPercent": 50
     },
     {
       "index": 6,
       "name": "Bootstrap",
-      "shortName":"Bootstrap",
+      "shortName": "Bootstrap",
       "type": "Technology",
       "status": "Improving",
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 31536000000
+        "previous": 31536000000,
+        "story": "<p>When creating something simple and quick app, I allways choose bootstrap for that .</p><p>I &nbsp;also have &nbsp;working experience with it , I have worked as a full stack developer for 6 months on web project, where we had extensively used bootstrap for interfaces</p>"
       },
       "progressPercent": 60
     },
@@ -64,19 +66,20 @@
       "index": 7,
       "name": "Javascript(Native)",
       "type": "Technology",
-           "shortName":"js",
+      "shortName": "js",
       "status": "RapidlyImproving",
       "experience": {
         "type": "ongoing",
         "start": 1471717727934,
-        "previous": 31536000000
+        "previous": 31536000000,
+        "story": "<p>I allways had hard time with javascript . But after experiencing angular,angular2, jquery, lodash &amp; underscore, react , d3.js and many more small libraries, I am in love with js, It's flexibility , power , even with weakneses .</p><p>So, when I have some problems to resolve, I allways try first, to implement efficient,short and readable sollution in vanilla.js. And if I was unable to succeed, only then I am starting to seek other sollution</p>"
       },
       "progressPercent": 75
     },
     {
       "index": 8,
       "name": "JQuery",
-           "shortName":"jq",
+      "shortName": "jq",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -90,7 +93,7 @@
       "index": 9,
       "name": "Angular.js (1.x)",
       "type": "Technology",
-           "shortName":"ng1",
+      "shortName": "ng1",
       "status": "Abandoned",
       "experience": {
         "type": "static",
@@ -102,7 +105,7 @@
     {
       "index": 10,
       "name": "D3.js",
-           "shortName":"D3",
+      "shortName": "D3",
       "type": "Technology",
       "status": "RapidlyImproving",
       "experience": {
@@ -116,7 +119,7 @@
     {
       "index": 11,
       "name": "Oracle (PL SQL)",
-           "shortName":"PL",
+      "shortName": "PL",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -130,7 +133,7 @@
     {
       "index": 12,
       "name": "MS SQL",
-           "shortName":"MS SQL",
+      "shortName": "MS SQL",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -143,7 +146,7 @@
     {
       "index": 13,
       "name": "MY SQL",
-           "shortName":"MY SQL",
+      "shortName": "MY SQL",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -156,7 +159,7 @@
     {
       "index": 14,
       "name": "Mongo db",
-           "shortName":"mongo",
+      "shortName": "mongo",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -169,7 +172,7 @@
     {
       "index": 15,
       "name": "Asp.Net MVC (Entity Framework)",
-           "shortName":"asp",
+      "shortName": "asp",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -182,7 +185,7 @@
     {
       "index": 16,
       "name": "Java (Hibernate)",
-           "shortName":"java",
+      "shortName": "java",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -195,7 +198,7 @@
     {
       "index": 17,
       "name": "Php",
-           "shortName":"php",
+      "shortName": "php",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -208,7 +211,7 @@
     {
       "index": 18,
       "name": "Node.js",
-           "shortName":"node",
+      "shortName": "node",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -226,7 +229,7 @@
     {
       "index": 20,
       "name": "Regular Expressions",
-           "shortName":"regex",
+      "shortName": "regex",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -239,7 +242,7 @@
     {
       "index": 21,
       "name": "Android (java)",
-           "shortName":"android",
+      "shortName": "android",
       "type": "Technology",
       "status": "Planned",
       "experience": {
@@ -252,7 +255,7 @@
     {
       "index": 22,
       "name": "Ios (Appcelerator)",
-           "shortName":"appc",
+      "shortName": "appc",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
@@ -266,7 +269,7 @@
       "index": 23,
       "name": "Ios (swift, objective c)",
       "type": "Technology",
-           "shortName":"swift",
+      "shortName": "swift",
       "status": "Planned",
       "experience": {
         "type": "static",
@@ -275,23 +278,22 @@
       },
       "progressPercent": 15
     },
-     {
-       "index": 24,
-       "name": "Express.js",
-       "type": "Technology",
-       "status": "Planned",
+    {
+      "index": 24,
+      "name": "Express.js",
+      "type": "Technology",
+      "status": "Planned",
       "experience": {
-         "type": "static",
-         "start": 1471717727934,
-         "previous": 2678400000
-       },
-       "progressPercent": 20
-     },
-    
+        "type": "static",
+        "start": 1471717727934,
+        "previous": 2678400000
+      },
+      "progressPercent": 20
+    },
     {
       "index": 25,
       "name": "React.js",
-           "shortName":"react",
+      "shortName": "react",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -304,7 +306,7 @@
     {
       "index": 26,
       "name": "Markdown",
-           "shortName":"md",
+      "shortName": "md",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -317,7 +319,7 @@
     {
       "index": 27,
       "name": "Git",
-           "shortName":"git",
+      "shortName": "git",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -330,7 +332,7 @@
     {
       "index": 28,
       "name": "Ionic 2",
-           "shortName":"ion",
+      "shortName": "ion",
       "type": "Technology",
       "status": "Improving",
       "experience": {
@@ -418,7 +420,7 @@
       "source": 19,
       "target": 20
     },
-        {
+    {
       "source": 1,
       "target": 24
     },
