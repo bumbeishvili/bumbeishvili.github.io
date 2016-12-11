@@ -5,9 +5,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
-  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
-  <title> About Me Page Using React.js and materialize.css</title>
+ <title>About Me Page Using React.js and materialize.css</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title> About Dato</title>
 
@@ -881,7 +879,7 @@ function drawSkillsForce(data) {
   var linkDistance = 40;
   var charge = -150;
   var gravity = 0.1;
-  var borderRadius = 10;
+  var borderRadius = 4;
 
   var skillConditions = {
     RapidlyImproving: {
@@ -911,7 +909,7 @@ function drawSkillsForce(data) {
   }.init();
 
   if (!isMobile) {
-    borderRadius = 20;
+    borderRadius = 8;
     techTextDisplayProgress = 50;
     rectWidth = 110;
     rectHeight = 40;
@@ -1040,19 +1038,19 @@ function drawSkillsForce(data) {
     tooltip.selectAll('h6').style('margin-bottom', '5px').style('text-align', 'left');
 
     tooltip.transition().duration(200).style("opacity", "1").style('display', 'block');
-    d3.select(this).attr('stroke-width', 10).attr("stroke", "#ccd9ff");
+    d3.select(this).select('circle').attr('stroke-width', 10).attr("stroke", "#ccd9ff");
   }
 
   function tooltipOutHandler() {
     tooltip.transition().duration(200).style('opacity', '0').style('display', 'none');
-    d3.select(this).attr('stroke-width', 5);
+    d3.select(this).select('circle').attr('stroke-width', 5);
   }
 
-  technologyNodes.on('mouseover', tooltipHoverHandler);
+  techGroup.on('mouseover', tooltipHoverHandler);
 
-  technologyNodes.on('mouseout', tooltipOutHandler);
+  techGroup.on('mouseout', tooltipOutHandler);
 
-  technologyNodes.on("mousemove", function (d) {
+  techGroup.on("mousemove", function (d) {
     tooltip.style('top', d3.event.pageY - 130 + 'px').style('left', d3.event.pageX + 20 + 'px');
   });
 
