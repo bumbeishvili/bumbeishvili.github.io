@@ -96,5 +96,24 @@
         "HREF": "https://github.com/bumbeishvili/free-code-camp-projects"
       }
     ]
+  },
+  {
+    "title": "FB GH Trends",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/githubTrends.png",
+    "description": "Bot, which posts daily github trends on fb pages ",
+    "tags": [
+      "node.js",
+      "express.js",
+      "mongodb"
+    ],
+    "links": [
+      {
+        "name": "Repo",
+        "HREF": "https://github.com/bumbeishvili/fb-github-trends"
+      },      {
+        "name": "Main Page",
+        "HREF": "https://www.facebook.com/github.trends/"
+      }
+    ]
   }
 ]
