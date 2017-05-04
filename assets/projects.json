@@ -46,7 +46,8 @@
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/Elections.png",
     "description": "This bubble chart clearly shows differences between pre election polls, exitpolls and real results from Election Administration of Georgia(Cesko)",
     "tags": [
-      "D3.js", "C3.js"
+      "D3.js",
+      "C3.js"
     ],
     "links": [
       {
@@ -58,7 +59,8 @@
         "HREF": "https://gist.github.com/bumbeishvili/0e1df129bd1082da8ceafaf93dbf0e57"
       }
     ]
-  },  {
+  },
+  {
     "title": "Chart.js to D3.js",
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/chartJsToD3js.png",
     "description": "Chart.js basic examples converted to d3.js charts. I tried to match everything, data structure, startup animations, color , tooltip and e.t.c.",
@@ -77,44 +79,7 @@
     ]
   },
   {
-    "title": "Recipes Box",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/recipes.png",
-    "description": "This is simple responsive crud web application, where you can add, delete, edit recipes, built with react.js and materialize.css",
-    "tags": [
-      "react.js",
-      "Materializecss"
-    ],
-    "links": [
-      {
-        "name": "Try It",
-        "HREF": "http://s.codepen.io/bumbeishvili/debug/gMLwYE"
-      },
-      {
-        "name": "source",
-        "HREF": "https://gist.github.com/bumbeishvili/907fe27d03faf900904c4947d2c4ff5c"
-      }
-    ]
-  },
-  {
-    "title": "Simon game",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/SimonGame.png",
-    "description": "In the game, you examine your memory. if you reach at 21 step, you will win. game hast strict mode, where sequence will restart, if mistake is made",
-    "tags": [
-      "jquery.js"
-    ],
-    "links": [
-      {
-        "name": "Try It",
-        "HREF": "https://s.codepen.io/bumbeishvili/debug/GZEwmY"
-      },
-      {
-        "name": "source",
-        "HREF": "https://gist.github.com/bumbeishvili/dc8d690f00a3249c6ecc4c6a1b474b11"
-      }
-    ]
-  },
-  {
-    "title": "Other FCC Projects",
+    "title": " FCC Projects",
     "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/camperImage.png",
     "description": "These are projects which I have completed during freecodecamp's Data Visualization and Front End Development   certification program ",
     "tags": [
@@ -129,24 +94,6 @@
       {
         "name": "List",
         "HREF": "https://github.com/bumbeishvili/free-code-camp-projects"
-      }
-    ]
-  },
-  {
-    "title": "51 Point",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/51Point.png",
-    "description": "This chrome extension adds cool features to electronic education system of tbilisi state university",
-    "tags": [
-      "vanilla-js"
-    ],
-    "links": [
-      {
-        "name": "Web store ",
-        "HREF": "https://goo.gl/xsGPVS"
-      },
-      {
-        "name": "source",
-        "HREF": "https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/51Point"
       }
     ]
   }
