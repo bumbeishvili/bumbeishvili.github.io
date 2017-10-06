@@ -42,58 +42,20 @@
     ]
   },
   {
-    "title": "Elections 2016",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/Elections.png",
-    "description": "This bubble chart clearly shows differences between pre election polls, exitpolls and real results from Election Administration of Georgia(Cesko)",
-    "tags": [
-      "D3.js",
-      "C3.js"
-    ],
-    "links": [
-      {
-        "name": "Try It",
-        "HREF": "https://s.codepen.io/bumbeishvili/debug/LROkRo"
-      },
-      {
-        "name": "source",
-        "HREF": "https://gist.github.com/bumbeishvili/0e1df129bd1082da8ceafaf93dbf0e57"
-      }
-    ]
-  },
-  {
-    "title": "Chart.js to D3.js",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/chartJsToD3js.png",
-    "description": "Chart.js basic examples converted to d3.js charts. I tried to match everything, data structure, startup animations, color , tooltip and e.t.c.",
+    "title": "Villages",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/map3dbar.png",
+    "description": " This D3.js powered chart shows populations ber villages as 3d bars.You can zoom in/out and drag map",
     "tags": [
       "D3.js"
     ],
     "links": [
       {
         "name": "Try It",
-        "HREF": "https://bumbeishvili.github.io/chartjs-to-d3js/"
+        "HREF": "https://bumbeishvili.github.io/geo-vis/populatedAreas/bar.html"
       },
       {
-        "name": "source",
-        "HREF": "https://github.com/bumbeishvili/chartjs-to-d3jsupdate "
-      }
-    ]
-  },
-  {
-    "title": " FCC Projects",
-    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/camperImage.png",
-    "description": "These are projects which I have completed during freecodecamp's Data Visualization and Front End Development   certification program ",
-    "tags": [
-      "react.js",
-      "D3.js",
-      "angular.js",
-      "bootstrap",
-      "jquery.js",
-      "vanilla-js"
-    ],
-    "links": [
-      {
-        "name": "List",
-        "HREF": "https://github.com/bumbeishvili/free-code-camp-projects"
+        "name": "Source",
+        "HREF": "https://github.com/bumbeishvili/geo-vis/tree/gh-pages/populationPerRegions"
       }
     ]
   },
@@ -110,7 +72,8 @@
       {
         "name": "Repo",
         "HREF": "https://github.com/bumbeishvili/fb-github-trends"
-      },      {
+      },
+      {
         "name": "Main Page",
         "HREF": "https://www.facebook.com/github.trends/"
       }
