@@ -57,8 +57,7 @@
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 31536000000,
-        "story": "<p>When creating something simple and quick app, I allways choose bootstrap for that .</p><p>I &nbsp;also have &nbsp;working experience with it , I have worked as a full stack developer for 6 months on web project, where we had extensively used bootstrap for interfaces</p>"
+        "previous": 31536000000
       },
       "progressPercent": 60
     },
@@ -72,9 +71,9 @@
         "type": "ongoing",
         "start": 1471717727934,
         "previous": 31536000000,
-        "story": "<p>I allways had hard time with javascript . But after experiencing angular,angular2, jquery, lodash &amp; underscore, react , d3.js and many more small libraries, I am in love with js, It's flexibility , power , even with weakneses .</p><p>So, when I have some problems to resolve, I allways try first, to implement efficient,short and readable sollution in vanilla.js. And if I was unable to succeed, only then I am starting to seek other sollution</p>"
+        "story": "<p>After experiencing angular,angular2, jquery, lodash &amp; underscore, react , d3.js and many more small libraries, I am in love with js, It's flexibility , power , even with weakneses .</p><p>So, when I have some problems to resolve, I allways try first, to implement efficient,short and readable sollution in vanilla.js. And if I was unable to succeed in short time, only then I am starting to seek other sollutions</p>"
       },
-      "progressPercent": 75
+      "progressPercent": 80
     },
     {
       "index": 8,
@@ -87,7 +86,7 @@
         "start": 1471717727934,
         "previous": 31536000000
       },
-      "progressPercent": 60
+      "progressPercent": 65
     },
     {
       "index": 9,
@@ -112,9 +111,9 @@
         "type": "ongoing",
         "start": 1471717727934,
         "previous": 8035200000,
-        "story": "<p>I am using d3.js mostly for freelance projects. I like it's flexibility, speed,power and e.t.c.</p><p>I have created several custom designed charts . Some of them are listed in projects section.</p><p>Overall, I enjoy working on it, and planning to advance my skills in that direction</p>"
+        "story": "<p>D3.js shortly became my passion. I enjoy working on it and love flexibility and power, it gives developers</p>"
       },
-      "progressPercent": 70
+      "progressPercent": 80
     },
     {
       "index": 11,
@@ -126,7 +125,7 @@
         "type": "static",
         "start": 1471717727934,
         "previous": 32140800000,
-        "story": "<p>During Internship, at bank of georgia, I had trainings in oracle &nbsp;and pl &amp; sql (11g) .I was using it for test projects. &nbsp;</p><p>After I was hired, had one web project, where we were using oracle in&nbsp;db side. I doubt, if we will meet again :D</p>"
+        "story": "<p>Worked within bound of some projects, at Bank of Georgia </p>"
       },
       "progressPercent": 60
     },
@@ -139,7 +138,8 @@
       "experience": {
         "type": "ongoing",
         "start": 1471717727934,
-        "previous": 32140800000
+        "previous": 32140800000,
+        "story": "<p>My experience with ms sql is ongoing, urually I am writing queries for complex reports and using CTE and other advanced stuff's to reach desired result </p>"
       },
       "progressPercent": 55
     },
@@ -152,7 +152,8 @@
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 5356800000
+        "previous": 5356800000,
+        "story": "<p>I was using it for side projects, but then I moved to mongo db, which was better suited for my needs</p>"
       },
       "progressPercent": 35
     },
@@ -165,9 +166,10 @@
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 2678400000
+        "previous": 2678400000,
+        "story": "I am using mongo db for side projects (See <b>fb-bot</b> and <b>fb-github-trends</b> repos for a reference)"
       },
-      "progressPercent": 20
+      "progressPercent": 25
     },
     {
       "index": 15,
@@ -178,7 +180,8 @@
       "experience": {
         "type": "ongoing",
         "start": 1471717727934,
-        "previous": 32140800000
+        "previous": 32140800000,
+        "story": "My current primary office job"
       },
       "progressPercent": 60
     },
@@ -191,29 +194,31 @@
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 2678400000
+        "previous": 2678400000,
+        "story": "I am familiar with syntax, have written 1-2 small mobile app for own use "
       },
       "progressPercent": 30
     },
     {
-      "index": 17,
-      "name": "Php",
-      "shortName": "php",
+      "index": 16,
+      "name": "Java (Hibernate)",
+      "shortName": "java",
       "type": "Technology",
       "status": "Abandoned",
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 5356800000
+        "previous": 2678400000,
+        "story": "I am familiar with syntax, have written 1-2 small mobile app for own use "
       },
-      "progressPercent": 20
+      "progressPercent": 30
     },
     {
-      "index": 18,
-      "name": "Node.js",
-      "shortName": "node",
+      "index": 17,
+      "name": "PHP",
+      "shortName": "php",
       "type": "Technology",
-      "status": "Improving",
+      "status": "Abandoned",
       "experience": {
         "type": "static",
         "start": 1471717727934,
@@ -235,7 +240,8 @@
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 2678400000
+        "previous": 2678400000,
+        "story": "I just know this tech "
       },
       "progressPercent": 60
     },
@@ -299,7 +305,8 @@
       "experience": {
         "type": "static",
         "start": 1471717727934,
-        "previous": 8035200000
+        "previous": 8035200000,
+        "story": "I have played with it severall times, current web app is written in React :) "
       },
       "progressPercent": 30
     },
@@ -325,7 +332,8 @@
       "experience": {
         "type": "ongoing",
         "start": 1471717727934,
-        "previous": 16070400000
+        "previous": 16070400000,
+        "story": "I am heavily using it for bot, office job and for side projects"
       },
       "progressPercent": 20
     },
