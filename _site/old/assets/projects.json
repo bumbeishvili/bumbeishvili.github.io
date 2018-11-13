@@ -1,0 +1,82 @@
+[
+  {
+    "title": "About Me",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/AboutMe.png",
+    "description": "This responsive single page application highlights some info about me.  It's built with react.js, materialize css and I have also used d3.js for skills visualization",
+    "tags": [
+      "react.js",
+      "D3.js",
+      "Materializecss"
+    ],
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "#"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/2d6bfb98707c46fe4b2c6b9a93fe9590"
+      }
+    ]
+  },
+  {
+    "title": "Org. chart",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/empChart.png",
+    "description": " This D3.js powered chart shows hierarchical structure of 1500  employees.You can zoom in/out, drag,  expand/collapse node, find currently logged user, search any user, separate department users",
+    "tags": [
+      "D3.js"
+    ],
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "https://codepen.io/bumbeishvili/full/yayErR"
+      },
+      {
+        "name": "source",
+        "HREF": "https://gist.github.com/bumbeishvili/361db9f6daa6306726ab0162fed5ad6f"
+      },
+      {
+        "name": "original",
+        "HREF": "https://jsfiddle.net/augburto/YMa2y/"
+      }
+    ]
+  },
+  {
+    "title": "Villages",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/map3dbar.png",
+    "description": " This D3.js powered chart shows populations ber villages as 3d bars.You can zoom in/out and drag map",
+    "tags": [
+      "D3.js"
+    ],
+    "links": [
+      {
+        "name": "Try It",
+        "HREF": "https://bumbeishvili.github.io/geo-vis/populatedAreas/bar.html"
+      },
+      {
+        "name": "Source",
+        "HREF": "https://github.com/bumbeishvili/geo-vis/tree/gh-pages/populationPerRegions"
+      }
+    ]
+  },
+  {
+    "title": "FB GH Trends",
+    "imageURL": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Portfolio/githubTrends.png",
+    "description": "Bot, which posts daily github trends on fb pages ",
+    "tags": [
+      "node.js",
+      "express.js",
+      "mongodb"
+    ],
+    "links": [
+      {
+        "name": "Repo",
+        "HREF": "https://github.com/bumbeishvili/fb-github-trends"
+      },
+      {
+        "name": "Main Page",
+        "HREF": "https://www.facebook.com/github.trends/"
+      }
+    ]
+  }
+]
