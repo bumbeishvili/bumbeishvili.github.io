@@ -1,5 +1,5 @@
 ---
-title: 'NestSeekers - Interactive Map'
+title: 'Occamlabs - Interactive Map'
 subtitle: 'Details'
 date: 2018-11-01 00:00:00
 description: This page is a demo that shows everything you can do inside portfolio and blog posts.
