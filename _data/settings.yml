@@ -15,15 +15,15 @@ menu_settings:
     #   url: '/blog/'
     # - title: 'About'
     #   url: '/about'
-    # - title: 'Contact'
-    #   url: '/contact'
+    - title: 'Contact'
+      url: '/contact'
 
 grid_settings:
   overlay_opacity: 0.8
   grid_spacing: 20
 
 contact_settings:
-  form_action: 'https://formspree.io/your@email.com'
+  form_action: 'https://formspree.io/davit.bumbeishvili@gmail.com'
   confirmation_url: '/thanks'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
@@ -31,7 +31,7 @@ contact_settings:
 social_settings:
   github_url: 'https://github.com/bumbeishvili'
   facebook_url: ''
-  twitter_url: 'https://twitter.com/'
+  twitter_url: 'https://twitter.com/dbumbeishvili'
   instagram_url: ''
   snapchat_url: ''
   youtube_url: ''
