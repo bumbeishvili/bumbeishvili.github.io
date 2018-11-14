@@ -14,7 +14,7 @@ featured_image: '/images/hedge/vertical.png'
 
 
 
- Created several  custom charts for   ```Beyond the hedge``` agency 
+ Created several  custom charts for  [Beyond the hedge](https://www.beyondthehedgecreative.com/) agency 
 
 
 Right now they are hosted on [staging website](http://pdi2018.bthstaging2.net/pages/homepage.php)
