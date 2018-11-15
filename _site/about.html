@@ -20,17 +20,17 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Hi, let's travel in the past ... – David B.</title>
+	<title>Let's  travel in the past ... – David B.</title>
 	<meta name="description" content="">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Hi, let's travel in the past ... – David B.">
+	<meta name="twitter:title" content="Let's  travel in the past ... – David B.">
 	<meta name="twitter:description" content="">
 	<meta name="twitter:image:src" content="http://localhost:4000">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Hi, let's travel in the past ... – David B." />
+	<meta property="og:title" content="Let's  travel in the past ... – David B." />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="http://localhost:4000" />
 
@@ -232,13 +232,13 @@
 	
 	<div class="page">
 
-		<div class="page__content" data-page-title="Hi, let's travel in the past ... – David B.">
+		<div class="page__content" data-page-title="Let's  travel in the past ... – David B.">
 
 			<section class="intro">
 
 	<div class="wrap">
 
-		<h1>Hi, let's travel in the past ...</h1>
+		<h1>Let's  travel in the past ...</h1>
 		<p></p>
 
 	</div>
@@ -272,7 +272,7 @@
                 <br /><br />
                 Data visualization has been passion of mine, for a long time
                  </p>
-				<span class="cd-date">October 2018</span>
+				<span class="cd-date full-freelance ">October 2018</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 		<div class="cd-timeline-block">
@@ -359,6 +359,49 @@
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section>
+
+<script>
+
+function timeSince(date) {
+
+  var seconds = Math.floor((new Date() - date) / 1000);
+
+  var interval = Math.floor(seconds / 31536000);
+
+  if (interval > 1) {
+    return interval + " years";
+  }
+  interval = Math.floor(seconds / 2592000);
+  if (interval > 1) {
+    return interval + " months";
+  }
+  interval = Math.floor(seconds / 86400);
+  if (interval > 1) {
+    return interval + " days";
+  }
+  interval = Math.floor(seconds / 3600);
+  if (interval > 1) {
+    return interval + " hours";
+  }
+  interval = Math.floor(seconds / 60);
+  if (interval > 1) {
+    return interval + " minutes";
+  }
+  return Math.floor(seconds) + " seconds";
+}
+
+
+
+document
+.querySelectorAll('.cd-date')
+.forEach((d,i)=>{
+    if(!i) return;
+    d.innerHTML = (d.innerHTML + " - "+timeSince(new Date(d.innerHTM+" ago")
+})
+
+
+</script>
+
 
 
 	</div>

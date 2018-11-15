@@ -1,11 +1,10 @@
 ---
-title: Hi, let's travel in the past ...
+title: Let's  travel in the past ...
 subtitle: 
 description:
 featured_image: 
 ---
  
-
 
 
 <section id="cd-timeline" class="cd-container">
@@ -31,7 +30,7 @@ featured_image:
                 <br/><br/>
                 Data visualization has been passion of mine, for a long time
                  </p>
-				<span class="cd-date">October 2018</span>
+				<span class="cd-date full-freelance ">October 2018</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 		<div class="cd-timeline-block">
@@ -118,3 +117,50 @@ featured_image:
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section> 
+
+
+
+
+
+
+<script>
+
+function timeSince(date) {
+
+  var seconds = Math.floor((new Date() - date) / 1000);
+
+  var interval = Math.floor(seconds / 31536000);
+
+  if (interval > 1) {
+    return interval + " years";
+  }
+  interval = Math.floor(seconds / 2592000);
+  if (interval > 1) {
+    return interval + " months";
+  }
+  interval = Math.floor(seconds / 86400);
+  if (interval > 1) {
+    return interval + " days";
+  }
+  interval = Math.floor(seconds / 3600);
+  if (interval > 1) {
+    return interval + " hours";
+  }
+  interval = Math.floor(seconds / 60);
+  if (interval > 1) {
+    return interval + " minutes";
+  }
+  return Math.floor(seconds) + " seconds";
+}
+
+
+
+document
+.querySelectorAll('.cd-date')
+.forEach((d,i)=>{
+    if(!i) return;
+    d.innerHTML = (d.innerHTML + " - "+timeSince(new Date(d.innerHTM+" ago")
+})
+
+
+</script>
