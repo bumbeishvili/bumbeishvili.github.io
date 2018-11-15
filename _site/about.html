@@ -395,8 +395,9 @@ function timeSince(date) {
 document
 .querySelectorAll('.cd-date')
 .forEach((d,i)=>{
-    if(!i) return;
-    d.innerHTML = (d.innerHTML + " - "+timeSince(new Date(d.innerHTM+" ago")
+    
+     if(!i) return;
+    d.innerHTML = (d.innerHTML + " - "+timeSince(new Date(d.innerHTML))+ " ago")
 })
 
 
