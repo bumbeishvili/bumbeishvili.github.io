@@ -1,6 +1,6 @@
 ---
 title: 'Occamlabs - Interactive Map'
-subtitle: 'Details'
+subtitle: 'mapbox, deck.gl, d3.js, bootstrap, sass, webpack'
 date: 2018-11-01 00:00:00
 description: This page is a demo that shows everything you can do inside portfolio and blog posts.
 featured_image: '/images/nestseekers/outer_thumbnail.png'

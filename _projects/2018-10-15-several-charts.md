@@ -1,6 +1,6 @@
 ---
 title: 'Beyond the hedge - Charts'
-subtitle: 'Details'
+subtitle: 'd3.js'
 date: 2018-11-01 00:00:00
 description: This page is a demo that shows everything you can do inside portfolio and blog posts.
 featured_image: '/images/hedge/vertical.png'
@@ -31,7 +31,6 @@ It's supposed to replace  `New South Wales Government's department of primary in
 <div class="gallery" data-columns="3">
 	<img src="/images/hedge/1.png">
 	<img src="/images/hedge/2.png">
-	<img src="/images/hedge/3.png">
 	<img src="/images/hedge/4.png">
 	<img src="/images/hedge/5.png">
 	<img src="/images/hedge/6.png">

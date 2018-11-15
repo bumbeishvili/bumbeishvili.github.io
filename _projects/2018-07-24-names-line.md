@@ -1,6 +1,6 @@
 ---
 title: 'CEROS - Names visualization'
-subtitle: 'Details'
+subtitle: 'd3.js'
 date: 2018-11-01 00:00:00
 description: 
 featured_image: '/images/ceros/namesDb.gif'
