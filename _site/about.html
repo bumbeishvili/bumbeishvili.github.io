@@ -392,13 +392,24 @@ function timeSince(date) {
 
 
 
-document
-.querySelectorAll('.cd-date')
-.forEach((d,i)=>{
-    
-     if(!i) return;
-    d.innerHTML = (d.innerHTML + " - "+timeSince(new Date(d.innerHTML))+ " ago")
-})
+setInterval(d=>{
+
+setAgo()
+},1000)
+
+setAgo();
+
+function setAgo(){
+    document
+    .querySelectorAll('.cd-date')
+    .forEach((d,i)=>{
+        if(!d.___data___){
+            d.___data___=d.innerHTML
+        }
+        if(!i) return;
+        d.innerHTML = (d.___data___ + " - "+timeSince(new Date(d.___data___))+ " ago")
+    })
+}
 
 
 </script>
