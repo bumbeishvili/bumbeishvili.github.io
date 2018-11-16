@@ -94,6 +94,10 @@
 					</li>
 					
 					<li class="menu__list__item">
+						<a href="/blog/" class="menu__list__item__link">Blog</a>
+					</li>
+					
+					<li class="menu__list__item">
 						<a href="/about" class="menu__list__item__link">About</a>
 					</li>
 					
@@ -298,6 +302,16 @@
 	
 </div>
 
+<form method="POST" action="https://api.staticman.net/v2/entry/bumbeishvili/bumbeishvili.github.io/master/comments">
+  <input name="options[redirect]" type="hidden" value="https://my-site.com" />
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="interactive-map" />
+  <label><input name="fields[name]" type="text" />Name</label>
+  <label><input name="fields[email]" type="email" />E-mail</label>
+  <label><textarea name="fields[message]"></textarea>Message</label>
+  
+  <button type="submit">Go!</button>
+</form>
 
 
 	</div>
