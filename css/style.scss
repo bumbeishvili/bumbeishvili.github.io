@@ -602,20 +602,27 @@ Main components
 }
 
 
-.full-screen{
+.page.full-screen{
   .body-full-screen-button{
     display:initial ;
   }
 }
 
-.full-screen{
+.page.full-screen{
   padding-left:0%;
   background:#FFFFFF;
 }
 
+.page.full-screen{
+  min-height: 85%;
+}
 
 @media only screen and (max-width: 1024px) {
   .post-full-screen-button{
+    display:none;
+  }
+
+  .body-full-screen-button{
     display:none;
   }
 }
