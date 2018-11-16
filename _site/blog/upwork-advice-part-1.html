@@ -544,6 +544,8 @@
 			window.full = !window.full;
 			if (full) {
 				window.history.replaceState( {} , 'title',  window.location.href.split('?')[0]+"?full=true" )
+
+				
 				//window.location.search = "full=true"
 				//(new URL(window.location.href).searchParams).set('full','true')
 				//	window.location.href  = window.location.href.split('?')[0]+"?full=true"
@@ -552,6 +554,9 @@
 				//	window.location.href =window.location.href.split('?')[0];
 			}
 			document.querySelector('.page').classList.toggle('full-screen')
+			document.querySelector('.header').classList.toggle('full-screen')
+
+			setTimeout(d=>{window.dispatchEvent(new Event('resize'));},500)
 
 		}
 
@@ -565,6 +570,7 @@
 				return uri + separator + key + "=" + value;
 			}
 		}
+		console.log('exec')
 	</script>
 
 </body>

@@ -610,6 +610,7 @@ Main components
 
 .full-screen{
   padding-left:0%;
+  background:#FFFFFF;
 }
 
 
@@ -621,4 +622,8 @@ Main components
 applause-button{
   background: white;
   border-radius: 28px;
+}
+
+.full-screen.header{
+  z-index: -1;
 }
