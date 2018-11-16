@@ -631,6 +631,9 @@ applause-button{
   border-radius: 28px;
 }
 
-.full-screen.header{
-  z-index: -1;
+@media only screen and (min-width: 1024px) {
+  .full-screen.header{
+    z-index: -1;
+  }
 }
+
