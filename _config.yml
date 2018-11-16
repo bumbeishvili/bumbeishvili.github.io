@@ -7,14 +7,16 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
-  talks:
-    output: true
-    permalink: /talk/:slug
   projects:
     output: true
     permalink: /project/:slug
+  talks:
+    output: true
+    permalink: /talks/:slug
 
-defaults:
+ 
+
+defaults: 
   -
     scope:
       path: ""
@@ -38,12 +40,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  -
-    scope:
-      path: ""
-      type: "talks"
-    values:
-      layout: "talk"
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "talks"
+  #   values:
+  #     layout: "talk"
 
 markdown: kramdown
 
