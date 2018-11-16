@@ -209,4 +209,4 @@ p.s. სურვილის შემთხვევაში შემოგ�
 
 Remote Work — Georgian Community ჯგუფში
 
-[https://www.facebook.com/groups/remote.work.georgian.community/](https://www.facebook.com/groups/remote.work.georgian.community/)
+[Remote Work Georgian Community](https://www.facebook.com/groups/remote.work.georgian.community/)

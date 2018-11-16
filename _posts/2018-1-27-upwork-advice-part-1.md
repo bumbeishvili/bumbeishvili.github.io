@@ -131,4 +131,4 @@ featured_image: '/images/blogs/upwork/logo.png'
 
 p.s. დისტანციურად მუშაობის მსურველები (ან უკვე მომუშავენი) შემოგვიერთდით ფეისბუქ ჯგუფში სადაც ერთმანეთს გამოცდილებას ვუზიარებთ
 
-[https://www.facebook.com/groups/remote.work.georgian.community/](https://www.facebook.com/groups/remote.work.georgian.community/)
+[Remote Work Georgian Community](https://www.facebook.com/groups/remote.work.georgian.community/)
