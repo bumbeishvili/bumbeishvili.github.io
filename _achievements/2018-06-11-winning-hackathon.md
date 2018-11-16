@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: VizHack - 1st Place
 date: 2018-06-11 00:00:00
 description: This page is a demo that shows everything you can do inside portfolio and blog posts.

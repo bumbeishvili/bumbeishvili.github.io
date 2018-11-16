@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: D3 Overview
 date: 2017-07-25 00:00:00
 language: Georgian Language
