@@ -1,0 +1,39 @@
+---
+layout: default
+title: Achievement
+description: Index includes a simple blog with pagination.
+featured_image: /images/social.jpg
+---
+
+
+	
+<section class="blog">
+	
+	<div class="content-wrap blog-wrap">
+		{% for post in site.achievements reversed %}
+
+		<article class="blog-post">
+
+			<a class="blog-post__link" href="{{ post.url }}">
+
+				<div class="blog-post__image">
+					<img src="{{ post.featured_image  }}" alt="{{ post.title }}">
+				</div>
+
+				<div class="blog-post__content">
+					<div class="blog-post__info">
+						<h2 class="blog-post__title">{{ post.title }}</h2>
+						<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
+						<p class="blog-post__subtitle">{{ post.language }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>

@@ -13,6 +13,9 @@ collections:
   talks:
     output: true
     permalink: /talks/:slug
+  achievements:
+    output: true
+    permalink: /achievements/:slug
 
  
 
@@ -40,12 +43,7 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  # -
-  #   scope:
-  #     path: ""
-  #     type: "talks"
-  #   values:
-  #     layout: "talk"
+
 
 markdown: kramdown
 
