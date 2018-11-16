@@ -39,3 +39,18 @@ It includes:
 * possibility to search people and find ancestors.
 * get statistical information for each region and city.
 
+
+
+<br/> <br/>
+## Gallery
+
+
+<div class="gallery" data-columns="3">
+	<img src="/images/achievements/vizhack/1.jpg">
+    <img src="/images/achievements/vizhack/2.jpg">
+    <img src="/images/achievements/vizhack/4.jpg">
+    <img src="/images/achievements/vizhack/6.jpg">
+    <img src="/images/achievements/vizhack/7.jpg">
+    <img src="/images/achievements/vizhack/8.jpg">
+	
+</div>
