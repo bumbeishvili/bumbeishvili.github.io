@@ -1,4 +1,5 @@
 ---
+comments: true
 title: 'Occamlabs - Interactive Map'
 subtitle: 'mapbox, deck.gl, d3.js, bootstrap, sass, webpack'
 date: 2018-11-01 00:00:00
@@ -69,14 +70,3 @@ If we zoom detailed enough, we even can see 3D buildings
 
 
 
-
-<form method="POST" action="https://api.staticman.net/v2/entry/bumbeishvili/bumbeishvili.github.io/master/comments">
-  <input name="options[redirect]" type="hidden" value="https://my-site.com">
-  <!-- e.g. "2016-01-02-this-is-a-post" -->
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <label><input name="fields[name]" type="text">Name</label>
-  <label><input name="fields[email]" type="email">E-mail</label>
-  <label><textarea name="fields[message]"></textarea>Message</label>
-  
-  <button type="submit">Go!</button>
-</form>
