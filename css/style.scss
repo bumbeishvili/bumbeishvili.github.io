@@ -590,3 +590,31 @@ Main components
     transform: translateX(0);
   }
 }
+
+
+
+
+
+.page{
+  .body-full-screen-button{
+    display:none;
+  }
+}
+
+
+.full-screen{
+  .body-full-screen-button{
+    display:initial ;
+  }
+}
+
+.full-screen{
+  padding-left:0%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .post-full-screen-button{
+    display:none;
+  }
+}
