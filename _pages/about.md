@@ -6,7 +6,7 @@ featured_image:
 ---
  
 
-<button class="download-button" style="right:0px;top:-10px;position:absolute" class='button' onclick="convertToPdf()">download</button>
+<!-- <button class="download-button" style="right:0px;top:-10px;position:absolute" class='button' onclick="convertToPdf()">download</button>
 
 <style>
 	.resume{
@@ -17,13 +17,13 @@ featured_image:
        font-size:30px;
 	   font-weight:bold;
 	}
-</style>
+</style> -->
 
 <script>
-   console.log('Javascript executed from "about" page directly')	
+  alert('Javascript executed from "about" page directly')	
 </script>
 
-
+<!-- 
 <div class='resume' style="background-color:white;padding:30px">
 	<div class='name'>
 	                    Davit Bumbeishvili  
@@ -55,4 +55,4 @@ featured_image:
 	<div class="">
 					dwakjdja
 	</div>	
-</div>
+</div> -->
