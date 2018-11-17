@@ -21,19 +21,19 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Thank you – David B.</title>
-	<meta name="description" content="">
+	<title>Georgian IT Survey 2018 – David B.</title>
+	<meta name="description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Thank you – David B. ">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/demo/demo-landscape.jpg">
+	<meta name="twitter:title" content="Georgian IT Survey 2018 – David B. ">
+	<meta name="twitter:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/blogs/observable/avg-salary.png">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Thank you – David B. " />
-	<meta property="og:description" content="" />
-	<meta property="og:image" content="http://localhost:4000/images/demo/demo-landscape.jpg" />
+	<meta property="og:title" content="Georgian IT Survey 2018 – David B. " />
+	<meta property="og:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts." />
+	<meta property="og:image" content="http://localhost:4000/images/blogs/observable/avg-salary.png" />
 
 	
 	<!-- Font Embed Code -->
@@ -83,7 +83,7 @@
 </head>
 
 
-<body class="loading" data-site-url="http://localhost:4000" data-page-url="/thanks">
+<body class="loading" data-site-url="http://localhost:4000" data-page-url="/blog/analyzing-it-survey-2018">
 
 
 
@@ -285,14 +285,26 @@
 
 
 
-		<div class="page__content" data-page-title="Thank you – David B. ">
+		<div class="page__content" data-page-title="Georgian IT Survey 2018 – David B. ">
 
-			<section class="intro">
+			
+<script>
+	console.log('test')
+</script>
 
-	<div class="wrap">
+<section class="intro">
 		
-		<h1>Thank you</h1>
-		<p>Your message was sent successfully.</p>
+	<div class="wrap">
+	
+			<button class='button post-full-screen-button' style="position:fixed;top:0px;right:0;z-index:999999" 
+			onclick="toggleFullScreen()" >
+			 Fullscreen</button>
+
+
+			 <applause-button style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
+
+		<h1>Georgian IT Survey 2018</h1>
+		<p>21 May 2018</p>
 
 	</div>
 
@@ -301,10 +313,98 @@
 <section class="single">
 
 	<div class="wrap">
+
+		<style>
+.observable-wrapper svg{
+  display:block;
+  margin: 0 auto;
+}
+
+
+.observable-wrapper {
+    margin-bottom: 15px;
+}
+
+.dc-wrapper-second{
+    width:102%;
+}
+
+.observable-wrapper h1{
+   margin-top: 60px;
+   margin-bottom: 55px;
+}
+
+.observable-wrapper h2{
+   margin-top: 60px;
+   margin-bottom: 55px;
+}
+
+.observable-wrapper h3{
+   margin-top: 60px;
+   margin-bottom: 55px;
+}
+
+.observablehq--boolean{
+    display:none;
+}
+
+.single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol {
+    max-width: 80% !important; 
+}
+
+input {
+  -webkit-appearance: checkbox;
+      margin-left: 10%;
+}
+#DIV_1{
+   margin: 0 auto !important;
+}
+
+ul, ol {
+    list-style-position: initial !important;
+}
+
+</style>
+
+<div class="full-page-blog-width">
+
+</div>
+
+<script type="module">
+
+  import notebook from "https://api.observablehq.com/@bumbeishvili/how-much-georgian-devs-earn.js";
+
+
+
+document.querySelector('.full-page-blog-width').innerHTML = notebook.modules[0].variables
+.filter(d=>d)
+.map((d,i)=>` <div class="observable-wrapper div-number-${i}" 
+               ${i>62?"style='display:none'":''}></div>`)
+.join('')
+
+
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+ 
+ 
+
+   let i=1;
+   Runtime.load(notebook, (variable) => {
+       console.log(variable.name=='ოფისში_მომუშავეები'?variable:'')
+
+      return new Inspector(document.querySelector(`.observable-wrapper:nth-child(${i++})`));
+   });
+
+</script>
+
+
 		
-		<p><img src="/images/demo/about.jpg" alt="" /></p>
-
-
+		<button class='button show-comments' onclick="showComment('/blog/analyzing-it-survey-2018')">
+			Comments
+		</button>
+		<div id="disqus_thread"></div>
+		
+	
 	</div>
 
 </section>
