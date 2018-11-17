@@ -80,7 +80,7 @@
 
 
 <body class="loading" data-site-url="{{ site.url }}" data-page-url="{{ page.url | replace: 'index.html', '' }}">
-	
+
 	{% include header.html %}
 
 
@@ -109,7 +109,7 @@
 		<button class='button body-full-screen-button' style="z-index:1;position:fixed;top:0px;right:0" onclick="toggleFullScreen()">
 			Fullscreen</button>
 
-		
+
 
 
 		<div class="page__content" data-page-title="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title
@@ -131,9 +131,9 @@
 
 	<script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
 
-	
+
 	<link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
-	
+
 
 	{% if site.data.settings.advanced_settings.footer_js %}
 	<!-- Extra Footer JS Code -->
@@ -153,20 +153,20 @@
 		function toggleFullScreen() {
 			window.full = !window.full;
 			if (full) {
-				window.history.replaceState( {} , 'title',  window.location.href.split('?')[0]+"?full=true" )
+				window.history.replaceState({}, 'title', window.location.href.split('?')[0] + "?full=true")
 
-				
+
 				//window.location.search = "full=true"
 				//(new URL(window.location.href).searchParams).set('full','true')
 				//	window.location.href  = window.location.href.split('?')[0]+"?full=true"
 			} else {
-				window.history.replaceState( {} , 'title',  window.location.href.split('?')[0]+"" )
+				window.history.replaceState({}, 'title', window.location.href.split('?')[0] + "")
 				//	window.location.href =window.location.href.split('?')[0];
 			}
 			document.querySelector('.page').classList.toggle('full-screen')
 			document.querySelector('.header').classList.toggle('full-screen')
 
-			setTimeout(d=>{window.dispatchEvent(new Event('resize'));},500)
+			setTimeout(d => { window.dispatchEvent(new Event('resize')); }, 500)
 
 		}
 
@@ -179,6 +179,26 @@
 			else {
 				return uri + separator + key + "=" + value;
 			}
+		}
+
+		function showComment(pageUrl) {
+
+			document.querySelector('.show-comments').style.display = "none"
+
+			//RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			// LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+			var disqus_config = function () {
+				this.page.url = window.location.href.split('?')[0];  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = window.location.href.split('?')[0]; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+
+			(function () { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = 'https://bumbeishvili-github-io.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
 		}
 		console.log('exec')
 	</script>

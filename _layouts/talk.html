@@ -18,7 +18,12 @@ layout: default
 	<div class="wrap">
 
 		{{ page.content }}
-
+		{% if page.comments %}
+		<button class='button show-comments' onclick="showComment('{{page.url}}')">
+			Comments
+		</button>
+		<div id="disqus_thread"></div>
+		{% endif %}
 	</div>
 
 </section>

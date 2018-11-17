@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Data , D3 and Observable
 date: 2018-05-24 00:00:00

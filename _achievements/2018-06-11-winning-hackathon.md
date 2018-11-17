@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: VizHack - 1st Place
 date: 2018-06-11 00:00:00
