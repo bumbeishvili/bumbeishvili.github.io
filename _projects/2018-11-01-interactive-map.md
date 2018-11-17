@@ -1,4 +1,5 @@
 ---
+layout: post
 comments: true
 title: 'Occamlabs - Interactive Map'
 subtitle: 'mapbox, deck.gl, d3.js, bootstrap, sass, webpack'
@@ -7,7 +8,9 @@ description: This page is a demo that shows everything you can do inside portfol
 featured_image: '/images/nestseekers/outer_thumbnail.png'
 ---
 
-![](/images/nestseekers/thumbnail.png)
+<iframe src="https://occam-labs.github.io/Nestseekers/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="20px" marginwidth="20px" height="700px" width="100%" allowfullscreen></iframe>
+
+
 
 ## Details
 
