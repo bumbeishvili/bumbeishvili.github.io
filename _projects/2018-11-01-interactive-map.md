@@ -1,4 +1,5 @@
 ---
+top: interactive
 layout: post
 comments: true
 title: 'Occamlabs - Interactive Map'

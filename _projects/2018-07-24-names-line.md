@@ -1,4 +1,5 @@
 ---
+top: interactive
 comments: true
 title: 'CEROS - Names visualization'
 subtitle: 'd3.js'
