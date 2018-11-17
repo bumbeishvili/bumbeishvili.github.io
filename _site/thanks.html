@@ -393,12 +393,15 @@
 
 
 	<!-- Javascript Assets -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/index-min.js"></script>
 
 	<script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
-
-
 	<link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
 
 
@@ -470,7 +473,15 @@
 				(d.head || d.body).appendChild(s);
 			})();
 		}
-		console.log('exec')
+
+
+
+		function convertToPdf() {
+			let doc = new jsPDF('p', 'pt', 'a4');
+			doc.addHTML(document.querySelector('.resume'), function () {
+				doc.save('resume_david_b.pdf');
+			});
+		}
 	</script>
 
 </body>
