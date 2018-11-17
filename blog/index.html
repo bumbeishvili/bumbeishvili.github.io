@@ -12,11 +12,11 @@ featured_image: /images/social.jpg
 		<article class="blog-post">
 
 			<a class="blog-post__link" href="{{ post.url }}">
-
+			
 				<div class="blog-post__image">
 					<img src="{{ post.featured_image  }}" alt="{{ post.title }}">
 				</div>
-
+	
 				<div class="blog-post__content">
 					<div class="blog-post__info">
 						<h2 class="blog-post__title">{{ post.title }}</h2>
@@ -24,6 +24,8 @@ featured_image: /images/social.jpg
 						<p class="blog-post__subtitle">{{ post.language }}</p>
 					</div>
 				</div>
+				<applause-button class="outer" style="position:absolute;width: 28px; height: 28px;z-index:999;bottom:5px;left:5px;"
+					url="https://bumbeishvili.github.io{{post.url}}" />
 
 			</a>
 
@@ -41,12 +43,14 @@ featured_image: /images/social.jpg
 
 	{% if paginator.previous_page %}
 	<div class="pagination__prev">
-		<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="button button--large"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
+		<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="button button--large"><i class="fa fa-angle-left"
+			 aria-hidden="true"></i> <span>Newer Posts</span></a>
 	</div>
 	{% endif %}
 	{% if paginator.next_page %}
 	<div class="pagination__next">
-		<a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="button button--large"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		<a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="button button--large"><span>Older Posts</span>
+			<i class="fa fa-angle-right" aria-hidden="true"></i></a>
 	</div>
 	{% endif %}
 
