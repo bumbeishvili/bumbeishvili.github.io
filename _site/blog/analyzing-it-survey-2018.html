@@ -15,6 +15,7 @@
 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -370,18 +371,21 @@ ul, ol {
 
 </div>
 
-<script type="module">
-
+<div style="display:none" data-type="module" class="script-this">
+    
+ console.log('start')
   import notebook from "https://api.observablehq.com/@bumbeishvili/how-much-georgian-devs-earn.js";
 
+console.log('imported')
 
 
-document.querySelector('.full-page-blog-width').innerHTML = notebook.modules[0].variables
-.filter(d=>d)
-.map((d,i)=>` <div class="observable-wrapper div-number-${i}" 
-               ${i>62?"style='display:none'":''}></div>`)
-.join('')
+document.querySelector('.full-page-blog-width').innerHTML =notebook.modules[0].variables
+.filter(d=&gt;d)
+.map((d,i)=&gt;` &lt;d`+`iv class="observable-wrapper div-number-${i}" 
+               ${i&gt;62?"style='display:none'":''}&gt;&lt;/`+`div&gt;`)
+.join('');
 
+console.log('created')
 
 
   import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
@@ -389,13 +393,28 @@ document.querySelector('.full-page-blog-width').innerHTML = notebook.modules[0].
  
 
    let i=1;
-   Runtime.load(notebook, (variable) => {
-       console.log(variable.name=='ოფისში_მომუშავეები'?variable:'')
-
+   Runtime.load(notebook, (variable) =&gt; {
       return new Inspector(document.querySelector(`.observable-wrapper:nth-child(${i++})`));
    });
 
-</script>
+console.log('finished')
+    
+</div>
+
+<script>
+
+     s = document.createElement('script');
+    s.type = 'module';
+    var code = document.querySelector('.script-this').innerText;
+    try {
+      s.appendChild(document.createTextNode(code));
+      document.body.appendChild(s);
+    } catch (e) {
+      s.text = code;
+      document.body.appendChild(s);
+}
+
+ </script>
 
 
 		
@@ -594,6 +613,36 @@ document.querySelector('.full-page-blog-width').innerHTML = notebook.modules[0].
 			});
 		}
 	</script>
+
+	<Script>
+		let url = location.href;
+		document.body.addEventListener('click', () => {
+			requestAnimationFrame(() => {
+
+				if (url !== location.href) {
+					console.log('changed')
+
+					setTimeout(d => {
+						if (document.querySelector('.script-this')) {
+							s = document.createElement('script');
+							s.type = 'module';
+							var code = document.querySelector('.script-this').innerText;
+							try {
+								s.appendChild(document.createTextNode(code));
+								document.body.appendChild(s);
+							} catch (e) {
+								s.text = code;
+								document.body.appendChild(s);
+							}
+						}
+					}, 500)
+
+
+				}
+				url = location.href;
+			});
+		}, true);
+	</Script>
 
 </body>
 

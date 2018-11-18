@@ -66,18 +66,21 @@ ul, ol {
 
 </div>
 
-<script type="module">
-
+<div style='display:none' data-type='module' class='script-this'>
+    
+ console.log('start')
   import notebook from "https://api.observablehq.com/@bumbeishvili/how-much-georgian-devs-earn.js";
 
+console.log('imported')
 
 
-document.querySelector('.full-page-blog-width').innerHTML = notebook.modules[0].variables
+document.querySelector('.full-page-blog-width').innerHTML =notebook.modules[0].variables
 .filter(d=>d)
-.map((d,i)=>` <div class="observable-wrapper div-number-${i}" 
-               ${i>62?"style='display:none'":''}></div>`)
-.join('')
+.map((d,i)=>` <d`+`iv class="observable-wrapper div-number-${i}" 
+               ${i>62?"style='display:none'":''}></`+`div>`)
+.join('');
 
+console.log('created')
 
 
   import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
@@ -86,9 +89,25 @@ document.querySelector('.full-page-blog-width').innerHTML = notebook.modules[0].
 
    let i=1;
    Runtime.load(notebook, (variable) => {
-       console.log(variable.name=='ოფისში_მომუშავეები'?variable:'')
-
       return new Inspector(document.querySelector(`.observable-wrapper:nth-child(${i++})`));
    });
 
-</script>
+console.log('finished')
+    
+</div>
+
+
+<script>
+
+     s = document.createElement('script');
+    s.type = 'module';
+    var code = document.querySelector('.script-this').innerText;
+    try {
+      s.appendChild(document.createTextNode(code));
+      document.body.appendChild(s);
+    } catch (e) {
+      s.text = code;
+      document.body.appendChild(s);
+}
+
+ </script>

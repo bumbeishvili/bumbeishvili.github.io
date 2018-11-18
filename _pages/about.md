@@ -7,6 +7,7 @@ featured_image:
  
 
 
-<script>
-  alert('Javascript executed from "about" page directly')	
-</script>
+<div class='script-this'>
+    
+</div>
+

@@ -15,6 +15,7 @@
 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -639,6 +640,36 @@
 			});
 		}
 	</script>
+
+	<Script>
+		let url = location.href;
+		document.body.addEventListener('click', () => {
+			requestAnimationFrame(() => {
+
+				if (url !== location.href) {
+					console.log('changed')
+
+					setTimeout(d => {
+						if (document.querySelector('.script-this')) {
+							s = document.createElement('script');
+							s.type = 'module';
+							var code = document.querySelector('.script-this').innerText;
+							try {
+								s.appendChild(document.createTextNode(code));
+								document.body.appendChild(s);
+							} catch (e) {
+								s.text = code;
+								document.body.appendChild(s);
+							}
+						}
+					}, 500)
+
+
+				}
+				url = location.href;
+			});
+		}, true);
+	</Script>
 
 </body>
 
