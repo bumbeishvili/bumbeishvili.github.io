@@ -12,7 +12,11 @@ featured_image: '/images/talks/observable.jpg'
 
 Sadly, video is not available
 
-We analyzed first, 1918 years parliament members data of country Georgia using [ObservableHQ Platform](https://beta.observablehq.com/) and `D3.js` library, we heavily used `d3.nest` in the process
+We analyzed  1918 year's, Georgian parliament members  data using [ObservableHQ Platform](https://beta.observablehq.com/) and `D3.js` library
+
+
+
+ We heavily used `d3.nest` in the process (Which kinda like is `group by` equivalent)
 
 
 

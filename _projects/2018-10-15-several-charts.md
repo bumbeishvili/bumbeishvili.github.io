@@ -1,6 +1,6 @@
 ---
 comments: true
-title: 'Beyond the hedge - Charts'
+title: 'Beyond the hedge - Visualizations'
 subtitle: 'd3.js'
 date: 2018-11-01 00:00:00
 description: This page is a demo that shows everything you can do inside portfolio and blog posts.
@@ -18,11 +18,10 @@ featured_image: '/images/hedge/vertical.png'
  Created several  custom charts for  [Beyond the hedge](https://www.beyondthehedgecreative.com/) agency 
 
 
-Right now they are hosted on [staging website](http://pdi2018.bthstaging2.net/pages/homepage.php)
 
 
-It's supposed to replace  `New South Wales Government's department of primary industries ` 
-[website](https://www.dpi.nsw.gov.au/agriculture)
+Project is live at  `New South Wales Government's department of primary industries ` 
+[website](https://www.dpi.nsw.gov.au/about-us/publications/pdi/2018/cotton)
 
 ---
 
