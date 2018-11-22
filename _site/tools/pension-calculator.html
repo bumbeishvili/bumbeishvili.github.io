@@ -86,8 +86,15 @@
 
 
 <body class="loading" data-site-url="http://localhost:4000" data-page-url="/tools/pension-calculator">
-
-
+	<script>
+	(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=598372137026804&autoLogAppEvents=1';
+			fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'))
+	</script>
 
 
 
@@ -285,7 +292,6 @@
 
 
 	<div class="page">
-		
 		<button class='button body-full-screen-button' style="z-index:1;position:fixed;top:0px;right:0" onclick="toggleFullScreen()">
 			Fullscreen</button>
 
@@ -812,13 +818,7 @@ console.log('created')
 
 console.log('finished');
 
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v3.2&amp;appId=598372137026804&amp;autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+
    
 </div>
 
@@ -839,15 +839,15 @@ console.log('finished');
 
 
 
-		
-		<button class='button show-comments' onclick="showComment('/tools/pension-calculator')">
-			Comments
-		</button>
-		<div id="disqus_thread"></div>
-		
+<button style="margin-bottom:50px;" class='button show-comments' onclick="showComment('/tools/pension-calculator')">
+	Comments
+</button>
+<div id="disqus_thread"></div>
+
+<applause-button style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999" />
 
 		</div>
-		<applause-button style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
+
 	</div>
 
 
