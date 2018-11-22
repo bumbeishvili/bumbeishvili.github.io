@@ -1,4 +1,5 @@
 ---
+layout: tool
 comments: true
 title: Pension calculator
 language:   Georgian Language
@@ -443,6 +444,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 </style> 
 <div class='pension-wrapper'>
+<div id="fb-root"></div>
  <div class='observable-wrapper div-number-1'>
 </div>
 <div>
@@ -482,8 +484,11 @@ input[type=range]::-webkit-slider-runnable-track {
 </div>
 <br/><br/>
 <a href='https://beta.observablehq.com/@bumbeishvili/pension-calculator/2'>იმპლემენტაციის დეტალების ნახვა ამ <b>ნოუთბუქში </b>შეგიძლიათ  </a>
+
 <br/><br/><br/><br/>
 
+
+<div class="fb-share-button" data-href="https://bumbeishvili.github.io/tools/pension-calculator" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbumbeishvili.github.io%2Ftools%2Fpension-calculator&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 </div>
 <div style='display:none' data-type='module' class='script-this'>
     
@@ -518,10 +523,18 @@ console.log('created')
 
    });
 
-console.log('finished')
-    
-</div>
+console.log('finished');
 
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=598372137026804&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+   
+</div>
+ 
 
 <script>
 
