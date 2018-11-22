@@ -23,19 +23,19 @@
 	<!-- Page Info -->
 	
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Data , D3 and Observable – David B.</title>
+	<title>Pension calculator – David B.</title>
 	<meta name="description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Data , D3 and Observable – David B. ">
+	<meta name="twitter:title" content="Pension calculator – David B. ">
 	<meta name="twitter:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/talks/observable.jpg">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/tools/pension.png">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Data , D3 and Observable – David B. " />
+	<meta property="og:title" content="Pension calculator – David B. " />
 	<meta property="og:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts." />
-	<meta property="og:image" content="http://localhost:4000/images/talks/observable.jpg" />
+	<meta property="og:image" content="http://localhost:4000/images/tools/pension.png" />
 
 	
 	<!-- Font Embed Code -->
@@ -85,7 +85,7 @@
 </head>
 
 
-<body class="loading" data-site-url="http://localhost:4000" data-page-url="/talks/observable">
+<body class="loading" data-site-url="http://localhost:4000" data-page-url="/tools/pension-calculator">
 
 
 
@@ -291,62 +291,516 @@
 
 
 
-		<div class="page__content" data-page-title="Data , D3 and Observable – David B. ">
+		<div class="page__content" data-page-title="Pension calculator – David B. ">
 
-			<section class="intro">
-		
-	<div class="wrap">
-	
-			<button class='button post-full-screen-button' style="position:fixed;top:0px;right:0;z-index:999999" 
-			onclick="toggleFullScreen()" >
-			 Fullscreen</button>
+			<style>
+.observable-wrapper svg{
+  display:block;
+  margin: 0 auto;
+}
 
 
-			 <applause-button style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
+.observable-wrapper {
+    margin-bottom: 15px;
+}
 
-		<h1>Data , D3 and Observable</h1>
-		<p>24 May 2018</p>
+.dc-wrapper-second{
+    width:102%;
+}
 
-	</div>
+.observable-wrapper h1{
+   margin-top: 60px;
+   margin-bottom: 55px;
+}
 
-</section>
+.observable-wrapper h2{
+   margin-top: 60px;
+   margin-bottom: 55px;
+}
 
-<section class="single">
+.observable-wrapper h3{
+   margin-top: 60px;
+   margin-bottom: 55px;
+}
 
-	<div class="wrap">
 
-		<p><img src="/images/talks/observable.jpg" alt="" /></p>
 
-<p>Sadly, video is not available</p>
+.single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol {
+    max-width: 80% !important; 
+}
 
-<p>We analyzed  1918 year’s, Georgian parliament members  data using <a href="https://beta.observablehq.com/">ObservableHQ Platform</a> and <code class="highlighter-rouge">D3.js</code> library</p>
+input {
+  -webkit-appearance: initial;
+ 
+}
 
-<p>We heavily used <code class="highlighter-rouge">d3.nest</code> in the process (Which kinda like is <code class="highlighter-rouge">group by</code> equivalent)</p>
 
-<p>Here is the notebook, we were working on</p>
+ul, ol {
+    list-style-position: initial !important;
+}
 
-<p><a href="https://beta.observablehq.com/@bumbeishvili/d3-meetup-georgia?fbclid=IwAR37kwzID5RawHoHbAuTBu0UMeT-Oo3_NAHRszAjdhQWyZLwW3jFJYgOfBs">Observable notebook</a></p>
+.observablehq--inspect{
+  display:none
+}
+ input[type=range] {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1;
+  height: 2em;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2em;
+  height: 2em;
+  margin-top: 0;
+  background-color: #16a085;
+  border-radius: 1em;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 2em;
+  height: 2em;
+  margin-top: 0;
+  background-color: #16a085;
+  border-radius: 1em;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+input[type=range]::-ms-thumb {
+  width: 2em;
+  height: 2em;
+  margin-top: 0;
+  background-color: #16a085;
+  border-radius: 1em;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+input[type=range]:hover::-webkit-slider-thumb {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+input[type=range]:hover::-moz-range-thumb {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+input[type=range]:hover::-ms-thumb {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+input[type=range]:active::-webkit-slider-thumb {
+  border-color: #ffffff;
+}
+input[type=range]:active::-moz-range-thumb {
+  border-color: #ffffff;
+}
+input[type=range]:active::-ms-thumb {
+  border-color: #ffffff;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  height: 1em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  cursor: pointer;
+  height: 1em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+section {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #16a085;
+}
+section div {
+  margin: auto;
+  width: 80%;
+}
+section h1 {
+  font-family: "Helvetica Neue", Helvetical, Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 42px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.block{
+  display:inline-block;
+  width:49%;
+  padding:5px;
+}
 
-<p><br />
-<br />
-<br />
-<b> P.S. </b>
-  If you are interested, you can join relevant facebook groups</p>
 
-<p><a href="https://www.facebook.com/groups/DataScienceTbilisi/"> Data science tbilisi </a></p>
+/*!
+// CSS only Responsive Tables
+// http://dbushell.com/2016/03/04/css-only-responsive-tables/
+// by David Bushell
+*/
 
-<p><a href="https://www.facebook.com/groups/d3.js.georgia/"> D3.js Georgia (Advanced Data Visualizations)</a></p>
+.rtable {
+  /*!
+  // IE needs inline-block to position scrolling shadows otherwise use:
+  // display: block;
+  // max-width: min-content;
+  */
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  
+  overflow-x: auto;
+  
+  // optional - looks better for small cell values
+  white-space: nowrap;
 
-		
-		<button class='button show-comments' onclick="showComment('/talks/observable')">
-			Comments
-		</button>
-		<div id="disqus_thread"></div>
-		
-	
-	</div>
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-</section>
+.rtable,
+.rtable--flip tbody {
+  // optional - enable iOS momentum scrolling
+  -webkit-overflow-scrolling: touch;
+  
+  // scrolling shadows
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+// change these gradients from white to your background colour if it differs
+// gradient on the first cells to hide the left shadow
+.rtable td:first-child,
+.rtable--flip tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+// gradient on the last cells to hide the right shadow
+.rtable td:last-child,
+.rtable--flip tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+.rtable th {
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+  background: #f2f0e6;
+}
+
+.rtable th,
+.rtable td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+.rtable--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.rtable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+
+.rtable--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rtable--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+.rtable--flip td,
+.rtable--flip th {
+  display: block;
+}
+
+.rtable--flip td {
+  background-image: none !important;
+  // border-collapse is no longer active
+  border-left: 0;
+}
+
+// border-collapse is no longer active
+.rtable--flip th:not(:last-child),
+.rtable--flip td:not(:last-child) {
+  border-bottom: 0;
+}
+
+
+
+
+
+
+.dropdown  select{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  width: 150px;
+  background: #f2f2f2;
+  border: 1px solid;
+  border-color: white #f7f7f7 whitesmoke;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown select:before, .dropdown select:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888888 transparent;
+  pointer-events: none;
+}
+
+.dropdown select:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown select:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select select{
+  position: relative;
+  width: 130%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #62717a;
+  text-shadow: 0 1px white;
+  background: #f2f2f2; /* Fallback for IE 8 */
+  background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.dropdown-select select:focus {
+  z-index: 3;
+  width: 100%;
+  color: #394349;
+  outline: 2px solid #49aff2;
+  outline: 2px solid -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.dropdown-select select > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Fix for IE 8 putting the arrows behind the select element. */
+
+.lt-ie9 .dropdown {
+  z-index: 1;
+}
+
+.lt-ie9 .dropdown-select {
+  z-index: -1;
+}
+
+.lt-ie9 .dropdown-select:focus {
+  z-index: 3;
+}
+
+/* Dirty fix for Firefox adding padding where it shouldn't. */
+
+@-moz-document url-prefix() {
+  .dropdown-select {
+    padding-left: 6px;
+  }
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  /* width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101; */
+  
+  border-bottom: 2px solid #00A586;
+}
+
+
+.widget{
+  text-align:center;
+  display:inline-block;
+  width:32%;
+  background:#00A586;
+  padding-top:20px;
+   padding-bottom:20px;
+   color:white;
+}
+
+.widget div{
+  margin-bottom:10px;
+}
+
+.widget .number{
+  font-size:40px;
+
+}
+</style>
+
+<div class="observable-wrapper div-number-1">
+</div>
+<div>
+<div class="block">
+  <div class="observable-wrapper div-number-2">
+  </div>
+  <div class="observable-wrapper div-number-3">
+  </div>
+ </div>
+
+ <div class="block">
+  <div class="observable-wrapper div-number-5">
+  </div>
+  <div class="observable-wrapper div-number-6">
+  </div>
+ </div>
+
+ <div class="block">
+  <div class="observable-wrapper div-number-8">
+  </div>
+  <div class="observable-wrapper div-number-9">
+  </div>
+ </div>
+
+
+ <div class="block">
+  <div class="observable-wrapper div-number-11">
+  </div>
+  <div class="observable-wrapper dropdown div-number-12">
+  </div>
+ </div>
+</div>
+
+<div class="full-page-blog-width">
+ 
+
+</div>
+<p><br /><br />
+<a href="https://beta.observablehq.com/@bumbeishvili/pension-calculator/2">იმპლემენტაციის დეტალების ნახვა ამ <b>ნოუთბუქში </b>შეგიძლიათ  </a>
+<br /><br /><br /><br /></p>
+
+<div style="display:none" data-type="module" class="script-this">
+    
+ console.log('start')
+  import notebook from "https://api.observablehq.com/@bumbeishvili/pension-calculator/2.js";
+
+console.log('imported')
+
+const html = document.querySelector('.full-page-blog-width').innerHTML;
+document.querySelector('.full-page-blog-width').innerHTML=(html+notebook.modules[0].variables
+.filter(d=&gt;d)
+.map((d,i)=&gt;{
+  if(i&lt;7) return '';
+  return ` &lt;d`+`iv class="observable-wrapper div-number-${i}" 
+               ${i&gt;=21?"style='display:none'":''}&gt;&lt;/`+`div&gt;`
+})
+.join(''));
+
+console.log('created')
+
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+ 
+ 
+
+   let i=1;
+   Runtime.load(notebook, (variable) =&gt; {
+       const selector = `.observable-wrapper.div-number-${i++}`
+       if(document.querySelector(selector)){
+      return new Inspector(document.querySelector(selector));
+       }
+
+   });
+
+console.log('finished')
+    
+</div>
+
+<script>
+
+     s = document.createElement('script');
+    s.type = 'module';
+    var code = document.querySelector('.script-this').innerText;
+    try {
+      s.appendChild(document.createTextNode(code));
+      document.body.appendChild(s);
+    } catch (e) {
+      s.text = code;
+      document.body.appendChild(s);
+}
+
+ </script>
+
+
 
 		</div>
 

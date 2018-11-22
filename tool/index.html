@@ -1,0 +1,42 @@
+---
+layout: default
+title: Tool
+description: Index includes a simple blog with pagination.
+featured_image: /images/social.jpg
+---
+
+
+	
+<section class="blog">
+	
+	<div class="content-wrap blog-wrap">
+		{% for post in site.tools reversed %}
+
+		<article class="blog-post">
+
+			<a class="blog-post__link" href="{{ post.url }}">
+
+				<div class="blog-post__image">
+					<img src="{{ post.featured_image  }}" alt="{{ post.title }}">
+				</div>
+
+				<div class="blog-post__content">
+					<div class="blog-post__info">
+						<h2 class="blog-post__title">{{ post.title }}</h2>
+						<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
+						<p class="blog-post__subtitle">{{ post.language }}</p>
+					</div>
+				</div>
+				<applause-button class="outer" style="position:absolute;width: 28px; height: 28px;z-index:999;bottom:5px;left:5px;"
+				url="https://bumbeishvili.github.io{{post.url}}" />
+
+
+			</a>
+
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>

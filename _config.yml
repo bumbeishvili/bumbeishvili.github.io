@@ -13,6 +13,9 @@ collections:
   talks:
     output: true
     permalink: /talks/:slug
+  tools:
+    output: true
+    permalink: /tools/:slug
   achievements:
     output: true
     permalink: /achievements/:slug

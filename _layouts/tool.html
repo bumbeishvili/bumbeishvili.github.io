@@ -1,18 +1,10 @@
 ---
-layout: default
+layout: post
 ---
 
-
 <section class="intro">
-		
 	<div class="wrap">
-	
-			<button class='button post-full-screen-button' style="position:fixed;top:0px;right:0;z-index:999999" 
-			onclick="toggleFullScreen()" >
-			 Fullscreen</button>
-
-
-			 <applause-button style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
+		<applause-button style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
 
 		<h1>{{ page.title }}</h1>
 		<p>{{ page.date | date_to_long_string }}</p>
@@ -32,7 +24,6 @@ layout: default
 		</button>
 		<div id="disqus_thread"></div>
 		{% endif %}
-	
 	</div>
 
 </section>
