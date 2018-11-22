@@ -437,6 +437,9 @@ input[type=range]::-webkit-slider-runnable-track {
    .widget{
       margin-left:2px !important;
    }
+   .block{
+     width:90%;
+   }
 }
 </style> 
 <div class='pension-wrapper'>
