@@ -169,6 +169,7 @@ section h1 {
   display:inline-block;
   width:49%;
   padding:5px;
+  float:left;
 }
 
 
@@ -409,6 +410,10 @@ input[type=range]::-webkit-slider-runnable-track {
   padding-top:20px;
    padding-bottom:20px;
    color:white;
+   min-height:125px;
+   float:left;
+   margin-left:5px;
+   margin-bottom:40px;
 }
 
 .widget div{
@@ -417,10 +422,24 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .widget .number{
   font-size:40px;
+}
 
+.pension-wrapper{
+  padding:20px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .widget .number{
+    font-size:15px !important;
+   }
+
+   .widget{
+      margin-left:2px !important;
+   }
 }
 </style> 
-
+<div class='pension-wrapper'>
  <div class='observable-wrapper div-number-1'>
 </div>
 <div>
@@ -454,7 +473,7 @@ input[type=range]::-webkit-slider-runnable-track {
  </div>
 </div>
 
-<div class="full-page-blog-width">
+<div class="full-page-blog-width" style="clear:both">
  
 
 </div>
@@ -462,7 +481,7 @@ input[type=range]::-webkit-slider-runnable-track {
 <a href='https://beta.observablehq.com/@bumbeishvili/pension-calculator/2'>იმპლემენტაციის დეტალების ნახვა ამ <b>ნოუთბუქში </b>შეგიძლიათ  </a>
 <br/><br/><br/><br/>
 
-
+</div>
 <div style='display:none' data-type='module' class='script-this'>
     
  console.log('start')
