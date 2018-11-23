@@ -4,7 +4,7 @@ title: 'DSIO - Dashboard, tree chart'
 subtitle: 'd3.js, bootstrap'
 date: 2018-11-01 00:00:00
 description: 
-featured_image: '/images/colin/tree.png'
+featured_image: '/images/colin/dashboard.png'
 ---
 
 ![](/images/colin/dashboard.png)
