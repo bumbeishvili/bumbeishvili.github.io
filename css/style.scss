@@ -648,7 +648,25 @@ applause-button .count{
   font-size: 15px;
 }
 
+applause-button.outer .style-root{
+ color:white  !important;
+ top: -1px;
+//  stroke:none  !important;
+//  fill:none !important;
+}
+
+applause-button.outer svg{
+  width:30%;
+ }
+
+ applause-button.outer .count{
+  top: 8px !important;
+  left: 6px;
+ }
+ 
+
 
 applause-button.outer{
   opacity:1;
+  width:37px !important;
 }
