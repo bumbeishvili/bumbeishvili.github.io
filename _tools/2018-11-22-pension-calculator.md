@@ -401,6 +401,12 @@ input[type=range]::-webkit-slider-runnable-track {
   border-bottom: 2px solid #00A586;
 }
 
+input[type=range]::-moz-range-track {
+
+  border-bottom: 2px solid #00A586;
+  margin-top:5px;
+}
+
 
 .widget{
   text-align:center;
