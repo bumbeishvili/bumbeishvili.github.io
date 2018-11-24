@@ -41,7 +41,7 @@ City insights
 
 
 
-By clicking the city, we can show detailed view of map, where more thank 50K + points are displayed
+By clicking the city, we can show detailed view of map, where more than 50K + points are displayed
 
 Where we can filter by category, price, see the details of each point and e.t.c
 
