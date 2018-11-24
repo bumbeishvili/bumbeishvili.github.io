@@ -233,7 +233,6 @@ section h1 {
 .rtable th {
   font-size: 11px;
   text-align: left;
-  text-transform: uppercase;
   background: #f2f0e6;
 }
 
