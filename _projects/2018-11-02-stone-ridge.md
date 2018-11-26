@@ -12,7 +12,7 @@ featured_image: '/images/projects/stoneridge/spline.png'
 
 ## Details
 
-I created some visual visual tools for [stone ridge technology](https://stoneridgetechnology.com/)
+I created some  visual tools for [stone ridge technology](https://stoneridgetechnology.com/)
 <br/><br/><br/>
 
 # 1.  spline editor
