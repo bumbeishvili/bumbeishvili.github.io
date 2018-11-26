@@ -446,6 +446,9 @@ input[type=range]::-moz-range-track {
 
 
 @media screen and (max-width: 900px) {
+  table{
+    width:50% !important;
+  }
   .widgets{
      width:100%;
   }
